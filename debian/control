@@ -15,15 +15,36 @@ Package: libqtxdg-dev
 Section: libdevel
 Architecture: any
 Depends:
- libqtxdg (= ${binary:Version}),
+ libqtxdg0 (= ${binary:Version}),
  ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Development files for libqtxdg
+ This library implements functions of the XDG Specifications in Qt.  It is part
+ of LXQt.
+ .
+ This package contains development files for libqtxdg.
 
-Package: libqtxdg
+Package: libqtxdg0
+Provides: libqtxdg
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Implementation of the XDG Specifications for Qt, libs
+ This library implements functions of the XDG Specifications in Qt.  It is part
+ of LXQt.
+
+Package: libqtxdg-dbg
+Section: debug
+Priority: extra
+Multi-Arch: same
+Architecture: any
+Depends:
+ libqtxdg0 (= ${binary:Version}),
+ ${misc:Depends}
+Description: Debug symbols for libqtxdg
+ This library implements functions of the XDG Specifications in Qt.  It is part
+ of LXQt.
+ .
+ This package contains debug symbols for libqtxdg.
