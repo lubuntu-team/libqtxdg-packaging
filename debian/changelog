@@ -1,5 +1,5 @@
-libqtxdg (0.5.3-1) unstable; urgency=low
+libqtxdg (1.0.0-1) unstable; urgency=low
 
   * Initial release (Closes: #757133)
 
- -- ChangZhuo Chen (陳昌倬) <czchen@gmail.com>  Fri, 05 Sep 2014 08:58:06 +0800
+ -- ChangZhuo Chen (陳昌倬) <czchen@gmail.com>  Sun, 07 Sep 2014 18:23:11 +0800
