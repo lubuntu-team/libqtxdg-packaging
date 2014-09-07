@@ -11,11 +11,11 @@ Homepage: https://github.com/lxde/libqtxdg
 #Vcs-Git: git://anonscm.debian.org/collab-maint/libqtxdg.git
 #Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/libqtxdg.git;a=summary
 
-Package: libqtxdg-dev
+Package: libqtxdg1-dev
 Section: libdevel
 Architecture: any
 Depends:
- libqtxdg0 (= ${binary:Version}),
+ libqtxdg1 (= ${binary:Version}),
  ${misc:Depends}
 Description: Development files for libqtxdg
  This library implements functions of the XDG Specifications in Qt.  It is part
@@ -23,8 +23,7 @@ Description: Development files for libqtxdg
  .
  This package contains development files for libqtxdg.
 
-Package: libqtxdg0
-Provides: libqtxdg
+Package: libqtxdg1
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Architecture: any
@@ -35,13 +34,13 @@ Description: Implementation of the XDG Specifications for Qt, libs
  This library implements functions of the XDG Specifications in Qt.  It is part
  of LXQt.
 
-Package: libqtxdg-dbg
+Package: libqtxdg1-dbg
 Section: debug
 Priority: extra
 Multi-Arch: same
 Architecture: any
 Depends:
- libqtxdg0 (= ${binary:Version}),
+ libqtxdg1 (= ${binary:Version}),
  ${misc:Depends}
 Description: Debug symbols for libqtxdg
  This library implements functions of the XDG Specifications in Qt.  It is part

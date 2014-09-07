@@ -8,4 +8,4 @@ override_dh_auto_configure:
 	dh_auto_configure -- -DUSE_QTMIMETYPES=no
 
 override_dh_strip:
-	dh_strip --dbg-package=libqtxdg-dbg
+	dh_strip --dbg-package=libqtxdg1-dbg
