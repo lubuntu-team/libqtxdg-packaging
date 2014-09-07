@@ -1,4 +1,4 @@
-libqtxdg.so.1 libqtxdg1 #MINVER#
+libQt5Xdg.so.1 libqt5xdg1 #MINVER#
  _Z10doUnEscapeR7QStringRK5QHashI5QCharS2_E@Base 1.0.0
  _Z10escapeExecR7QString@Base 1.0.0
  _Z10replaceVarR7QStringRKS_S2_@Base 1.0.0
@@ -9,30 +9,27 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _Z12xdgSingleDirRK7QStringS1_b@Base 1.0.0
  _Z15findDesktopFileRK7QString@Base 1.0.0
  _Z15findDesktopFileRK7QStringS1_@Base 1.0.0
- _Z15getFileMimeTypeRK9QFileInfob@Base 1.0.0
  _Z15readDesktopFileR9QIODeviceR4QMapI7QString8QVariantE@Base 1.0.0
  _Z16expandDynamicUrl7QString@Base 1.0.0
  _Z16fixBashShortcutsR7QString@Base 1.0.0
  _Z16loadMimeCacheDirRK7QStringR5QHashIS_5QListIP14XdgDesktopFileEE@Base 1.0.0
  _Z16writeDesktopFileR9QIODeviceRK4QMapI7QString8QVariantE@Base 1.0.0
- _Z17loadMimeInfoCacheR4QMapI7QStringS_IS0_P11XdgMimeInfoEE@Base 1.0.0
  _Z18expandEnvVariables11QStringList@Base 1.0.0
  _Z18expandEnvVariables7QString@Base 1.0.0
  _Z18installTranslationRK7QString@Base 1.0.0
  _Z20findLastElementByTag11QDomElement7QString@Base 1.0.0
- _Z23qStringComparisonHelperRK7QStringPKc@Base 1.0.0
  _Z6escapeR7QString@Base 1.0.0
  _Z8doEscapeR7QStringRK5QHashI5QCharS2_E@Base 1.0.0
  _Z8isParentRK11QDomElementS1_@Base 1.0.0
  _Z8unEscapeR7QString@Base 1.0.0
  _ZN10QByteArrayD1Ev@Base 1.0.0
  _ZN10QByteArrayD2Ev@Base 1.0.0
- _ZN11QLinkedListIP11XdgMenuRuleE13detach_helperEv@Base 1.0.0
+ _ZN11QLinkedListIP11XdgMenuRuleE14detach_helper2ENS2_8iteratorE@Base 1.0.0
  _ZN11QLinkedListIP11XdgMenuRuleE6appendERKS1_@Base 1.0.0
- _ZN11QLinkedListIP18XdgMenuAppFileInfoE13detach_helperEv@Base 1.0.0
+ _ZN11QLinkedListIP18XdgMenuAppFileInfoE14detach_helper2ENS2_8iteratorE@Base 1.0.0
  _ZN11QLinkedListIP18XdgMenuAppFileInfoED1Ev@Base 1.0.0
  _ZN11QLinkedListIP18XdgMenuAppFileInfoED2Ev@Base 1.0.0
- _ZN11QLinkedListIP23XdgMenuApplinkProcessorE13detach_helperEv@Base 1.0.0
+ _ZN11QLinkedListIP23XdgMenuApplinkProcessorE14detach_helper2ENS2_8iteratorE@Base 1.0.0
  _ZN11QLinkedListIP23XdgMenuApplinkProcessorED1Ev@Base 1.0.0
  _ZN11QLinkedListIP23XdgMenuApplinkProcessorED2Ev@Base 1.0.0
  _ZN11XdgMenuRule11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
@@ -43,16 +40,15 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZN11XdgMenuRuleD0Ev@Base 1.0.0
  _ZN11XdgMenuRuleD1Ev@Base 1.0.0
  _ZN11XdgMenuRuleD2Ev@Base 1.0.0
- _ZN11XdgMimeData7readXmlEP9QIODevice@Base 1.0.0
- _ZN11XdgMimeDataC1E7QStringS0_@Base 1.0.0
- _ZN11XdgMimeDataC2E7QStringS0_@Base 1.0.0
- _ZN11XdgMimeInfo10loadFromDbEP9QIODevice@Base 1.0.0
- _ZN11XdgMimeInfoC1ERK7QString@Base 1.0.0
- _ZN11XdgMimeInfoC1ERK9QFileInfob@Base 1.0.0
- _ZN11XdgMimeInfoC2ERK7QString@Base 1.0.0
- _ZN11XdgMimeInfoC2ERK9QFileInfob@Base 1.0.0
- _ZN11XdgMimeInfoD1Ev@Base 1.0.0
- _ZN11XdgMimeInfoD2Ev@Base 1.0.0
+ _ZN11XdgMimeTypeC1ERK9QMimeType@Base 1.0.0
+ _ZN11XdgMimeTypeC1ERKS_@Base 1.0.0
+ _ZN11XdgMimeTypeC1Ev@Base 1.0.0
+ _ZN11XdgMimeTypeC2ERK9QMimeType@Base 1.0.0
+ _ZN11XdgMimeTypeC2ERKS_@Base 1.0.0
+ _ZN11XdgMimeTypeC2Ev@Base 1.0.0
+ _ZN11XdgMimeTypeD1Ev@Base 1.0.0
+ _ZN11XdgMimeTypeD2Ev@Base 1.0.0
+ _ZN11XdgMimeTypeaSERKS_@Base 1.0.0
  _ZN12XdgAutoStart15desktopFileListE11QStringListb@Base 1.0.0
  _ZN12XdgAutoStart15desktopFileListEb@Base 1.0.0
  _ZN12XdgAutoStart9localPathERK14XdgDesktopFile@Base 1.0.0
@@ -177,11 +173,6 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZN14XdgMenuRuleNotD0Ev@Base 1.0.0
  _ZN14XdgMenuRuleNotD1Ev@Base 1.0.0
  _ZN14XdgMenuRuleNotD2Ev@Base 1.0.0
- _ZN16XdgMimeInfoCache10mediatypesEv@Base 1.0.0
- _ZN16XdgMimeInfoCache11xdgMimeInfoERK7QString@Base 1.0.0
- _ZN16XdgMimeInfoCache11xdgMimeInfoERK7QStringS2_@Base 1.0.0
- _ZN16XdgMimeInfoCache5cacheEv@Base 1.0.0
- _ZN16XdgMimeInfoCache8subtypesERK7QString@Base 1.0.0
  _ZN18DomElementIteratorD1Ev@Base 1.0.0
  _ZN18DomElementIteratorD2Ev@Base 1.0.0
  _ZN18QSharedDataPointerI18XdgDesktopFileDataE13detach_helperEv@Base 1.0.0
@@ -196,6 +187,10 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZN18XdgMenuAppFileInfoD0Ev@Base 1.0.0
  _ZN18XdgMenuAppFileInfoD1Ev@Base 1.0.0
  _ZN18XdgMenuAppFileInfoD2Ev@Base 1.0.0
+ _ZN18XdgMimeTypePrivateC1ERK11XdgMimeType@Base 1.0.0
+ _ZN18XdgMimeTypePrivateC1Ev@Base 1.0.0
+ _ZN18XdgMimeTypePrivateC2ERK11XdgMimeType@Base 1.0.0
+ _ZN18XdgMimeTypePrivateC2Ev@Base 1.0.0
  _ZN19XdgDesktopFileCache10initializeERK7QString@Base 1.0.0
  _ZN19XdgDesktopFileCache10initializeEv@Base 1.0.0
  _ZN19XdgDesktopFileCache11getAllFilesEv@Base 1.0.0
@@ -227,10 +222,6 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZN19XdgMenuRuleFileNameD0Ev@Base 1.0.0
  _ZN19XdgMenuRuleFileNameD1Ev@Base 1.0.0
  _ZN19XdgMenuRuleFileNameD2Ev@Base 1.0.0
- _ZN20QGlobalStaticDeleterI6QCacheI7QString5QIconEED1Ev@Base 1.0.0
- _ZN20QGlobalStaticDeleterI6QCacheI7QString5QIconEED2Ev@Base 1.0.0
- _ZN20QGlobalStaticDeleterIN5QtXdg11QIconLoaderEED1Ev@Base 1.0.0
- _ZN20QGlobalStaticDeleterIN5QtXdg11QIconLoaderEED2Ev@Base 1.0.0
  _ZN20XdgMenuWidgetPrivate12createActionERK11QDomElement@Base 1.0.0
  _ZN20XdgMenuWidgetPrivate14mouseMoveEventEP11QMouseEvent@Base 1.0.0
  _ZN20XdgMenuWidgetPrivate4initERK11QDomElement@Base 1.0.0
@@ -266,18 +257,8 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZN4QMapI7QString11QDomElementE13detach_helperEv@Base 1.0.0
  _ZN4QMapI7QString11QDomElementED1Ev@Base 1.0.0
  _ZN4QMapI7QString11QDomElementED2Ev@Base 1.0.0
- _ZN4QMapI7QString8QVariantE11node_createEP8QMapDataPPNS3_4NodeERKS0_RKS1_@Base 1.0.0
  _ZN4QMapI7QString8QVariantE13detach_helperEv@Base 1.0.0
- _ZN4QMapI7QString8QVariantE6removeERKS0_@Base 1.0.0
- _ZN4QMapI7QStringP11XdgMimeInfoE13detach_helperEv@Base 1.0.0
- _ZN4QMapI7QStringP11XdgMimeInfoED1Ev@Base 1.0.0
- _ZN4QMapI7QStringP11XdgMimeInfoED2Ev@Base 1.0.0
- _ZN4QMapI7QStringS0_E13detach_helperEv@Base 1.0.0
- _ZN4QMapI7QStringS0_ED1Ev@Base 1.0.0
- _ZN4QMapI7QStringS0_ED2Ev@Base 1.0.0
- _ZN4QMapI7QStringS_IS0_P11XdgMimeInfoEE13detach_helperEv@Base 1.0.0
- _ZN4QMapI7QStringS_IS0_P11XdgMimeInfoEED1Ev@Base 1.0.0
- _ZN4QMapI7QStringS_IS0_P11XdgMimeInfoEED2Ev@Base 1.0.0
+ _ZN4QMapI7QString8QVariantE6insertERKS0_RKS1_@Base 1.0.0
  _ZN5QHashI5QCharS0_E11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
  _ZN5QHashI5QCharS0_E13detach_helperEv@Base 1.0.0
  _ZN5QHashI5QCharS0_E13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
@@ -290,7 +271,6 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZN5QHashI7QString15QHashDummyValueE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
  _ZN5QHashI7QString5QListIP14XdgDesktopFileEE11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
  _ZN5QHashI7QString5QListIP14XdgDesktopFileEE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
- _ZN5QHashI7QString5QListIP14XdgDesktopFileEEixERKS0_@Base 1.0.0
  _ZN5QHashI7QStringN5QtXdg10QIconThemeEE11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
  _ZN5QHashI7QStringN5QtXdg10QIconThemeEE13detach_helperEv@Base 1.0.0
  _ZN5QHashI7QStringN5QtXdg10QIconThemeEE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
@@ -310,6 +290,8 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZN5QHashI7QStringS0_E11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
  _ZN5QHashI7QStringS0_E13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
  _ZN5QHashI7QStringS0_E6insertERKS0_S3_@Base 1.0.0
+ _ZN5QHashI7QStringS0_ED1Ev@Base 1.0.0
+ _ZN5QHashI7QStringS0_ED2Ev@Base 1.0.0
  _ZN5QListI14XdgDesktopFileE18detach_helper_growEii@Base 1.0.0
  _ZN5QListI14XdgDesktopFileE6appendERKS0_@Base 1.0.0
  _ZN5QListI4QUrlE18detach_helper_growEii@Base 1.0.0
@@ -324,29 +306,31 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZN5QListI7QStringE18detach_helper_growEii@Base 1.0.0
  _ZN5QListI7QStringE6appendERKS0_@Base 1.0.0
  _ZN5QListI7QStringE7prependERKS0_@Base 1.0.0
- _ZN5QListI7QStringE7reserveEi@Base 1.0.0
  _ZN5QListI7QStringE9removeAllERKS0_@Base 1.0.0
  _ZN5QListI7QStringEC1ERKS1_@Base 1.0.0
  _ZN5QListI7QStringEC2ERKS1_@Base 1.0.0
  _ZN5QListI7QStringED1Ev@Base 1.0.0
  _ZN5QListI7QStringED2Ev@Base 1.0.0
  _ZN5QListI7QStringEpLERKS1_@Base 1.0.0
- _ZN5QListI9QFileInfoE13detach_helperEi@Base 1.0.0
+ _ZN5QListI9QFileInfoEC1ERKS1_@Base 1.0.0
+ _ZN5QListI9QFileInfoEC2ERKS1_@Base 1.0.0
  _ZN5QListI9QFileInfoED1Ev@Base 1.0.0
  _ZN5QListI9QFileInfoED2Ev@Base 1.0.0
- _ZN5QListIN5QtXdg12QIconDirInfoEE13detach_helperEi@Base 1.0.0
  _ZN5QListIN5QtXdg12QIconDirInfoEE18detach_helper_growEii@Base 1.0.0
  _ZN5QListIN5QtXdg12QIconDirInfoEE6appendERKS1_@Base 1.0.0
+ _ZN5QListIN5QtXdg12QIconDirInfoEEC1ERKS2_@Base 1.0.0
+ _ZN5QListIN5QtXdg12QIconDirInfoEEC2ERKS2_@Base 1.0.0
  _ZN5QListIN5QtXdg12QIconDirInfoEED1Ev@Base 1.0.0
  _ZN5QListIN5QtXdg12QIconDirInfoEED2Ev@Base 1.0.0
  _ZN5QListIP14XdgDesktopFileE13detach_helperEi@Base 1.0.0
  _ZN5QListIP14XdgDesktopFileE18detach_helper_growEii@Base 1.0.0
  _ZN5QListIP14XdgDesktopFileE6appendERKS1_@Base 1.0.0
+ _ZN5QListIP14XdgDesktopFileEC1ERKS2_@Base 1.0.0
+ _ZN5QListIP14XdgDesktopFileEC2ERKS2_@Base 1.0.0
  _ZN5QListIP14XdgDesktopFileED1Ev@Base 1.0.0
  _ZN5QListIP14XdgDesktopFileED2Ev@Base 1.0.0
  _ZN5QListIP7QActionED1Ev@Base 1.0.0
  _ZN5QListIP7QActionED2Ev@Base 1.0.0
- _ZN5QListIPN5QtXdg22QIconLoaderEngineEntryEE13detach_helperEi@Base 1.0.0
  _ZN5QListIPN5QtXdg22QIconLoaderEngineEntryEE18detach_helper_growEii@Base 1.0.0
  _ZN5QListIPN5QtXdg22QIconLoaderEngineEntryEE6appendERKS2_@Base 1.0.0
  _ZN5QListIPN5QtXdg22QIconLoaderEngineEntryEE7prependERKS2_@Base 1.0.0
@@ -396,17 +380,15 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZN5QtXdg22QIconLoaderEngineFixedD1Ev@Base 1.0.0
  _ZN5QtXdg22QIconLoaderEngineFixedD2Ev@Base 1.0.0
  _ZN6QCacheI7QString5QIconE6insertERKS0_PS1_i@Base 1.0.0
- _ZN6QDebugC1E9QtMsgType@Base 1.0.0
- _ZN6QDebugC2E9QtMsgType@Base 1.0.0
  _ZN6QDebugD1Ev@Base 1.0.0
  _ZN6QDebugD2Ev@Base 1.0.0
  _ZN6QDebuglsEPKc@Base 1.0.0
- _ZN7QStringC1ERKS_@Base 1.0.0
- _ZN7QStringC2ERKS_@Base 1.0.0
+ _ZN7QStringC1EPKc@Base 1.0.0
+ _ZN7QStringC2EPKc@Base 1.0.0
  _ZN7QStringD1Ev@Base 1.0.0
  _ZN7QStringD2Ev@Base 1.0.0
+ _ZN7QVectorI7QStringE11reallocDataEii6QFlagsIN10QArrayData16AllocationOptionEE@Base 1.0.0
  _ZN7QVectorI7QStringE6appendERKS0_@Base 1.0.0
- _ZN7QVectorI7QStringE7reallocEii@Base 1.0.0
  _ZN7XdgDirs10configDirsERK7QString@Base 1.0.0
  _ZN7XdgDirs10configHomeEb@Base 1.0.0
  _ZN7XdgDirs10runtimeDirEv@Base 1.0.0
@@ -447,6 +429,8 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZN7XdgMenuD0Ev@Base 1.0.0
  _ZN7XdgMenuD1Ev@Base 1.0.0
  _ZN7XdgMenuD2Ev@Base 1.0.0
+ _ZN8QMapNodeI7QString11QDomElementE14destroySubTreeEv@Base 1.0.0
+ _ZN8QMapNodeI7QString8QVariantE14destroySubTreeEv@Base 1.0.0
  _ZN9XdgAction10updateIconEv@Base 1.0.0
  _ZN9XdgAction11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
  _ZN9XdgAction11qt_metacastEPKc@Base 1.0.0
@@ -467,15 +451,8 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZN9XdgActionD2Ev@Base 1.0.0
  _ZN9XdgActionaSERKS_@Base 1.0.0
  _ZNK11XdgMenuRule10metaObjectEv@Base 1.0.0
- _ZNK11XdgMimeInfo10subClassOfEv@Base 1.0.0
- _ZNK11XdgMimeInfo16localizedCommentEv@Base 1.0.0
- _ZNK11XdgMimeInfo4iconEv@Base 1.0.0
- _ZNK11XdgMimeInfo7commentEv@Base 1.0.0
- _ZNK11XdgMimeInfo7subTypeEv@Base 1.0.0
- _ZNK11XdgMimeInfo8iconNameEv@Base 1.0.0
- _ZNK11XdgMimeInfo8mimeTypeEv@Base 1.0.0
- _ZNK11XdgMimeInfo8patternsEv@Base 1.0.0
- _ZNK11XdgMimeInfo9mediaTypeEv@Base 1.0.0
+ _ZNK11XdgMimeType4iconEv@Base 1.0.0
+ _ZNK11XdgMimeType8iconNameEv@Base 1.0.0
  _ZNK12XdgMenuRules10metaObjectEv@Base 1.0.0
  _ZNK13XdgMenuReader10metaObjectEv@Base 1.0.0
  _ZNK13XdgMenuRuleOr10metaObjectEv@Base 1.0.0
@@ -514,14 +491,13 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZNK19XdgMenuRuleFileName10metaObjectEv@Base 1.0.0
  _ZNK22XdgMenuLayoutProcessor13searchElementERK7QStringS2_S2_@Base 1.0.0
  _ZNK23XdgMenuApplinkProcessor10metaObjectEv@Base 1.0.0
- _ZNK4QMapI7QString8QVariantE15mutableFindNodeEPPN8QMapData4NodeERKS0_@Base 1.0.0
+ _ZNK4QMapI7QString8QVariantEeqERKS2_@Base 1.0.0
  _ZNK5QHashI5QCharS0_E8findNodeERKS0_Pj@Base 1.0.0
  _ZNK5QHashI7QString11QDomElementE8findNodeERKS0_Pj@Base 1.0.0
  _ZNK5QHashI7QString15QHashDummyValueE8findNodeERKS0_Pj@Base 1.0.0
  _ZNK5QHashI7QString5QListIP14XdgDesktopFileEE8findNodeERKS0_Pj@Base 1.0.0
  _ZNK5QHashI7QStringN5QtXdg10QIconThemeEE8findNodeERKS0_Pj@Base 1.0.0
  _ZNK5QHashI7QStringN6QCacheIS0_5QIconE4NodeEE8findNodeERKS0_Pj@Base 1.0.0
- _ZNK5QHashI7QStringP14XdgDesktopFileE6valuesEv@Base 1.0.0
  _ZNK5QHashI7QStringP14XdgDesktopFileE8findNodeERKS0_Pj@Base 1.0.0
  _ZNK5QHashI7QStringP18XdgMenuAppFileInfoE8findNodeERKS0_Pj@Base 1.0.0
  _ZNK5QHashI7QStringS0_E8findNodeERKS0_Pj@Base 1.0.0
@@ -532,12 +508,16 @@ libqtxdg.so.1 libqtxdg1 #MINVER#
  _ZNK5QtXdg22QIconLoaderEngineFixed5cloneEv@Base 1.0.0
  _ZNK5QtXdg22QIconLoaderEngineFixed5writeER11QDataStream@Base 1.0.0
  _ZNK5QtXdg22QIconLoaderEngineFixed7hasIconEv@Base 1.0.0
+ _ZNK7QStringeqEPKc@Base 1.0.0
  _ZNK7XdgMenu10isOutDatedEv@Base 1.0.0
  _ZNK7XdgMenu10metaObjectEv@Base 1.0.0
  _ZNK7XdgMenu11errorStringEv@Base 1.0.0
  _ZNK7XdgMenu12menuFileNameEv@Base 1.0.0
  _ZNK7XdgMenu3xmlEv@Base 1.0.0
  _ZNK7XdgMenu6logDirEv@Base 1.0.0
+ _ZNK8QMapDataI7QString8QVariantE8findNodeERKS0_@Base 1.0.0
+ _ZNK8QMapNodeI7QString11QDomElementE4copyEP8QMapDataIS0_S1_E@Base 1.0.0
+ _ZNK8QMapNodeI7QString8QVariantE4copyEP8QMapDataIS0_S1_E@Base 1.0.0
  _ZNK9XdgAction10metaObjectEv@Base 1.0.0
  _ZNK9XdgAction11runConmmandEv@Base 1.0.0
  _ZNK9XdgAction7isValidEv@Base 1.0.0
