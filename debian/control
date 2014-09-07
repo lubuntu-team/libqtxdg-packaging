@@ -20,8 +20,6 @@ Architecture: any
 Depends:
  libqt5xdg1 (= ${binary:Version}),
  ${misc:Depends}
-Conflicts:
- libqt5xdg0-dev
 Description: Development files for libqtxdg
  This library implements functions of the XDG Specifications in Qt.  It is part
  of LXQt.
@@ -36,8 +34,6 @@ Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends}
-Conflicts:
- libqtxdg0
 Description: Implementation of the XDG Specifications for Qt, libs
  This library implements functions of the XDG Specifications in Qt.  It is part
  of LXQt.
