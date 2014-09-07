@@ -6,7 +6,8 @@ Build-Depends:
  cmake,
  libmagic-dev,
  qtbase5-dev,
- qttools5-dev
+ qttools5-dev,
+ qttools5-dev-tools
 Standards-Version: 3.9.5
 Section: libs
 Homepage: https://github.com/lxde/libqtxdg
