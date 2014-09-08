@@ -1,11 +1,14 @@
 #!/usr/bin/make -f
 
-#DH_VERBOSE = 1
-%:
-	dh $@ 
+#export DH_VERBOSE = 1
+export USE_QT5=1
 
-override_dh_auto_configure:
-	dh_auto_configure -- -DUSE_QT5=yes
+%:
+	dh ${@} --buildsystem cmake --parallel
+
+
+override_dh_install:
+	dh_install --list-missing --fail-missing
 
 override_dh_strip:
 	dh_strip --dbg-package=libqt5xdg-dbg
