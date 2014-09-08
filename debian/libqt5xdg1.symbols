@@ -1,593 +1,593 @@
 libQt5Xdg.so.1 libqt5xdg1 #MINVER#
- _Z10doUnEscapeR7QStringRK5QHashI5QCharS2_E@Base 1.0.0
- _Z10escapeExecR7QString@Base 1.0.0
- _Z10replaceVarR7QStringRKS_S2_@Base 1.0.0
- _Z10xdgDirListRK7QStringS1_@Base 1.0.0
- _Z11childsCountRK11QDomElement@Base 1.0.0
- _Z12checkTryExecRK7QString@Base 1.0.0
- _Z12unEscapeExecR7QString@Base 1.0.0
- _Z12xdgSingleDirRK7QStringS1_b@Base 1.0.0
- _Z15findDesktopFileRK7QString@Base 1.0.0
- _Z15findDesktopFileRK7QStringS1_@Base 1.0.0
- _Z15readDesktopFileR9QIODeviceR4QMapI7QString8QVariantE@Base 1.0.0
- _Z16expandDynamicUrl7QString@Base 1.0.0
- _Z16fixBashShortcutsR7QString@Base 1.0.0
- _Z16loadMimeCacheDirRK7QStringR5QHashIS_5QListIP14XdgDesktopFileEE@Base 1.0.0
- _Z16writeDesktopFileR9QIODeviceRK4QMapI7QString8QVariantE@Base 1.0.0
- _Z18expandEnvVariables11QStringList@Base 1.0.0
- _Z18expandEnvVariables7QString@Base 1.0.0
- _Z18installTranslationRK7QString@Base 1.0.0
- _Z20findLastElementByTag11QDomElement7QString@Base 1.0.0
- _Z6escapeR7QString@Base 1.0.0
- _Z8doEscapeR7QStringRK5QHashI5QCharS2_E@Base 1.0.0
- _Z8isParentRK11QDomElementS1_@Base 1.0.0
- _Z8unEscapeR7QString@Base 1.0.0
- _ZN10QByteArrayD1Ev@Base 1.0.0
- _ZN10QByteArrayD2Ev@Base 1.0.0
- _ZN11QLinkedListIP11XdgMenuRuleE14detach_helper2ENS2_8iteratorE@Base 1.0.0
- _ZN11QLinkedListIP11XdgMenuRuleE6appendERKS1_@Base 1.0.0
- _ZN11QLinkedListIP18XdgMenuAppFileInfoE14detach_helper2ENS2_8iteratorE@Base 1.0.0
- _ZN11QLinkedListIP18XdgMenuAppFileInfoED1Ev@Base 1.0.0
- _ZN11QLinkedListIP18XdgMenuAppFileInfoED2Ev@Base 1.0.0
- _ZN11QLinkedListIP23XdgMenuApplinkProcessorE14detach_helper2ENS2_8iteratorE@Base 1.0.0
- _ZN11QLinkedListIP23XdgMenuApplinkProcessorED1Ev@Base 1.0.0
- _ZN11QLinkedListIP23XdgMenuApplinkProcessorED2Ev@Base 1.0.0
- _ZN11XdgMenuRule11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN11XdgMenuRule11qt_metacastEPKc@Base 1.0.0
- _ZN11XdgMenuRule16staticMetaObjectE@Base 1.0.0
- _ZN11XdgMenuRuleC1ERK11QDomElementP7QObject@Base 1.0.0
- _ZN11XdgMenuRuleC2ERK11QDomElementP7QObject@Base 1.0.0
- _ZN11XdgMenuRuleD0Ev@Base 1.0.0
- _ZN11XdgMenuRuleD1Ev@Base 1.0.0
- _ZN11XdgMenuRuleD2Ev@Base 1.0.0
- _ZN11XdgMimeTypeC1ERK9QMimeType@Base 1.0.0
- _ZN11XdgMimeTypeC1ERKS_@Base 1.0.0
- _ZN11XdgMimeTypeC1Ev@Base 1.0.0
- _ZN11XdgMimeTypeC2ERK9QMimeType@Base 1.0.0
- _ZN11XdgMimeTypeC2ERKS_@Base 1.0.0
- _ZN11XdgMimeTypeC2Ev@Base 1.0.0
- _ZN11XdgMimeTypeD1Ev@Base 1.0.0
- _ZN11XdgMimeTypeD2Ev@Base 1.0.0
- _ZN11XdgMimeTypeaSERKS_@Base 1.0.0
- _ZN12XdgAutoStart15desktopFileListE11QStringListb@Base 1.0.0
- _ZN12XdgAutoStart15desktopFileListEb@Base 1.0.0
- _ZN12XdgAutoStart9localPathERK14XdgDesktopFile@Base 1.0.0
- _ZN12XdgMenuRules10addExcludeERK11QDomElement@Base 1.0.0
- _ZN12XdgMenuRules10addIncludeERK11QDomElement@Base 1.0.0
- _ZN12XdgMenuRules11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN12XdgMenuRules11qt_metacastEPKc@Base 1.0.0
- _ZN12XdgMenuRules12checkExcludeERK7QStringRK14XdgDesktopFile@Base 1.0.0
- _ZN12XdgMenuRules12checkIncludeERK7QStringRK14XdgDesktopFile@Base 1.0.0
- _ZN12XdgMenuRules16staticMetaObjectE@Base 1.0.0
- _ZN12XdgMenuRulesC1EP7QObject@Base 1.0.0
- _ZN12XdgMenuRulesC2EP7QObject@Base 1.0.0
- _ZN12XdgMenuRulesD0Ev@Base 1.0.0
- _ZN12XdgMenuRulesD1Ev@Base 1.0.0
- _ZN12XdgMenuRulesD2Ev@Base 1.0.0
- _ZN13XdgMenuReader11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN13XdgMenuReader11qt_metacastEPKc@Base 1.0.0
- _ZN13XdgMenuReader16processAppDirTagER11QDomElement@Base 1.0.0
- _ZN13XdgMenuReader16processMergeTagsER11QDomElement@Base 1.0.0
- _ZN13XdgMenuReader16staticMetaObjectE@Base 1.0.0
- _ZN13XdgMenuReader18processMergeDirTagER11QDomElementP11QStringList@Base 1.0.0
- _ZN13XdgMenuReader19processMergeFileTagER11QDomElementP11QStringList@Base 1.0.0
- _ZN13XdgMenuReader22processDirectoryDirTagER11QDomElement@Base 1.0.0
- _ZN13XdgMenuReader24processDefaultAppDirsTagER11QDomElement@Base 1.0.0
- _ZN13XdgMenuReader26processDefaultMergeDirsTagER11QDomElementP11QStringList@Base 1.0.0
- _ZN13XdgMenuReader30processDefaultDirectoryDirsTagER11QDomElement@Base 1.0.0
- _ZN13XdgMenuReader4loadERK7QStringS2_@Base 1.0.0
- _ZN13XdgMenuReader8mergeDirERK7QStringR11QDomElementP11QStringList@Base 1.0.0
- _ZN13XdgMenuReader9addDirTagER11QDomElementRK7QStringS4_@Base 1.0.0
- _ZN13XdgMenuReader9mergeFileERK7QStringR11QDomElementP11QStringList@Base 1.0.0
- _ZN13XdgMenuReaderC1EP7XdgMenuPS_P7QObject@Base 1.0.0
- _ZN13XdgMenuReaderC2EP7XdgMenuPS_P7QObject@Base 1.0.0
- _ZN13XdgMenuReaderD0Ev@Base 1.0.0
- _ZN13XdgMenuReaderD1Ev@Base 1.0.0
- _ZN13XdgMenuReaderD2Ev@Base 1.0.0
- _ZN13XdgMenuRuleOr11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN13XdgMenuRuleOr11qt_metacastEPKc@Base 1.0.0
- _ZN13XdgMenuRuleOr16staticMetaObjectE@Base 1.0.0
- _ZN13XdgMenuRuleOr5checkERK7QStringRK14XdgDesktopFile@Base 1.0.0
- _ZN13XdgMenuRuleOrC1ERK11QDomElementP7QObject@Base 1.0.0
- _ZN13XdgMenuRuleOrC2ERK11QDomElementP7QObject@Base 1.0.0
- _ZN13XdgMenuRuleOrD0Ev@Base 1.0.0
- _ZN13XdgMenuRuleOrD1Ev@Base 1.0.0
- _ZN13XdgMenuRuleOrD2Ev@Base 1.0.0
- _ZN13XdgMenuWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN13XdgMenuWidget11qt_metacastEPKc@Base 1.0.0
- _ZN13XdgMenuWidget16staticMetaObjectE@Base 1.0.0
- _ZN13XdgMenuWidget5eventEP6QEvent@Base 1.0.0
- _ZN13XdgMenuWidgetC1ERK11QDomElementP7QWidget@Base 1.0.0
- _ZN13XdgMenuWidgetC1ERK7XdgMenuRK7QStringP7QWidget@Base 1.0.0
- _ZN13XdgMenuWidgetC1ERKS_P7QWidget@Base 1.0.0
- _ZN13XdgMenuWidgetC2ERK11QDomElementP7QWidget@Base 1.0.0
- _ZN13XdgMenuWidgetC2ERK7XdgMenuRK7QStringP7QWidget@Base 1.0.0
- _ZN13XdgMenuWidgetC2ERKS_P7QWidget@Base 1.0.0
- _ZN13XdgMenuWidgetD0Ev@Base 1.0.0
- _ZN13XdgMenuWidgetD1Ev@Base 1.0.0
- _ZN13XdgMenuWidgetD2Ev@Base 1.0.0
- _ZN13XdgMenuWidgetaSERKS_@Base 1.0.0
- _ZN14XdgDesktopFile11removeEntryERK7QString@Base 1.0.0
- _ZN14XdgDesktopFile17setLocalizedValueERK7QStringRK8QVariant@Base 1.0.0
- _ZN14XdgDesktopFile4loadERK7QString@Base 1.0.0
- _ZN14XdgDesktopFile8setValueERK7QStringRK8QVariant@Base 1.0.0
- _ZN14XdgDesktopFileC1ENS_4TypeERK7QStringS3_@Base 1.0.0
- _ZN14XdgDesktopFileC1ERKS_@Base 1.0.0
- _ZN14XdgDesktopFileC1Ev@Base 1.0.0
- _ZN14XdgDesktopFileC2ENS_4TypeERK7QStringS3_@Base 1.0.0
- _ZN14XdgDesktopFileC2ERKS_@Base 1.0.0
- _ZN14XdgDesktopFileC2Ev@Base 1.0.0
- _ZN14XdgDesktopFileD0Ev@Base 1.0.0
- _ZN14XdgDesktopFileD1Ev@Base 1.0.0
- _ZN14XdgDesktopFileD2Ev@Base 1.0.0
- _ZN14XdgDesktopFileaSERKS_@Base 1.0.0
- _ZN14XdgMenuPrivate10mergeMenusER11QDomElement@Base 1.0.0
- _ZN14XdgMenuPrivate11deleteEmptyER11QDomElement@Base 1.0.0
- _ZN14XdgMenuPrivate11processAppsER11QDomElement@Base 1.0.0
- _ZN14XdgMenuPrivate11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN14XdgMenuPrivate11qt_metacastEPKc@Base 1.0.0
- _ZN14XdgMenuPrivate12appendChildsER11QDomElementS1_@Base 1.0.0
- _ZN14XdgMenuPrivate12clearWatcherEv@Base 1.0.0
- _ZN14XdgMenuPrivate13fixSeparatorsER11QDomElement@Base 1.0.0
- _ZN14XdgMenuPrivate13prependChildsER11QDomElementS1_@Base 1.0.0
- _ZN14XdgMenuPrivate14processLayoutsER11QDomElement@Base 1.0.0
- _ZN14XdgMenuPrivate16staticMetaObjectE@Base 1.0.0
- _ZN14XdgMenuPrivate17loadDirectoryFileERK7QStringR11QDomElement@Base 1.0.0
- _ZN14XdgMenuPrivate18deleteDeletedMenusER11QDomElement@Base 1.0.0
- _ZN14XdgMenuPrivate23processDirectoryEntriesER11QDomElementRK11QStringList@Base 1.0.0
- _ZN14XdgMenuPrivate4loadERK7QString@Base 1.0.0
- _ZN14XdgMenuPrivate7changedEv@Base 1.0.0
- _ZN14XdgMenuPrivate7rebuildEv@Base 1.0.0
- _ZN14XdgMenuPrivate7saveLogERK7QString@Base 1.0.0
- _ZN14XdgMenuPrivate8simplifyER11QDomElement@Base 1.0.0
- _ZN14XdgMenuPrivate9moveMenusER11QDomElement@Base 1.0.0
- _ZN14XdgMenuPrivateC1EP7XdgMenu@Base 1.0.0
- _ZN14XdgMenuPrivateC2EP7XdgMenu@Base 1.0.0
- _ZN14XdgMenuPrivateD0Ev@Base 1.0.0
- _ZN14XdgMenuPrivateD1Ev@Base 1.0.0
- _ZN14XdgMenuPrivateD2Ev@Base 1.0.0
- _ZN14XdgMenuRuleAll11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN14XdgMenuRuleAll11qt_metacastEPKc@Base 1.0.0
- _ZN14XdgMenuRuleAll16staticMetaObjectE@Base 1.0.0
- _ZN14XdgMenuRuleAll5checkERK7QStringRK14XdgDesktopFile@Base 1.0.0
- _ZN14XdgMenuRuleAllC1ERK11QDomElementP7QObject@Base 1.0.0
- _ZN14XdgMenuRuleAllC2ERK11QDomElementP7QObject@Base 1.0.0
- _ZN14XdgMenuRuleAllD0Ev@Base 1.0.0
- _ZN14XdgMenuRuleAllD1Ev@Base 1.0.0
- _ZN14XdgMenuRuleAllD2Ev@Base 1.0.0
- _ZN14XdgMenuRuleAnd11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN14XdgMenuRuleAnd11qt_metacastEPKc@Base 1.0.0
- _ZN14XdgMenuRuleAnd16staticMetaObjectE@Base 1.0.0
- _ZN14XdgMenuRuleAnd5checkERK7QStringRK14XdgDesktopFile@Base 1.0.0
- _ZN14XdgMenuRuleAndC1ERK11QDomElementP7QObject@Base 1.0.0
- _ZN14XdgMenuRuleAndC2ERK11QDomElementP7QObject@Base 1.0.0
- _ZN14XdgMenuRuleAndD0Ev@Base 1.0.0
- _ZN14XdgMenuRuleAndD1Ev@Base 1.0.0
- _ZN14XdgMenuRuleAndD2Ev@Base 1.0.0
- _ZN14XdgMenuRuleNot11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN14XdgMenuRuleNot11qt_metacastEPKc@Base 1.0.0
- _ZN14XdgMenuRuleNot16staticMetaObjectE@Base 1.0.0
- _ZN14XdgMenuRuleNot5checkERK7QStringRK14XdgDesktopFile@Base 1.0.0
- _ZN14XdgMenuRuleNotC1ERK11QDomElementP7QObject@Base 1.0.0
- _ZN14XdgMenuRuleNotC2ERK11QDomElementP7QObject@Base 1.0.0
- _ZN14XdgMenuRuleNotD0Ev@Base 1.0.0
- _ZN14XdgMenuRuleNotD1Ev@Base 1.0.0
- _ZN14XdgMenuRuleNotD2Ev@Base 1.0.0
- _ZN18DomElementIteratorD1Ev@Base 1.0.0
- _ZN18DomElementIteratorD2Ev@Base 1.0.0
- _ZN18QSharedDataPointerI18XdgDesktopFileDataE13detach_helperEv@Base 1.0.0
- _ZN18QSharedDataPointerI18XdgDesktopFileDataED1Ev@Base 1.0.0
- _ZN18QSharedDataPointerI18XdgDesktopFileDataED2Ev@Base 1.0.0
- _ZN18XdgDesktopFileData4readERK7QString@Base 1.0.0
- _ZN18XdgDesktopFileDataC1Ev@Base 1.0.0
- _ZN18XdgDesktopFileDataC2Ev@Base 1.0.0
- _ZN18XdgMenuAppFileInfo11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN18XdgMenuAppFileInfo11qt_metacastEPKc@Base 1.0.0
- _ZN18XdgMenuAppFileInfo16staticMetaObjectE@Base 1.0.0
- _ZN18XdgMenuAppFileInfoD0Ev@Base 1.0.0
- _ZN18XdgMenuAppFileInfoD1Ev@Base 1.0.0
- _ZN18XdgMenuAppFileInfoD2Ev@Base 1.0.0
- _ZN18XdgMimeTypePrivateC1ERK11XdgMimeType@Base 1.0.0
- _ZN18XdgMimeTypePrivateC1Ev@Base 1.0.0
- _ZN18XdgMimeTypePrivateC2ERK11XdgMimeType@Base 1.0.0
- _ZN18XdgMimeTypePrivateC2Ev@Base 1.0.0
- _ZN19XdgDesktopFileCache10initializeERK7QString@Base 1.0.0
- _ZN19XdgDesktopFileCache10initializeEv@Base 1.0.0
- _ZN19XdgDesktopFileCache11getAllFilesEv@Base 1.0.0
- _ZN19XdgDesktopFileCache13getDefaultAppERK7QString@Base 1.0.0
- _ZN19XdgDesktopFileCache25desktopFileSettingsFormatEv@Base 1.0.0
- _ZN19XdgDesktopFileCache4loadERK7QString@Base 1.0.0
- _ZN19XdgDesktopFileCache7getAppsERK7QString@Base 1.0.0
- _ZN19XdgDesktopFileCache7getFileERK7QString@Base 1.0.0
- _ZN19XdgDesktopFileCache8instanceEv@Base 1.0.0
- _ZN19XdgDesktopFileCacheC1Ev@Base 1.0.0
- _ZN19XdgDesktopFileCacheC2Ev@Base 1.0.0
- _ZN19XdgDesktopFileCacheD1Ev@Base 1.0.0
- _ZN19XdgDesktopFileCacheD2Ev@Base 1.0.0
- _ZN19XdgMenuRuleCategory11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN19XdgMenuRuleCategory11qt_metacastEPKc@Base 1.0.0
- _ZN19XdgMenuRuleCategory16staticMetaObjectE@Base 1.0.0
- _ZN19XdgMenuRuleCategory5checkERK7QStringRK14XdgDesktopFile@Base 1.0.0
- _ZN19XdgMenuRuleCategoryC1ERK11QDomElementP7QObject@Base 1.0.0
- _ZN19XdgMenuRuleCategoryC2ERK11QDomElementP7QObject@Base 1.0.0
- _ZN19XdgMenuRuleCategoryD0Ev@Base 1.0.0
- _ZN19XdgMenuRuleCategoryD1Ev@Base 1.0.0
- _ZN19XdgMenuRuleCategoryD2Ev@Base 1.0.0
- _ZN19XdgMenuRuleFileName11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN19XdgMenuRuleFileName11qt_metacastEPKc@Base 1.0.0
- _ZN19XdgMenuRuleFileName16staticMetaObjectE@Base 1.0.0
- _ZN19XdgMenuRuleFileName5checkERK7QStringRK14XdgDesktopFile@Base 1.0.0
- _ZN19XdgMenuRuleFileNameC1ERK11QDomElementP7QObject@Base 1.0.0
- _ZN19XdgMenuRuleFileNameC2ERK11QDomElementP7QObject@Base 1.0.0
- _ZN19XdgMenuRuleFileNameD0Ev@Base 1.0.0
- _ZN19XdgMenuRuleFileNameD1Ev@Base 1.0.0
- _ZN19XdgMenuRuleFileNameD2Ev@Base 1.0.0
- _ZN20XdgMenuWidgetPrivate12createActionERK11QDomElement@Base 1.0.0
- _ZN20XdgMenuWidgetPrivate14mouseMoveEventEP11QMouseEvent@Base 1.0.0
- _ZN20XdgMenuWidgetPrivate4initERK11QDomElement@Base 1.0.0
- _ZN20XdgMenuWidgetPrivate6escapeE7QString@Base 1.0.0
- _ZN20XdgMenuWidgetPrivate9buildMenuEv@Base 1.0.0
- _ZN22XdgMenuLayoutProcessor15processMergeTagERK11QDomElement@Base 1.0.0
- _ZN22XdgMenuLayoutProcessor18processFilenameTagERK11QDomElement@Base 1.0.0
- _ZN22XdgMenuLayoutProcessor18processMenunameTagERK11QDomElement@Base 1.0.0
- _ZN22XdgMenuLayoutProcessor19processSeparatorTagERK11QDomElement@Base 1.0.0
- _ZN22XdgMenuLayoutProcessor3runEv@Base 1.0.0
- _ZN22XdgMenuLayoutProcessor9setParamsE11QDomElementP12LayoutParams@Base 1.0.0
- _ZN22XdgMenuLayoutProcessorC1ER11QDomElement@Base 1.0.0
- _ZN22XdgMenuLayoutProcessorC1ER11QDomElementPS_@Base 1.0.0
- _ZN22XdgMenuLayoutProcessorC2ER11QDomElement@Base 1.0.0
- _ZN22XdgMenuLayoutProcessorC2ER11QDomElementPS_@Base 1.0.0
- _ZN23XdgMenuApplinkProcessor11createRulesEv@Base 1.0.0
- _ZN23XdgMenuApplinkProcessor11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN23XdgMenuApplinkProcessor11qt_metacastEPKc@Base 1.0.0
- _ZN23XdgMenuApplinkProcessor12checkTryExecERK7QString@Base 1.0.0
- _ZN23XdgMenuApplinkProcessor16findDesktopFilesERK7QStringS2_@Base 1.0.0
- _ZN23XdgMenuApplinkProcessor16staticMetaObjectE@Base 1.0.0
- _ZN23XdgMenuApplinkProcessor19fillAppFileInfoListEv@Base 1.0.0
- _ZN23XdgMenuApplinkProcessor3runEv@Base 1.0.0
- _ZN23XdgMenuApplinkProcessor5step1Ev@Base 1.0.0
- _ZN23XdgMenuApplinkProcessor5step2Ev@Base 1.0.0
- _ZN23XdgMenuApplinkProcessorC1ER11QDomElementP7XdgMenuPS_@Base 1.0.0
- _ZN23XdgMenuApplinkProcessorC2ER11QDomElementP7XdgMenuPS_@Base 1.0.0
- _ZN23XdgMenuApplinkProcessorD0Ev@Base 1.0.0
- _ZN23XdgMenuApplinkProcessorD1Ev@Base 1.0.0
- _ZN23XdgMenuApplinkProcessorD2Ev@Base 1.0.0
- _ZN25MutableDomElementIteratorD1Ev@Base 1.0.0
- _ZN25MutableDomElementIteratorD2Ev@Base 1.0.0
- _ZN4QMapI7QString11QDomElementE13detach_helperEv@Base 1.0.0
- _ZN4QMapI7QString11QDomElementED1Ev@Base 1.0.0
- _ZN4QMapI7QString11QDomElementED2Ev@Base 1.0.0
- _ZN4QMapI7QString8QVariantE13detach_helperEv@Base 1.0.0
- _ZN4QMapI7QString8QVariantE6insertERKS0_RKS1_@Base 1.0.0
- _ZN5QHashI5QCharS0_E11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
- _ZN5QHashI5QCharS0_E13detach_helperEv@Base 1.0.0
- _ZN5QHashI5QCharS0_E13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
- _ZN5QHashI5QCharS0_E6insertERKS0_S3_@Base 1.0.0
- _ZN5QHashI5QCharS0_ED1Ev@Base 1.0.0
- _ZN5QHashI5QCharS0_ED2Ev@Base 1.0.0
- _ZN5QHashI7QString11QDomElementE11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
- _ZN5QHashI7QString11QDomElementE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
- _ZN5QHashI7QString15QHashDummyValueE11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
- _ZN5QHashI7QString15QHashDummyValueE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
- _ZN5QHashI7QString5QListIP14XdgDesktopFileEE11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
- _ZN5QHashI7QString5QListIP14XdgDesktopFileEE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
- _ZN5QHashI7QStringN5QtXdg10QIconThemeEE11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
- _ZN5QHashI7QStringN5QtXdg10QIconThemeEE13detach_helperEv@Base 1.0.0
- _ZN5QHashI7QStringN5QtXdg10QIconThemeEE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
- _ZN5QHashI7QStringN6QCacheIS0_5QIconE4NodeEE11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
- _ZN5QHashI7QStringN6QCacheIS0_5QIconE4NodeEE13detach_helperEv@Base 1.0.0
- _ZN5QHashI7QStringN6QCacheIS0_5QIconE4NodeEE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
- _ZN5QHashI7QStringN6QCacheIS0_5QIconE4NodeEED1Ev@Base 1.0.0
- _ZN5QHashI7QStringN6QCacheIS0_5QIconE4NodeEED2Ev@Base 1.0.0
- _ZN5QHashI7QStringP14XdgDesktopFileE11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
- _ZN5QHashI7QStringP14XdgDesktopFileE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
- _ZN5QHashI7QStringP14XdgDesktopFileE6insertERKS0_RKS2_@Base 1.0.0
- _ZN5QHashI7QStringP18XdgMenuAppFileInfoE11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
- _ZN5QHashI7QStringP18XdgMenuAppFileInfoE13detach_helperEv@Base 1.0.0
- _ZN5QHashI7QStringP18XdgMenuAppFileInfoE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
- _ZN5QHashI7QStringP18XdgMenuAppFileInfoED1Ev@Base 1.0.0
- _ZN5QHashI7QStringP18XdgMenuAppFileInfoED2Ev@Base 1.0.0
- _ZN5QHashI7QStringS0_E11deleteNode2EPN9QHashData4NodeE@Base 1.0.0
- _ZN5QHashI7QStringS0_E13duplicateNodeEPN9QHashData4NodeEPv@Base 1.0.0
- _ZN5QHashI7QStringS0_E6insertERKS0_S3_@Base 1.0.0
- _ZN5QHashI7QStringS0_ED1Ev@Base 1.0.0
- _ZN5QHashI7QStringS0_ED2Ev@Base 1.0.0
- _ZN5QListI14XdgDesktopFileE18detach_helper_growEii@Base 1.0.0
- _ZN5QListI14XdgDesktopFileE6appendERKS0_@Base 1.0.0
- _ZN5QListI4QUrlE18detach_helper_growEii@Base 1.0.0
- _ZN5QListI4QUrlE6appendERKS0_@Base 1.0.0
- _ZN5QListI4QUrlED1Ev@Base 1.0.0
- _ZN5QListI4QUrlED2Ev@Base 1.0.0
- _ZN5QListI5QSizeE18detach_helper_growEii@Base 1.0.0
- _ZN5QListI5QSizeE5clearEv@Base 1.0.0
- _ZN5QListI5QSizeED1Ev@Base 1.0.0
- _ZN5QListI5QSizeED2Ev@Base 1.0.0
- _ZN5QListI7QStringE13detach_helperEi@Base 1.0.0
- _ZN5QListI7QStringE18detach_helper_growEii@Base 1.0.0
- _ZN5QListI7QStringE6appendERKS0_@Base 1.0.0
- _ZN5QListI7QStringE7prependERKS0_@Base 1.0.0
- _ZN5QListI7QStringE9removeAllERKS0_@Base 1.0.0
- _ZN5QListI7QStringEC1ERKS1_@Base 1.0.0
- _ZN5QListI7QStringEC2ERKS1_@Base 1.0.0
- _ZN5QListI7QStringED1Ev@Base 1.0.0
- _ZN5QListI7QStringED2Ev@Base 1.0.0
- _ZN5QListI7QStringEpLERKS1_@Base 1.0.0
- _ZN5QListI9QFileInfoEC1ERKS1_@Base 1.0.0
- _ZN5QListI9QFileInfoEC2ERKS1_@Base 1.0.0
- _ZN5QListI9QFileInfoED1Ev@Base 1.0.0
- _ZN5QListI9QFileInfoED2Ev@Base 1.0.0
- _ZN5QListIN5QtXdg12QIconDirInfoEE18detach_helper_growEii@Base 1.0.0
- _ZN5QListIN5QtXdg12QIconDirInfoEE6appendERKS1_@Base 1.0.0
- _ZN5QListIN5QtXdg12QIconDirInfoEEC1ERKS2_@Base 1.0.0
- _ZN5QListIN5QtXdg12QIconDirInfoEEC2ERKS2_@Base 1.0.0
- _ZN5QListIN5QtXdg12QIconDirInfoEED1Ev@Base 1.0.0
- _ZN5QListIN5QtXdg12QIconDirInfoEED2Ev@Base 1.0.0
- _ZN5QListIP14XdgDesktopFileE13detach_helperEi@Base 1.0.0
- _ZN5QListIP14XdgDesktopFileE18detach_helper_growEii@Base 1.0.0
- _ZN5QListIP14XdgDesktopFileE6appendERKS1_@Base 1.0.0
- _ZN5QListIP14XdgDesktopFileEC1ERKS2_@Base 1.0.0
- _ZN5QListIP14XdgDesktopFileEC2ERKS2_@Base 1.0.0
- _ZN5QListIP14XdgDesktopFileED1Ev@Base 1.0.0
- _ZN5QListIP14XdgDesktopFileED2Ev@Base 1.0.0
- _ZN5QListIP7QActionED1Ev@Base 1.0.0
- _ZN5QListIP7QActionED2Ev@Base 1.0.0
- _ZN5QListIPN5QtXdg22QIconLoaderEngineEntryEE18detach_helper_growEii@Base 1.0.0
- _ZN5QListIPN5QtXdg22QIconLoaderEngineEntryEE6appendERKS2_@Base 1.0.0
- _ZN5QListIPN5QtXdg22QIconLoaderEngineEntryEE7prependERKS2_@Base 1.0.0
- _ZN5QListIPN5QtXdg22QIconLoaderEngineEntryEED1Ev@Base 1.0.0
- _ZN5QListIPN5QtXdg22QIconLoaderEngineEntryEED2Ev@Base 1.0.0
- _ZN5QtXdg10QIconThemeC1ERK7QString@Base 1.0.0
- _ZN5QtXdg10QIconThemeC2ERK7QString@Base 1.0.0
- _ZN5QtXdg10QIconThemeD1Ev@Base 1.0.0
- _ZN5QtXdg10QIconThemeD2Ev@Base 1.0.0
- _ZN5QtXdg11PixmapEntry6pixmapERK5QSizeN5QIcon4ModeENS4_5StateE@Base 1.0.0
- _ZN5QtXdg11PixmapEntryC1Ev@Base 1.0.0
- _ZN5QtXdg11PixmapEntryC2Ev@Base 1.0.0
- _ZN5QtXdg11PixmapEntryD0Ev@Base 1.0.0
- _ZN5QtXdg11PixmapEntryD1Ev@Base 1.0.0
- _ZN5QtXdg11PixmapEntryD2Ev@Base 1.0.0
- _ZN5QtXdg11QIconLoader12setThemeNameERK7QString@Base 1.0.0
- _ZN5QtXdg11QIconLoader17ensureInitializedEv@Base 1.0.0
- _ZN5QtXdg11QIconLoader17updateSystemThemeEv@Base 1.0.0
- _ZN5QtXdg11QIconLoader18setThemeSearchPathERK11QStringList@Base 1.0.0
- _ZN5QtXdg11QIconLoader8instanceEv@Base 1.0.0
- _ZN5QtXdg11QIconLoaderC1Ev@Base 1.0.0
- _ZN5QtXdg11QIconLoaderC2Ev@Base 1.0.0
- _ZN5QtXdg11QIconLoaderD0Ev@Base 1.0.0
- _ZN5QtXdg11QIconLoaderD1Ev@Base 1.0.0
- _ZN5QtXdg11QIconLoaderD2Ev@Base 1.0.0
- _ZN5QtXdg13ScalableEntry6pixmapERK5QSizeN5QIcon4ModeENS4_5StateE@Base 1.0.0
- _ZN5QtXdg13ScalableEntryC1Ev@Base 1.0.0
- _ZN5QtXdg13ScalableEntryC2Ev@Base 1.0.0
- _ZN5QtXdg13ScalableEntryD0Ev@Base 1.0.0
- _ZN5QtXdg13ScalableEntryD1Ev@Base 1.0.0
- _ZN5QtXdg13ScalableEntryD2Ev@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineEntryD0Ev@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineEntryD1Ev@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineEntryD2Ev@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixed10actualSizeERK5QSizeN5QIcon4ModeENS4_5StateE@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixed12ensureLoadedEv@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixed12entryForSizeERK5QSize@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixed12virtual_hookEiPv@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixed4readER11QDataStream@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixed5paintEP8QPainterRK5QRectN5QIcon4ModeENS6_5StateE@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixed6pixmapERK5QSizeN5QIcon4ModeENS4_5StateE@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixedC1ERK7QString@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixedC1ERKS0_@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixedC2ERK7QString@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixedC2ERKS0_@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixedD0Ev@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixedD1Ev@Base 1.0.0
- _ZN5QtXdg22QIconLoaderEngineFixedD2Ev@Base 1.0.0
- _ZN6QCacheI7QString5QIconE6insertERKS0_PS1_i@Base 1.0.0
- _ZN6QDebugD1Ev@Base 1.0.0
- _ZN6QDebugD2Ev@Base 1.0.0
- _ZN6QDebuglsEPKc@Base 1.0.0
- _ZN7QStringC1EPKc@Base 1.0.0
- _ZN7QStringC2EPKc@Base 1.0.0
- _ZN7QStringD1Ev@Base 1.0.0
- _ZN7QStringD2Ev@Base 1.0.0
- _ZN7QVectorI7QStringE11reallocDataEii6QFlagsIN10QArrayData16AllocationOptionEE@Base 1.0.0
- _ZN7QVectorI7QStringE6appendERKS0_@Base 1.0.0
- _ZN7XdgDirs10configDirsERK7QString@Base 1.0.0
- _ZN7XdgDirs10configHomeEb@Base 1.0.0
- _ZN7XdgDirs10runtimeDirEv@Base 1.0.0
- _ZN7XdgDirs10setUserDirENS_13UserDirectoryERK7QStringb@Base 1.0.0
- _ZN7XdgDirs13autostartDirsERK7QString@Base 1.0.0
- _ZN7XdgDirs13autostartHomeEb@Base 1.0.0
- _ZN7XdgDirs7userDirENS_13UserDirectoryE@Base 1.0.0
- _ZN7XdgDirs8dataDirsERK7QString@Base 1.0.0
- _ZN7XdgDirs8dataHomeEb@Base 1.0.0
- _ZN7XdgDirs9cacheHomeEb@Base 1.0.0
- _ZN7XdgIcon12setThemeNameERK7QString@Base 1.0.0
- _ZN7XdgIcon22defaultApplicationIconEv@Base 1.0.0
- _ZN7XdgIcon26defaultApplicationIconNameEv@Base 1.0.0
- _ZN7XdgIcon9fromThemeERK11QStringListRK5QIcon@Base 1.0.0
- _ZN7XdgIcon9fromThemeERK7QStringRK5QIcon@Base 1.0.0
- _ZN7XdgIcon9fromThemeERK7QStringS2_S2_S2_S2_@Base 1.0.0
- _ZN7XdgIcon9themeNameEv@Base 1.0.0
- _ZN7XdgIconC1Ev@Base 1.0.0
- _ZN7XdgIconC2Ev@Base 1.0.0
- _ZN7XdgIconD0Ev@Base 1.0.0
- _ZN7XdgIconD1Ev@Base 1.0.0
- _ZN7XdgIconD2Ev@Base 1.0.0
- _ZN7XdgMenu11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN7XdgMenu11qt_metacastEPKc@Base 1.0.0
- _ZN7XdgMenu12addWatchPathERK7QString@Base 1.0.0
- _ZN7XdgMenu12environmentsEv@Base 1.0.0
- _ZN7XdgMenu15getMenuFileNameERK7QString@Base 1.0.0
- _ZN7XdgMenu15setEnvironmentsERK11QStringList@Base 1.0.0
- _ZN7XdgMenu15setEnvironmentsERK7QString@Base 1.0.0
- _ZN7XdgMenu16staticMetaObjectE@Base 1.0.0
- _ZN7XdgMenu4readERK7QString@Base 1.0.0
- _ZN7XdgMenu4saveERK7QString@Base 1.0.0
- _ZN7XdgMenu7changedEv@Base 1.0.0
- _ZN7XdgMenu8findMenuER11QDomElementRK7QStringb@Base 1.0.0
- _ZN7XdgMenu9setLogDirERK7QString@Base 1.0.0
- _ZN7XdgMenuC1EP7QObject@Base 1.0.0
- _ZN7XdgMenuC2EP7QObject@Base 1.0.0
- _ZN7XdgMenuD0Ev@Base 1.0.0
- _ZN7XdgMenuD1Ev@Base 1.0.0
- _ZN7XdgMenuD2Ev@Base 1.0.0
- _ZN8QMapNodeI7QString11QDomElementE14destroySubTreeEv@Base 1.0.0
- _ZN8QMapNodeI7QString8QVariantE14destroySubTreeEv@Base 1.0.0
- _ZN9XdgAction10updateIconEv@Base 1.0.0
- _ZN9XdgAction11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.0
- _ZN9XdgAction11qt_metacastEPKc@Base 1.0.0
- _ZN9XdgAction16staticMetaObjectE@Base 1.0.0
- _ZN9XdgAction4loadERK14XdgDesktopFile@Base 1.0.0
- _ZN9XdgActionC1EP7QObject@Base 1.0.0
- _ZN9XdgActionC1EPK14XdgDesktopFileP7QObject@Base 1.0.0
- _ZN9XdgActionC1ERK14XdgDesktopFileP7QObject@Base 1.0.0
- _ZN9XdgActionC1ERK7QStringP7QObject@Base 1.0.0
- _ZN9XdgActionC1ERKS_P7QObject@Base 1.0.0
- _ZN9XdgActionC2EP7QObject@Base 1.0.0
- _ZN9XdgActionC2EPK14XdgDesktopFileP7QObject@Base 1.0.0
- _ZN9XdgActionC2ERK14XdgDesktopFileP7QObject@Base 1.0.0
- _ZN9XdgActionC2ERK7QStringP7QObject@Base 1.0.0
- _ZN9XdgActionC2ERKS_P7QObject@Base 1.0.0
- _ZN9XdgActionD0Ev@Base 1.0.0
- _ZN9XdgActionD1Ev@Base 1.0.0
- _ZN9XdgActionD2Ev@Base 1.0.0
- _ZN9XdgActionaSERKS_@Base 1.0.0
- _ZNK11XdgMenuRule10metaObjectEv@Base 1.0.0
- _ZNK11XdgMimeType4iconEv@Base 1.0.0
- _ZNK11XdgMimeType8iconNameEv@Base 1.0.0
- _ZNK12XdgMenuRules10metaObjectEv@Base 1.0.0
- _ZNK13XdgMenuReader10metaObjectEv@Base 1.0.0
- _ZNK13XdgMenuRuleOr10metaObjectEv@Base 1.0.0
- _ZNK13XdgMenuWidget10metaObjectEv@Base 1.0.0
- _ZNK14XdgDesktopFile10isSuitableEbRK7QString@Base 1.0.0
- _ZNK14XdgDesktopFile12isApplicableEbRK7QString@Base 1.0.0
- _ZNK14XdgDesktopFile12localizedKeyERK7QString@Base 1.0.0
- _ZNK14XdgDesktopFile13startDetachedERK11QStringList@Base 1.0.0
- _ZNK14XdgDesktopFile13startDetachedERK7QString@Base 1.0.0
- _ZNK14XdgDesktopFile14localizedValueERK7QStringRK8QVariant@Base 1.0.0
- _ZNK14XdgDesktopFile16expandExecStringERK11QStringList@Base 1.0.0
- _ZNK14XdgDesktopFile3urlEv@Base 1.0.0
- _ZNK14XdgDesktopFile4iconERK5QIcon@Base 1.0.0
- _ZNK14XdgDesktopFile4saveEP9QIODevice@Base 1.0.0
- _ZNK14XdgDesktopFile4saveERK7QString@Base 1.0.0
- _ZNK14XdgDesktopFile4typeEv@Base 1.0.0
- _ZNK14XdgDesktopFile5checkEv@Base 1.0.0
- _ZNK14XdgDesktopFile5valueERK7QStringRK8QVariant@Base 1.0.0
- _ZNK14XdgDesktopFile6isShowERK7QString@Base 1.0.0
- _ZNK14XdgDesktopFile6prefixEv@Base 1.0.0
- _ZNK14XdgDesktopFile7isShownERK7QString@Base 1.0.0
- _ZNK14XdgDesktopFile7isValidEv@Base 1.0.0
- _ZNK14XdgDesktopFile8containsERK7QString@Base 1.0.0
- _ZNK14XdgDesktopFile8fileNameEv@Base 1.0.0
- _ZNK14XdgDesktopFile8iconNameEv@Base 1.0.0
- _ZNK14XdgDesktopFileeqERKS_@Base 1.0.0
- _ZNK14XdgMenuPrivate10metaObjectEv@Base 1.0.0
- _ZNK14XdgMenuRuleAll10metaObjectEv@Base 1.0.0
- _ZNK14XdgMenuRuleAnd10metaObjectEv@Base 1.0.0
- _ZNK14XdgMenuRuleNot10metaObjectEv@Base 1.0.0
- _ZNK18XdgDesktopFileData10detectTypeEP14XdgDesktopFile@Base 1.0.0
- _ZNK18XdgDesktopFileData17startLinkDetachedEPK14XdgDesktopFile@Base 1.0.0
- _ZNK18XdgDesktopFileData24startApplicationDetachedEPK14XdgDesktopFileRK11QStringList@Base 1.0.0
- _ZNK18XdgMenuAppFileInfo10metaObjectEv@Base 1.0.0
- _ZNK19XdgMenuRuleCategory10metaObjectEv@Base 1.0.0
- _ZNK19XdgMenuRuleFileName10metaObjectEv@Base 1.0.0
- _ZNK22XdgMenuLayoutProcessor13searchElementERK7QStringS2_S2_@Base 1.0.0
- _ZNK23XdgMenuApplinkProcessor10metaObjectEv@Base 1.0.0
- _ZNK4QMapI7QString8QVariantEeqERKS2_@Base 1.0.0
- _ZNK5QHashI5QCharS0_E8findNodeERKS0_Pj@Base 1.0.0
- _ZNK5QHashI7QString11QDomElementE8findNodeERKS0_Pj@Base 1.0.0
- _ZNK5QHashI7QString15QHashDummyValueE8findNodeERKS0_Pj@Base 1.0.0
- _ZNK5QHashI7QString5QListIP14XdgDesktopFileEE8findNodeERKS0_Pj@Base 1.0.0
- _ZNK5QHashI7QStringN5QtXdg10QIconThemeEE8findNodeERKS0_Pj@Base 1.0.0
- _ZNK5QHashI7QStringN6QCacheIS0_5QIconE4NodeEE8findNodeERKS0_Pj@Base 1.0.0
- _ZNK5QHashI7QStringP14XdgDesktopFileE8findNodeERKS0_Pj@Base 1.0.0
- _ZNK5QHashI7QStringP18XdgMenuAppFileInfoE8findNodeERKS0_Pj@Base 1.0.0
- _ZNK5QHashI7QStringS0_E8findNodeERKS0_Pj@Base 1.0.0
- _ZNK5QtXdg11QIconLoader14findIconHelperERK7QStringS3_R11QStringList@Base 1.0.0
- _ZNK5QtXdg11QIconLoader16themeSearchPathsEv@Base 1.0.0
- _ZNK5QtXdg11QIconLoader8loadIconERK7QString@Base 1.0.0
- _ZNK5QtXdg22QIconLoaderEngineFixed3keyEv@Base 1.0.0
- _ZNK5QtXdg22QIconLoaderEngineFixed5cloneEv@Base 1.0.0
- _ZNK5QtXdg22QIconLoaderEngineFixed5writeER11QDataStream@Base 1.0.0
- _ZNK5QtXdg22QIconLoaderEngineFixed7hasIconEv@Base 1.0.0
- _ZNK7QStringeqEPKc@Base 1.0.0
- _ZNK7XdgMenu10isOutDatedEv@Base 1.0.0
- _ZNK7XdgMenu10metaObjectEv@Base 1.0.0
- _ZNK7XdgMenu11errorStringEv@Base 1.0.0
- _ZNK7XdgMenu12menuFileNameEv@Base 1.0.0
- _ZNK7XdgMenu3xmlEv@Base 1.0.0
- _ZNK7XdgMenu6logDirEv@Base 1.0.0
- _ZNK8QMapDataI7QString8QVariantE8findNodeERKS0_@Base 1.0.0
- _ZNK8QMapNodeI7QString11QDomElementE4copyEP8QMapDataIS0_S1_E@Base 1.0.0
- _ZNK8QMapNodeI7QString8QVariantE4copyEP8QMapDataIS0_S1_E@Base 1.0.0
- _ZNK9XdgAction10metaObjectEv@Base 1.0.0
- _ZNK9XdgAction11runConmmandEv@Base 1.0.0
- _ZNK9XdgAction7isValidEv@Base 1.0.0
- _ZTI11XdgMenuRule@Base 1.0.0
- _ZTI12XdgMenuRules@Base 1.0.0
- _ZTI13XdgMenuReader@Base 1.0.0
- _ZTI13XdgMenuRuleOr@Base 1.0.0
- _ZTI13XdgMenuWidget@Base 1.0.0
- _ZTI14XdgDesktopFile@Base 1.0.0
- _ZTI14XdgMenuPrivate@Base 1.0.0
- _ZTI14XdgMenuRuleAll@Base 1.0.0
- _ZTI14XdgMenuRuleAnd@Base 1.0.0
- _ZTI14XdgMenuRuleNot@Base 1.0.0
- _ZTI18XdgMenuAppFileInfo@Base 1.0.0
- _ZTI19XdgMenuRuleCategory@Base 1.0.0
- _ZTI19XdgMenuRuleFileName@Base 1.0.0
- _ZTI23XdgMenuApplinkProcessor@Base 1.0.0
- _ZTI7XdgIcon@Base 1.0.0
- _ZTI7XdgMenu@Base 1.0.0
- _ZTI9XdgAction@Base 1.0.0
- _ZTIN5QtXdg11PixmapEntryE@Base 1.0.0
- _ZTIN5QtXdg11QIconLoaderE@Base 1.0.0
- _ZTIN5QtXdg13ScalableEntryE@Base 1.0.0
- _ZTIN5QtXdg22QIconLoaderEngineEntryE@Base 1.0.0
- _ZTIN5QtXdg22QIconLoaderEngineFixedE@Base 1.0.0
- _ZTS11XdgMenuRule@Base 1.0.0
- _ZTS12XdgMenuRules@Base 1.0.0
- _ZTS13XdgMenuReader@Base 1.0.0
- _ZTS13XdgMenuRuleOr@Base 1.0.0
- _ZTS13XdgMenuWidget@Base 1.0.0
- _ZTS14XdgDesktopFile@Base 1.0.0
- _ZTS14XdgMenuPrivate@Base 1.0.0
- _ZTS14XdgMenuRuleAll@Base 1.0.0
- _ZTS14XdgMenuRuleAnd@Base 1.0.0
- _ZTS14XdgMenuRuleNot@Base 1.0.0
- _ZTS18XdgMenuAppFileInfo@Base 1.0.0
- _ZTS19XdgMenuRuleCategory@Base 1.0.0
- _ZTS19XdgMenuRuleFileName@Base 1.0.0
- _ZTS23XdgMenuApplinkProcessor@Base 1.0.0
- _ZTS7XdgIcon@Base 1.0.0
- _ZTS7XdgMenu@Base 1.0.0
- _ZTS9XdgAction@Base 1.0.0
- _ZTSN5QtXdg11PixmapEntryE@Base 1.0.0
- _ZTSN5QtXdg11QIconLoaderE@Base 1.0.0
- _ZTSN5QtXdg13ScalableEntryE@Base 1.0.0
- _ZTSN5QtXdg22QIconLoaderEngineEntryE@Base 1.0.0
- _ZTSN5QtXdg22QIconLoaderEngineFixedE@Base 1.0.0
- _ZTV11XdgMenuRule@Base 1.0.0
- _ZTV12XdgMenuRules@Base 1.0.0
- _ZTV13XdgMenuReader@Base 1.0.0
- _ZTV13XdgMenuRuleOr@Base 1.0.0
- _ZTV13XdgMenuWidget@Base 1.0.0
- _ZTV14XdgDesktopFile@Base 1.0.0
- _ZTV14XdgMenuPrivate@Base 1.0.0
- _ZTV14XdgMenuRuleAll@Base 1.0.0
- _ZTV14XdgMenuRuleAnd@Base 1.0.0
- _ZTV14XdgMenuRuleNot@Base 1.0.0
- _ZTV18XdgMenuAppFileInfo@Base 1.0.0
- _ZTV19XdgMenuRuleCategory@Base 1.0.0
- _ZTV19XdgMenuRuleFileName@Base 1.0.0
- _ZTV23XdgMenuApplinkProcessor@Base 1.0.0
- _ZTV7XdgIcon@Base 1.0.0
- _ZTV7XdgMenu@Base 1.0.0
- _ZTV9XdgAction@Base 1.0.0
- _ZTVN5QtXdg11PixmapEntryE@Base 1.0.0
- _ZTVN5QtXdg11QIconLoaderE@Base 1.0.0
- _ZTVN5QtXdg13ScalableEntryE@Base 1.0.0
- _ZTVN5QtXdg22QIconLoaderEngineEntryE@Base 1.0.0
- _ZTVN5QtXdg22QIconLoaderEngineFixedE@Base 1.0.0
- _ZThn16_N13XdgMenuWidgetD0Ev@Base 1.0.0
- _ZThn16_N13XdgMenuWidgetD1Ev@Base 1.0.0
- _Zls6QDebugRK11QDomElement@Base 1.0.0
- _ZplRK7QStringS1_@Base 1.0.0
+ (c++)"doUnEscape(QString&, QHash<QChar, QChar> const&)@Base" 1.0.0
+ (c++)"escapeExec(QString&)@Base" 1.0.0
+ (c++)"replaceVar(QString&, QString const&, QString const&)@Base" 1.0.0
+ (c++)"xdgDirList(QString const&, QString const&)@Base" 1.0.0
+ (c++)"childsCount(QDomElement const&)@Base" 1.0.0
+ (c++)"checkTryExec(QString const&)@Base" 1.0.0
+ (c++)"unEscapeExec(QString&)@Base" 1.0.0
+ (c++)"xdgSingleDir(QString const&, QString const&, bool)@Base" 1.0.0
+ (c++)"findDesktopFile(QString const&)@Base" 1.0.0
+ (c++)"findDesktopFile(QString const&, QString const&)@Base" 1.0.0
+ (c++)"readDesktopFile(QIODevice&, QMap<QString, QVariant>&)@Base" 1.0.0
+ (c++)"expandDynamicUrl(QString)@Base" 1.0.0
+ (c++)"fixBashShortcuts(QString&)@Base" 1.0.0
+ (c++)"loadMimeCacheDir(QString const&, QHash<QString, QList<XdgDesktopFile*> >&)@Base" 1.0.0
+ (c++)"writeDesktopFile(QIODevice&, QMap<QString, QVariant> const&)@Base" 1.0.0
+ (c++)"expandEnvVariables(QStringList)@Base" 1.0.0
+ (c++)"expandEnvVariables(QString)@Base" 1.0.0
+ (c++)"installTranslation(QString const&)@Base" 1.0.0
+ (c++)"findLastElementByTag(QDomElement, QString)@Base" 1.0.0
+ (c++)"escape(QString&)@Base" 1.0.0
+ (c++)"doEscape(QString&, QHash<QChar, QChar> const&)@Base" 1.0.0
+ (c++)"isParent(QDomElement const&, QDomElement const&)@Base" 1.0.0
+ (c++)"unEscape(QString&)@Base" 1.0.0
+ (c++)"QByteArray::~QByteArray()@Base" 1.0.0
+ (c++)"QByteArray::~QByteArray()@Base" 1.0.0
+ (c++)"QLinkedList<XdgMenuRule*>::detach_helper2(QLinkedList<XdgMenuRule*>::iterator)@Base" 1.0.0
+ (c++)"QLinkedList<XdgMenuRule*>::append(XdgMenuRule* const&)@Base" 1.0.0
+ (c++)"QLinkedList<XdgMenuAppFileInfo*>::detach_helper2(QLinkedList<XdgMenuAppFileInfo*>::iterator)@Base" 1.0.0
+ (c++)"QLinkedList<XdgMenuAppFileInfo*>::~QLinkedList()@Base" 1.0.0
+ (c++)"QLinkedList<XdgMenuAppFileInfo*>::~QLinkedList()@Base" 1.0.0
+ (c++)"QLinkedList<XdgMenuApplinkProcessor*>::detach_helper2(QLinkedList<XdgMenuApplinkProcessor*>::iterator)@Base" 1.0.0
+ (c++)"QLinkedList<XdgMenuApplinkProcessor*>::~QLinkedList()@Base" 1.0.0
+ (c++)"QLinkedList<XdgMenuApplinkProcessor*>::~QLinkedList()@Base" 1.0.0
+ (c++)"XdgMenuRule::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuRule::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuRule::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuRule::XdgMenuRule(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRule::XdgMenuRule(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRule::~XdgMenuRule()@Base" 1.0.0
+ (c++)"XdgMenuRule::~XdgMenuRule()@Base" 1.0.0
+ (c++)"XdgMenuRule::~XdgMenuRule()@Base" 1.0.0
+ (c++)"XdgMimeType::XdgMimeType(QMimeType const&)@Base" 1.0.0
+ (c++)"XdgMimeType::XdgMimeType(XdgMimeType const&)@Base" 1.0.0
+ (c++)"XdgMimeType::XdgMimeType()@Base" 1.0.0
+ (c++)"XdgMimeType::XdgMimeType(QMimeType const&)@Base" 1.0.0
+ (c++)"XdgMimeType::XdgMimeType(XdgMimeType const&)@Base" 1.0.0
+ (c++)"XdgMimeType::XdgMimeType()@Base" 1.0.0
+ (c++)"XdgMimeType::~XdgMimeType()@Base" 1.0.0
+ (c++)"XdgMimeType::~XdgMimeType()@Base" 1.0.0
+ (c++)"XdgMimeType::operator=(XdgMimeType const&)@Base" 1.0.0
+ (c++)"XdgAutoStart::desktopFileList(QStringList, bool)@Base" 1.0.0
+ (c++)"XdgAutoStart::desktopFileList(bool)@Base" 1.0.0
+ (c++)"XdgAutoStart::localPath(XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgMenuRules::addExclude(QDomElement const&)@Base" 1.0.0
+ (c++)"XdgMenuRules::addInclude(QDomElement const&)@Base" 1.0.0
+ (c++)"XdgMenuRules::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuRules::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuRules::checkExclude(QString const&, XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgMenuRules::checkInclude(QString const&, XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgMenuRules::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuRules::XdgMenuRules(QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRules::XdgMenuRules(QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRules::~XdgMenuRules()@Base" 1.0.0
+ (c++)"XdgMenuRules::~XdgMenuRules()@Base" 1.0.0
+ (c++)"XdgMenuRules::~XdgMenuRules()@Base" 1.0.0
+ (c++)"XdgMenuReader::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuReader::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuReader::processAppDirTag(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuReader::processMergeTags(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuReader::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuReader::processMergeDirTag(QDomElement&, QStringList*)@Base" 1.0.0
+ (c++)"XdgMenuReader::processMergeFileTag(QDomElement&, QStringList*)@Base" 1.0.0
+ (c++)"XdgMenuReader::processDirectoryDirTag(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuReader::processDefaultAppDirsTag(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuReader::processDefaultMergeDirsTag(QDomElement&, QStringList*)@Base" 1.0.0
+ (c++)"XdgMenuReader::processDefaultDirectoryDirsTag(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuReader::load(QString const&, QString const&)@Base" 1.0.0
+ (c++)"XdgMenuReader::mergeDir(QString const&, QDomElement&, QStringList*)@Base" 1.0.0
+ (c++)"XdgMenuReader::addDirTag(QDomElement&, QString const&, QString const&)@Base" 1.0.0
+ (c++)"XdgMenuReader::mergeFile(QString const&, QDomElement&, QStringList*)@Base" 1.0.0
+ (c++)"XdgMenuReader::XdgMenuReader(XdgMenu*, XdgMenuReader*, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuReader::XdgMenuReader(XdgMenu*, XdgMenuReader*, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuReader::~XdgMenuReader()@Base" 1.0.0
+ (c++)"XdgMenuReader::~XdgMenuReader()@Base" 1.0.0
+ (c++)"XdgMenuReader::~XdgMenuReader()@Base" 1.0.0
+ (c++)"XdgMenuRuleOr::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuRuleOr::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuRuleOr::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuRuleOr::check(QString const&, XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgMenuRuleOr::XdgMenuRuleOr(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRuleOr::XdgMenuRuleOr(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRuleOr::~XdgMenuRuleOr()@Base" 1.0.0
+ (c++)"XdgMenuRuleOr::~XdgMenuRuleOr()@Base" 1.0.0
+ (c++)"XdgMenuRuleOr::~XdgMenuRuleOr()@Base" 1.0.0
+ (c++)"XdgMenuWidget::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuWidget::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuWidget::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuWidget::event(QEvent*)@Base" 1.0.0
+ (c++)"XdgMenuWidget::XdgMenuWidget(QDomElement const&, QWidget*)@Base" 1.0.0
+ (c++)"XdgMenuWidget::XdgMenuWidget(XdgMenu const&, QString const&, QWidget*)@Base" 1.0.0
+ (c++)"XdgMenuWidget::XdgMenuWidget(XdgMenuWidget const&, QWidget*)@Base" 1.0.0
+ (c++)"XdgMenuWidget::XdgMenuWidget(QDomElement const&, QWidget*)@Base" 1.0.0
+ (c++)"XdgMenuWidget::XdgMenuWidget(XdgMenu const&, QString const&, QWidget*)@Base" 1.0.0
+ (c++)"XdgMenuWidget::XdgMenuWidget(XdgMenuWidget const&, QWidget*)@Base" 1.0.0
+ (c++)"XdgMenuWidget::~XdgMenuWidget()@Base" 1.0.0
+ (c++)"XdgMenuWidget::~XdgMenuWidget()@Base" 1.0.0
+ (c++)"XdgMenuWidget::~XdgMenuWidget()@Base" 1.0.0
+ (c++)"XdgMenuWidget::operator=(XdgMenuWidget const&)@Base" 1.0.0
+ (c++)"XdgDesktopFile::removeEntry(QString const&)@Base" 1.0.0
+ (c++)"XdgDesktopFile::setLocalizedValue(QString const&, QVariant const&)@Base" 1.0.0
+ (c++)"XdgDesktopFile::load(QString const&)@Base" 1.0.0
+ (c++)"XdgDesktopFile::setValue(QString const&, QVariant const&)@Base" 1.0.0
+ (c++)"XdgDesktopFile::XdgDesktopFile(XdgDesktopFile::Type, QString const&, QString const&)@Base" 1.0.0
+ (c++)"XdgDesktopFile::XdgDesktopFile(XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgDesktopFile::XdgDesktopFile()@Base" 1.0.0
+ (c++)"XdgDesktopFile::XdgDesktopFile(XdgDesktopFile::Type, QString const&, QString const&)@Base" 1.0.0
+ (c++)"XdgDesktopFile::XdgDesktopFile(XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgDesktopFile::XdgDesktopFile()@Base" 1.0.0
+ (c++)"XdgDesktopFile::~XdgDesktopFile()@Base" 1.0.0
+ (c++)"XdgDesktopFile::~XdgDesktopFile()@Base" 1.0.0
+ (c++)"XdgDesktopFile::~XdgDesktopFile()@Base" 1.0.0
+ (c++)"XdgDesktopFile::operator=(XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::mergeMenus(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::deleteEmpty(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::processApps(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::appendChilds(QDomElement&, QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::clearWatcher()@Base" 1.0.0
+ (c++)"XdgMenuPrivate::fixSeparators(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::prependChilds(QDomElement&, QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::processLayouts(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuPrivate::loadDirectoryFile(QString const&, QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::deleteDeletedMenus(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::processDirectoryEntries(QDomElement&, QStringList const&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::load(QString const&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::changed()@Base" 1.0.0
+ (c++)"XdgMenuPrivate::rebuild()@Base" 1.0.0
+ (c++)"XdgMenuPrivate::saveLog(QString const&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::simplify(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::moveMenus(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::XdgMenuPrivate(XdgMenu*)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::XdgMenuPrivate(XdgMenu*)@Base" 1.0.0
+ (c++)"XdgMenuPrivate::~XdgMenuPrivate()@Base" 1.0.0
+ (c++)"XdgMenuPrivate::~XdgMenuPrivate()@Base" 1.0.0
+ (c++)"XdgMenuPrivate::~XdgMenuPrivate()@Base" 1.0.0
+ (c++)"XdgMenuRuleAll::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuRuleAll::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuRuleAll::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuRuleAll::check(QString const&, XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgMenuRuleAll::XdgMenuRuleAll(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRuleAll::XdgMenuRuleAll(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRuleAll::~XdgMenuRuleAll()@Base" 1.0.0
+ (c++)"XdgMenuRuleAll::~XdgMenuRuleAll()@Base" 1.0.0
+ (c++)"XdgMenuRuleAll::~XdgMenuRuleAll()@Base" 1.0.0
+ (c++)"XdgMenuRuleAnd::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuRuleAnd::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuRuleAnd::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuRuleAnd::check(QString const&, XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgMenuRuleAnd::XdgMenuRuleAnd(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRuleAnd::XdgMenuRuleAnd(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRuleAnd::~XdgMenuRuleAnd()@Base" 1.0.0
+ (c++)"XdgMenuRuleAnd::~XdgMenuRuleAnd()@Base" 1.0.0
+ (c++)"XdgMenuRuleAnd::~XdgMenuRuleAnd()@Base" 1.0.0
+ (c++)"XdgMenuRuleNot::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuRuleNot::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuRuleNot::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuRuleNot::check(QString const&, XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgMenuRuleNot::XdgMenuRuleNot(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRuleNot::XdgMenuRuleNot(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRuleNot::~XdgMenuRuleNot()@Base" 1.0.0
+ (c++)"XdgMenuRuleNot::~XdgMenuRuleNot()@Base" 1.0.0
+ (c++)"XdgMenuRuleNot::~XdgMenuRuleNot()@Base" 1.0.0
+ (c++)"DomElementIterator::~DomElementIterator()@Base" 1.0.0
+ (c++)"DomElementIterator::~DomElementIterator()@Base" 1.0.0
+ (c++)"QSharedDataPointer<XdgDesktopFileData>::detach_helper()@Base" 1.0.0
+ (c++)"QSharedDataPointer<XdgDesktopFileData>::~QSharedDataPointer()@Base" 1.0.0
+ (c++)"QSharedDataPointer<XdgDesktopFileData>::~QSharedDataPointer()@Base" 1.0.0
+ (c++)"XdgDesktopFileData::read(QString const&)@Base" 1.0.0
+ (c++)"XdgDesktopFileData::XdgDesktopFileData()@Base" 1.0.0
+ (c++)"XdgDesktopFileData::XdgDesktopFileData()@Base" 1.0.0
+ (c++)"XdgMenuAppFileInfo::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuAppFileInfo::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuAppFileInfo::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuAppFileInfo::~XdgMenuAppFileInfo()@Base" 1.0.0
+ (c++)"XdgMenuAppFileInfo::~XdgMenuAppFileInfo()@Base" 1.0.0
+ (c++)"XdgMenuAppFileInfo::~XdgMenuAppFileInfo()@Base" 1.0.0
+ (c++)"XdgMimeTypePrivate::XdgMimeTypePrivate(XdgMimeType const&)@Base" 1.0.0
+ (c++)"XdgMimeTypePrivate::XdgMimeTypePrivate()@Base" 1.0.0
+ (c++)"XdgMimeTypePrivate::XdgMimeTypePrivate(XdgMimeType const&)@Base" 1.0.0
+ (c++)"XdgMimeTypePrivate::XdgMimeTypePrivate()@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::initialize(QString const&)@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::initialize()@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::getAllFiles()@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::getDefaultApp(QString const&)@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::desktopFileSettingsFormat()@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::load(QString const&)@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::getApps(QString const&)@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::getFile(QString const&)@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::instance()@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::XdgDesktopFileCache()@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::XdgDesktopFileCache()@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::~XdgDesktopFileCache()@Base" 1.0.0
+ (c++)"XdgDesktopFileCache::~XdgDesktopFileCache()@Base" 1.0.0
+ (c++)"XdgMenuRuleCategory::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuRuleCategory::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuRuleCategory::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuRuleCategory::check(QString const&, XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgMenuRuleCategory::XdgMenuRuleCategory(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRuleCategory::XdgMenuRuleCategory(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRuleCategory::~XdgMenuRuleCategory()@Base" 1.0.0
+ (c++)"XdgMenuRuleCategory::~XdgMenuRuleCategory()@Base" 1.0.0
+ (c++)"XdgMenuRuleCategory::~XdgMenuRuleCategory()@Base" 1.0.0
+ (c++)"XdgMenuRuleFileName::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuRuleFileName::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuRuleFileName::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuRuleFileName::check(QString const&, XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgMenuRuleFileName::XdgMenuRuleFileName(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRuleFileName::XdgMenuRuleFileName(QDomElement const&, QObject*)@Base" 1.0.0
+ (c++)"XdgMenuRuleFileName::~XdgMenuRuleFileName()@Base" 1.0.0
+ (c++)"XdgMenuRuleFileName::~XdgMenuRuleFileName()@Base" 1.0.0
+ (c++)"XdgMenuRuleFileName::~XdgMenuRuleFileName()@Base" 1.0.0
+ (c++)"XdgMenuWidgetPrivate::createAction(QDomElement const&)@Base" 1.0.0
+ (c++)"XdgMenuWidgetPrivate::mouseMoveEvent(QMouseEvent*)@Base" 1.0.0
+ (c++)"XdgMenuWidgetPrivate::init(QDomElement const&)@Base" 1.0.0
+ (c++)"XdgMenuWidgetPrivate::escape(QString)@Base" 1.0.0
+ (c++)"XdgMenuWidgetPrivate::buildMenu()@Base" 1.0.0
+ (c++)"XdgMenuLayoutProcessor::processMergeTag(QDomElement const&)@Base" 1.0.0
+ (c++)"XdgMenuLayoutProcessor::processFilenameTag(QDomElement const&)@Base" 1.0.0
+ (c++)"XdgMenuLayoutProcessor::processMenunameTag(QDomElement const&)@Base" 1.0.0
+ (c++)"XdgMenuLayoutProcessor::processSeparatorTag(QDomElement const&)@Base" 1.0.0
+ (c++)"XdgMenuLayoutProcessor::run()@Base" 1.0.0
+ (c++)"XdgMenuLayoutProcessor::setParams(QDomElement, LayoutParams*)@Base" 1.0.0
+ (c++)"XdgMenuLayoutProcessor::XdgMenuLayoutProcessor(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuLayoutProcessor::XdgMenuLayoutProcessor(QDomElement&, XdgMenuLayoutProcessor*)@Base" 1.0.0
+ (c++)"XdgMenuLayoutProcessor::XdgMenuLayoutProcessor(QDomElement&)@Base" 1.0.0
+ (c++)"XdgMenuLayoutProcessor::XdgMenuLayoutProcessor(QDomElement&, XdgMenuLayoutProcessor*)@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::createRules()@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::checkTryExec(QString const&)@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::findDesktopFiles(QString const&, QString const&)@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::fillAppFileInfoList()@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::run()@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::step1()@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::step2()@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::XdgMenuApplinkProcessor(QDomElement&, XdgMenu*, XdgMenuApplinkProcessor*)@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::XdgMenuApplinkProcessor(QDomElement&, XdgMenu*, XdgMenuApplinkProcessor*)@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::~XdgMenuApplinkProcessor()@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::~XdgMenuApplinkProcessor()@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::~XdgMenuApplinkProcessor()@Base" 1.0.0
+ (c++)"MutableDomElementIterator::~MutableDomElementIterator()@Base" 1.0.0
+ (c++)"MutableDomElementIterator::~MutableDomElementIterator()@Base" 1.0.0
+ (c++)"QMap<QString, QDomElement>::detach_helper()@Base" 1.0.0
+ (c++)"QMap<QString, QDomElement>::~QMap()@Base" 1.0.0
+ (c++)"QMap<QString, QDomElement>::~QMap()@Base" 1.0.0
+ (c++)"QMap<QString, QVariant>::detach_helper()@Base" 1.0.0
+ (c++)"QMap<QString, QVariant>::insert(QString const&, QVariant const&)@Base" 1.0.0
+ (c++)"QHash<QChar, QChar>::deleteNode2(QHashData::Node*)@Base" 1.0.0
+ (c++)"QHash<QChar, QChar>::detach_helper()@Base" 1.0.0
+ (c++)"QHash<QChar, QChar>::duplicateNode(QHashData::Node*, void*)@Base" 1.0.0
+ (c++)"QHash<QChar, QChar>::insert(QChar const&, QChar const&)@Base" 1.0.0
+ (c++)"QHash<QChar, QChar>::~QHash()@Base" 1.0.0
+ (c++)"QHash<QChar, QChar>::~QHash()@Base" 1.0.0
+ (c++)"QHash<QString, QDomElement>::deleteNode2(QHashData::Node*)@Base" 1.0.0
+ (c++)"QHash<QString, QDomElement>::duplicateNode(QHashData::Node*, void*)@Base" 1.0.0
+ (c++)"QHash<QString, QHashDummyValue>::deleteNode2(QHashData::Node*)@Base" 1.0.0
+ (c++)"QHash<QString, QHashDummyValue>::duplicateNode(QHashData::Node*, void*)@Base" 1.0.0
+ (c++)"QHash<QString, QList<XdgDesktopFile*> >::deleteNode2(QHashData::Node*)@Base" 1.0.0
+ (c++)"QHash<QString, QList<XdgDesktopFile*> >::duplicateNode(QHashData::Node*, void*)@Base" 1.0.0
+ (c++)"QHash<QString, QtXdg::QIconTheme>::deleteNode2(QHashData::Node*)@Base" 1.0.0
+ (c++)"QHash<QString, QtXdg::QIconTheme>::detach_helper()@Base" 1.0.0
+ (c++)"QHash<QString, QtXdg::QIconTheme>::duplicateNode(QHashData::Node*, void*)@Base" 1.0.0
+ (c++)"QHash<QString, QCache<QString, QIcon>::Node>::deleteNode2(QHashData::Node*)@Base" 1.0.0
+ (c++)"QHash<QString, QCache<QString, QIcon>::Node>::detach_helper()@Base" 1.0.0
+ (c++)"QHash<QString, QCache<QString, QIcon>::Node>::duplicateNode(QHashData::Node*, void*)@Base" 1.0.0
+ (c++)"QHash<QString, QCache<QString, QIcon>::Node>::~QHash()@Base" 1.0.0
+ (c++)"QHash<QString, QCache<QString, QIcon>::Node>::~QHash()@Base" 1.0.0
+ (c++)"QHash<QString, XdgDesktopFile*>::deleteNode2(QHashData::Node*)@Base" 1.0.0
+ (c++)"QHash<QString, XdgDesktopFile*>::duplicateNode(QHashData::Node*, void*)@Base" 1.0.0
+ (c++)"QHash<QString, XdgDesktopFile*>::insert(QString const&, XdgDesktopFile* const&)@Base" 1.0.0
+ (c++)"QHash<QString, XdgMenuAppFileInfo*>::deleteNode2(QHashData::Node*)@Base" 1.0.0
+ (c++)"QHash<QString, XdgMenuAppFileInfo*>::detach_helper()@Base" 1.0.0
+ (c++)"QHash<QString, XdgMenuAppFileInfo*>::duplicateNode(QHashData::Node*, void*)@Base" 1.0.0
+ (c++)"QHash<QString, XdgMenuAppFileInfo*>::~QHash()@Base" 1.0.0
+ (c++)"QHash<QString, XdgMenuAppFileInfo*>::~QHash()@Base" 1.0.0
+ (c++)"QHash<QString, QString>::deleteNode2(QHashData::Node*)@Base" 1.0.0
+ (c++)"QHash<QString, QString>::duplicateNode(QHashData::Node*, void*)@Base" 1.0.0
+ (c++)"QHash<QString, QString>::insert(QString const&, QString const&)@Base" 1.0.0
+ (c++)"QHash<QString, QString>::~QHash()@Base" 1.0.0
+ (c++)"QHash<QString, QString>::~QHash()@Base" 1.0.0
+ (c++)"QList<XdgDesktopFile>::detach_helper_grow(int, int)@Base" 1.0.0
+ (c++)"QList<XdgDesktopFile>::append(XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"QList<QUrl>::detach_helper_grow(int, int)@Base" 1.0.0
+ (c++)"QList<QUrl>::append(QUrl const&)@Base" 1.0.0
+ (c++)"QList<QUrl>::~QList()@Base" 1.0.0
+ (c++)"QList<QUrl>::~QList()@Base" 1.0.0
+ (c++)"QList<QSize>::detach_helper_grow(int, int)@Base" 1.0.0
+ (c++)"QList<QSize>::clear()@Base" 1.0.0
+ (c++)"QList<QSize>::~QList()@Base" 1.0.0
+ (c++)"QList<QSize>::~QList()@Base" 1.0.0
+ (c++)"QList<QString>::detach_helper(int)@Base" 1.0.0
+ (c++)"QList<QString>::detach_helper_grow(int, int)@Base" 1.0.0
+ (c++)"QList<QString>::append(QString const&)@Base" 1.0.0
+ (c++)"QList<QString>::prepend(QString const&)@Base" 1.0.0
+ (c++)"QList<QString>::removeAll(QString const&)@Base" 1.0.0
+ (c++)"QList<QString>::QList(QList<QString> const&)@Base" 1.0.0
+ (c++)"QList<QString>::QList(QList<QString> const&)@Base" 1.0.0
+ (c++)"QList<QString>::~QList()@Base" 1.0.0
+ (c++)"QList<QString>::~QList()@Base" 1.0.0
+ (c++)"QList<QString>::operator+=(QList<QString> const&)@Base" 1.0.0
+ (c++)"QList<QFileInfo>::QList(QList<QFileInfo> const&)@Base" 1.0.0
+ (c++)"QList<QFileInfo>::QList(QList<QFileInfo> const&)@Base" 1.0.0
+ (c++)"QList<QFileInfo>::~QList()@Base" 1.0.0
+ (c++)"QList<QFileInfo>::~QList()@Base" 1.0.0
+ (c++)"QList<QtXdg::QIconDirInfo>::detach_helper_grow(int, int)@Base" 1.0.0
+ (c++)"QList<QtXdg::QIconDirInfo>::append(QtXdg::QIconDirInfo const&)@Base" 1.0.0
+ (c++)"QList<QtXdg::QIconDirInfo>::QList(QList<QtXdg::QIconDirInfo> const&)@Base" 1.0.0
+ (c++)"QList<QtXdg::QIconDirInfo>::QList(QList<QtXdg::QIconDirInfo> const&)@Base" 1.0.0
+ (c++)"QList<QtXdg::QIconDirInfo>::~QList()@Base" 1.0.0
+ (c++)"QList<QtXdg::QIconDirInfo>::~QList()@Base" 1.0.0
+ (c++)"QList<XdgDesktopFile*>::detach_helper(int)@Base" 1.0.0
+ (c++)"QList<XdgDesktopFile*>::detach_helper_grow(int, int)@Base" 1.0.0
+ (c++)"QList<XdgDesktopFile*>::append(XdgDesktopFile* const&)@Base" 1.0.0
+ (c++)"QList<XdgDesktopFile*>::QList(QList<XdgDesktopFile*> const&)@Base" 1.0.0
+ (c++)"QList<XdgDesktopFile*>::QList(QList<XdgDesktopFile*> const&)@Base" 1.0.0
+ (c++)"QList<XdgDesktopFile*>::~QList()@Base" 1.0.0
+ (c++)"QList<XdgDesktopFile*>::~QList()@Base" 1.0.0
+ (c++)"QList<QAction*>::~QList()@Base" 1.0.0
+ (c++)"QList<QAction*>::~QList()@Base" 1.0.0
+ (c++)"QList<QtXdg::QIconLoaderEngineEntry*>::detach_helper_grow(int, int)@Base" 1.0.0
+ (c++)"QList<QtXdg::QIconLoaderEngineEntry*>::append(QtXdg::QIconLoaderEngineEntry* const&)@Base" 1.0.0
+ (c++)"QList<QtXdg::QIconLoaderEngineEntry*>::prepend(QtXdg::QIconLoaderEngineEntry* const&)@Base" 1.0.0
+ (c++)"QList<QtXdg::QIconLoaderEngineEntry*>::~QList()@Base" 1.0.0
+ (c++)"QList<QtXdg::QIconLoaderEngineEntry*>::~QList()@Base" 1.0.0
+ (c++)"QtXdg::QIconTheme::QIconTheme(QString const&)@Base" 1.0.0
+ (c++)"QtXdg::QIconTheme::QIconTheme(QString const&)@Base" 1.0.0
+ (c++)"QtXdg::QIconTheme::~QIconTheme()@Base" 1.0.0
+ (c++)"QtXdg::QIconTheme::~QIconTheme()@Base" 1.0.0
+ (c++)"QtXdg::PixmapEntry::pixmap(QSize const&, QIcon::Mode, QIcon::State)@Base" 1.0.0
+ (c++)"QtXdg::PixmapEntry::PixmapEntry()@Base" 1.0.0
+ (c++)"QtXdg::PixmapEntry::PixmapEntry()@Base" 1.0.0
+ (c++)"QtXdg::PixmapEntry::~PixmapEntry()@Base" 1.0.0
+ (c++)"QtXdg::PixmapEntry::~PixmapEntry()@Base" 1.0.0
+ (c++)"QtXdg::PixmapEntry::~PixmapEntry()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::setThemeName(QString const&)@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::ensureInitialized()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::updateSystemTheme()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::setThemeSearchPath(QStringList const&)@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::instance()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::QIconLoader()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::QIconLoader()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::~QIconLoader()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::~QIconLoader()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::~QIconLoader()@Base" 1.0.0
+ (c++)"QtXdg::ScalableEntry::pixmap(QSize const&, QIcon::Mode, QIcon::State)@Base" 1.0.0
+ (c++)"QtXdg::ScalableEntry::ScalableEntry()@Base" 1.0.0
+ (c++)"QtXdg::ScalableEntry::ScalableEntry()@Base" 1.0.0
+ (c++)"QtXdg::ScalableEntry::~ScalableEntry()@Base" 1.0.0
+ (c++)"QtXdg::ScalableEntry::~ScalableEntry()@Base" 1.0.0
+ (c++)"QtXdg::ScalableEntry::~ScalableEntry()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineEntry::~QIconLoaderEngineEntry()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineEntry::~QIconLoaderEngineEntry()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineEntry::~QIconLoaderEngineEntry()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::actualSize(QSize const&, QIcon::Mode, QIcon::State)@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::ensureLoaded()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::entryForSize(QSize const&)@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::virtual_hook(int, void*)@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::read(QDataStream&)@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::paint(QPainter*, QRect const&, QIcon::Mode, QIcon::State)@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::pixmap(QSize const&, QIcon::Mode, QIcon::State)@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::QIconLoaderEngineFixed(QString const&)@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::QIconLoaderEngineFixed(QtXdg::QIconLoaderEngineFixed const&)@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::QIconLoaderEngineFixed(QString const&)@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::QIconLoaderEngineFixed(QtXdg::QIconLoaderEngineFixed const&)@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::~QIconLoaderEngineFixed()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::~QIconLoaderEngineFixed()@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::~QIconLoaderEngineFixed()@Base" 1.0.0
+ (c++)"QCache<QString, QIcon>::insert(QString const&, QIcon*, int)@Base" 1.0.0
+ (c++)"QDebug::~QDebug()@Base" 1.0.0
+ (c++)"QDebug::~QDebug()@Base" 1.0.0
+ (c++)"QDebug::operator<<(char const*)@Base" 1.0.0
+ (c++)"QString::QString(char const*)@Base" 1.0.0
+ (c++)"QString::QString(char const*)@Base" 1.0.0
+ (c++)"QString::~QString()@Base" 1.0.0
+ (c++)"QString::~QString()@Base" 1.0.0
+ (c++)"QVector<QString>::reallocData(int, int, QFlags<QArrayData::AllocationOption>)@Base" 1.0.0
+ (c++)"QVector<QString>::append(QString const&)@Base" 1.0.0
+ (c++)"XdgDirs::configDirs(QString const&)@Base" 1.0.0
+ (c++)"XdgDirs::configHome(bool)@Base" 1.0.0
+ (c++)"XdgDirs::runtimeDir()@Base" 1.0.0
+ (c++)"XdgDirs::setUserDir(XdgDirs::UserDirectory, QString const&, bool)@Base" 1.0.0
+ (c++)"XdgDirs::autostartDirs(QString const&)@Base" 1.0.0
+ (c++)"XdgDirs::autostartHome(bool)@Base" 1.0.0
+ (c++)"XdgDirs::userDir(XdgDirs::UserDirectory)@Base" 1.0.0
+ (c++)"XdgDirs::dataDirs(QString const&)@Base" 1.0.0
+ (c++)"XdgDirs::dataHome(bool)@Base" 1.0.0
+ (c++)"XdgDirs::cacheHome(bool)@Base" 1.0.0
+ (c++)"XdgIcon::setThemeName(QString const&)@Base" 1.0.0
+ (c++)"XdgIcon::defaultApplicationIcon()@Base" 1.0.0
+ (c++)"XdgIcon::defaultApplicationIconName()@Base" 1.0.0
+ (c++)"XdgIcon::fromTheme(QStringList const&, QIcon const&)@Base" 1.0.0
+ (c++)"XdgIcon::fromTheme(QString const&, QIcon const&)@Base" 1.0.0
+ (c++)"XdgIcon::fromTheme(QString const&, QString const&, QString const&, QString const&, QString const&)@Base" 1.0.0
+ (c++)"XdgIcon::themeName()@Base" 1.0.0
+ (c++)"XdgIcon::XdgIcon()@Base" 1.0.0
+ (c++)"XdgIcon::XdgIcon()@Base" 1.0.0
+ (c++)"XdgIcon::~XdgIcon()@Base" 1.0.0
+ (c++)"XdgIcon::~XdgIcon()@Base" 1.0.0
+ (c++)"XdgIcon::~XdgIcon()@Base" 1.0.0
+ (c++)"XdgMenu::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgMenu::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgMenu::addWatchPath(QString const&)@Base" 1.0.0
+ (c++)"XdgMenu::environments()@Base" 1.0.0
+ (c++)"XdgMenu::getMenuFileName(QString const&)@Base" 1.0.0
+ (c++)"XdgMenu::setEnvironments(QStringList const&)@Base" 1.0.0
+ (c++)"XdgMenu::setEnvironments(QString const&)@Base" 1.0.0
+ (c++)"XdgMenu::staticMetaObject@Base" 1.0.0
+ (c++)"XdgMenu::read(QString const&)@Base" 1.0.0
+ (c++)"XdgMenu::save(QString const&)@Base" 1.0.0
+ (c++)"XdgMenu::changed()@Base" 1.0.0
+ (c++)"XdgMenu::findMenu(QDomElement&, QString const&, bool)@Base" 1.0.0
+ (c++)"XdgMenu::setLogDir(QString const&)@Base" 1.0.0
+ (c++)"XdgMenu::XdgMenu(QObject*)@Base" 1.0.0
+ (c++)"XdgMenu::XdgMenu(QObject*)@Base" 1.0.0
+ (c++)"XdgMenu::~XdgMenu()@Base" 1.0.0
+ (c++)"XdgMenu::~XdgMenu()@Base" 1.0.0
+ (c++)"XdgMenu::~XdgMenu()@Base" 1.0.0
+ (c++)"QMapNode<QString, QDomElement>::destroySubTree()@Base" 1.0.0
+ (c++)"QMapNode<QString, QVariant>::destroySubTree()@Base" 1.0.0
+ (c++)"XdgAction::updateIcon()@Base" 1.0.0
+ (c++)"XdgAction::qt_metacall(QMetaObject::Call, int, void**)@Base" 1.0.0
+ (c++)"XdgAction::qt_metacast(char const*)@Base" 1.0.0
+ (c++)"XdgAction::staticMetaObject@Base" 1.0.0
+ (c++)"XdgAction::load(XdgDesktopFile const&)@Base" 1.0.0
+ (c++)"XdgAction::XdgAction(QObject*)@Base" 1.0.0
+ (c++)"XdgAction::XdgAction(XdgDesktopFile const*, QObject*)@Base" 1.0.0
+ (c++)"XdgAction::XdgAction(XdgDesktopFile const&, QObject*)@Base" 1.0.0
+ (c++)"XdgAction::XdgAction(QString const&, QObject*)@Base" 1.0.0
+ (c++)"XdgAction::XdgAction(XdgAction const&, QObject*)@Base" 1.0.0
+ (c++)"XdgAction::XdgAction(QObject*)@Base" 1.0.0
+ (c++)"XdgAction::XdgAction(XdgDesktopFile const*, QObject*)@Base" 1.0.0
+ (c++)"XdgAction::XdgAction(XdgDesktopFile const&, QObject*)@Base" 1.0.0
+ (c++)"XdgAction::XdgAction(QString const&, QObject*)@Base" 1.0.0
+ (c++)"XdgAction::XdgAction(XdgAction const&, QObject*)@Base" 1.0.0
+ (c++)"XdgAction::~XdgAction()@Base" 1.0.0
+ (c++)"XdgAction::~XdgAction()@Base" 1.0.0
+ (c++)"XdgAction::~XdgAction()@Base" 1.0.0
+ (c++)"XdgAction::operator=(XdgAction const&)@Base" 1.0.0
+ (c++)"XdgMenuRule::metaObject() const@Base" 1.0.0
+ (c++)"XdgMimeType::icon() const@Base" 1.0.0
+ (c++)"XdgMimeType::iconName() const@Base" 1.0.0
+ (c++)"XdgMenuRules::metaObject() const@Base" 1.0.0
+ (c++)"XdgMenuReader::metaObject() const@Base" 1.0.0
+ (c++)"XdgMenuRuleOr::metaObject() const@Base" 1.0.0
+ (c++)"XdgMenuWidget::metaObject() const@Base" 1.0.0
+ (c++)"XdgDesktopFile::isSuitable(bool, QString const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::isApplicable(bool, QString const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::localizedKey(QString const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::startDetached(QStringList const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::startDetached(QString const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::localizedValue(QString const&, QVariant const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::expandExecString(QStringList const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::url() const@Base" 1.0.0
+ (c++)"XdgDesktopFile::icon(QIcon const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::save(QIODevice*) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::save(QString const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::type() const@Base" 1.0.0
+ (c++)"XdgDesktopFile::check() const@Base" 1.0.0
+ (c++)"XdgDesktopFile::value(QString const&, QVariant const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::isShow(QString const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::prefix() const@Base" 1.0.0
+ (c++)"XdgDesktopFile::isShown(QString const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::isValid() const@Base" 1.0.0
+ (c++)"XdgDesktopFile::contains(QString const&) const@Base" 1.0.0
+ (c++)"XdgDesktopFile::fileName() const@Base" 1.0.0
+ (c++)"XdgDesktopFile::iconName() const@Base" 1.0.0
+ (c++)"XdgDesktopFile::operator==(XdgDesktopFile const&) const@Base" 1.0.0
+ (c++)"XdgMenuPrivate::metaObject() const@Base" 1.0.0
+ (c++)"XdgMenuRuleAll::metaObject() const@Base" 1.0.0
+ (c++)"XdgMenuRuleAnd::metaObject() const@Base" 1.0.0
+ (c++)"XdgMenuRuleNot::metaObject() const@Base" 1.0.0
+ (c++)"XdgDesktopFileData::detectType(XdgDesktopFile*) const@Base" 1.0.0
+ (c++)"XdgDesktopFileData::startLinkDetached(XdgDesktopFile const*) const@Base" 1.0.0
+ (c++)"XdgDesktopFileData::startApplicationDetached(XdgDesktopFile const*, QStringList const&) const@Base" 1.0.0
+ (c++)"XdgMenuAppFileInfo::metaObject() const@Base" 1.0.0
+ (c++)"XdgMenuRuleCategory::metaObject() const@Base" 1.0.0
+ (c++)"XdgMenuRuleFileName::metaObject() const@Base" 1.0.0
+ (c++)"XdgMenuLayoutProcessor::searchElement(QString const&, QString const&, QString const&) const@Base" 1.0.0
+ (c++)"XdgMenuApplinkProcessor::metaObject() const@Base" 1.0.0
+ (c++)"QMap<QString, QVariant>::operator==(QMap<QString, QVariant> const&) const@Base" 1.0.0
+ (c++)"QHash<QChar, QChar>::findNode(QChar const&, unsigned int*) const@Base" 1.0.0
+ (c++)"QHash<QString, QDomElement>::findNode(QString const&, unsigned int*) const@Base" 1.0.0
+ (c++)"QHash<QString, QHashDummyValue>::findNode(QString const&, unsigned int*) const@Base" 1.0.0
+ (c++)"QHash<QString, QList<XdgDesktopFile*> >::findNode(QString const&, unsigned int*) const@Base" 1.0.0
+ (c++)"QHash<QString, QtXdg::QIconTheme>::findNode(QString const&, unsigned int*) const@Base" 1.0.0
+ (c++)"QHash<QString, QCache<QString, QIcon>::Node>::findNode(QString const&, unsigned int*) const@Base" 1.0.0
+ (c++)"QHash<QString, XdgDesktopFile*>::findNode(QString const&, unsigned int*) const@Base" 1.0.0
+ (c++)"QHash<QString, XdgMenuAppFileInfo*>::findNode(QString const&, unsigned int*) const@Base" 1.0.0
+ (c++)"QHash<QString, QString>::findNode(QString const&, unsigned int*) const@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::findIconHelper(QString const&, QString const&, QStringList&) const@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::themeSearchPaths() const@Base" 1.0.0
+ (c++)"QtXdg::QIconLoader::loadIcon(QString const&) const@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::key() const@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::clone() const@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::write(QDataStream&) const@Base" 1.0.0
+ (c++)"QtXdg::QIconLoaderEngineFixed::hasIcon() const@Base" 1.0.0
+ (c++)"QString::operator==(char const*) const@Base" 1.0.0
+ (c++)"XdgMenu::isOutDated() const@Base" 1.0.0
+ (c++)"XdgMenu::metaObject() const@Base" 1.0.0
+ (c++)"XdgMenu::errorString() const@Base" 1.0.0
+ (c++)"XdgMenu::menuFileName() const@Base" 1.0.0
+ (c++)"XdgMenu::xml() const@Base" 1.0.0
+ (c++)"XdgMenu::logDir() const@Base" 1.0.0
+ (c++)"QMapData<QString, QVariant>::findNode(QString const&) const@Base" 1.0.0
+ (c++)"QMapNode<QString, QDomElement>::copy(QMapData<QString, QDomElement>*) const@Base" 1.0.0
+ (c++)"QMapNode<QString, QVariant>::copy(QMapData<QString, QVariant>*) const@Base" 1.0.0
+ (c++)"XdgAction::metaObject() const@Base" 1.0.0
+ (c++)"XdgAction::runConmmand() const@Base" 1.0.0
+ (c++)"XdgAction::isValid() const@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuRule@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuRules@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuReader@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuRuleOr@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuWidget@Base" 1.0.0
+ (c++)"typeinfo for XdgDesktopFile@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuPrivate@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuRuleAll@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuRuleAnd@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuRuleNot@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuAppFileInfo@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuRuleCategory@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuRuleFileName@Base" 1.0.0
+ (c++)"typeinfo for XdgMenuApplinkProcessor@Base" 1.0.0
+ (c++)"typeinfo for XdgIcon@Base" 1.0.0
+ (c++)"typeinfo for XdgMenu@Base" 1.0.0
+ (c++)"typeinfo for XdgAction@Base" 1.0.0
+ (c++)"typeinfo for QtXdg::PixmapEntry@Base" 1.0.0
+ (c++)"typeinfo for QtXdg::QIconLoader@Base" 1.0.0
+ (c++)"typeinfo for QtXdg::ScalableEntry@Base" 1.0.0
+ (c++)"typeinfo for QtXdg::QIconLoaderEngineEntry@Base" 1.0.0
+ (c++)"typeinfo for QtXdg::QIconLoaderEngineFixed@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuRule@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuRules@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuReader@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuRuleOr@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuWidget@Base" 1.0.0
+ (c++)"typeinfo name for XdgDesktopFile@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuPrivate@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuRuleAll@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuRuleAnd@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuRuleNot@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuAppFileInfo@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuRuleCategory@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuRuleFileName@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenuApplinkProcessor@Base" 1.0.0
+ (c++)"typeinfo name for XdgIcon@Base" 1.0.0
+ (c++)"typeinfo name for XdgMenu@Base" 1.0.0
+ (c++)"typeinfo name for XdgAction@Base" 1.0.0
+ (c++)"typeinfo name for QtXdg::PixmapEntry@Base" 1.0.0
+ (c++)"typeinfo name for QtXdg::QIconLoader@Base" 1.0.0
+ (c++)"typeinfo name for QtXdg::ScalableEntry@Base" 1.0.0
+ (c++)"typeinfo name for QtXdg::QIconLoaderEngineEntry@Base" 1.0.0
+ (c++)"typeinfo name for QtXdg::QIconLoaderEngineFixed@Base" 1.0.0
+ (c++)"vtable for XdgMenuRule@Base" 1.0.0
+ (c++)"vtable for XdgMenuRules@Base" 1.0.0
+ (c++)"vtable for XdgMenuReader@Base" 1.0.0
+ (c++)"vtable for XdgMenuRuleOr@Base" 1.0.0
+ (c++)"vtable for XdgMenuWidget@Base" 1.0.0
+ (c++)"vtable for XdgDesktopFile@Base" 1.0.0
+ (c++)"vtable for XdgMenuPrivate@Base" 1.0.0
+ (c++)"vtable for XdgMenuRuleAll@Base" 1.0.0
+ (c++)"vtable for XdgMenuRuleAnd@Base" 1.0.0
+ (c++)"vtable for XdgMenuRuleNot@Base" 1.0.0
+ (c++)"vtable for XdgMenuAppFileInfo@Base" 1.0.0
+ (c++)"vtable for XdgMenuRuleCategory@Base" 1.0.0
+ (c++)"vtable for XdgMenuRuleFileName@Base" 1.0.0
+ (c++)"vtable for XdgMenuApplinkProcessor@Base" 1.0.0
+ (c++)"vtable for XdgIcon@Base" 1.0.0
+ (c++)"vtable for XdgMenu@Base" 1.0.0
+ (c++)"vtable for XdgAction@Base" 1.0.0
+ (c++)"vtable for QtXdg::PixmapEntry@Base" 1.0.0
+ (c++)"vtable for QtXdg::QIconLoader@Base" 1.0.0
+ (c++)"vtable for QtXdg::ScalableEntry@Base" 1.0.0
+ (c++)"vtable for QtXdg::QIconLoaderEngineEntry@Base" 1.0.0
+ (c++)"vtable for QtXdg::QIconLoaderEngineFixed@Base" 1.0.0
+ (c++)"non-virtual thunk to XdgMenuWidget::~XdgMenuWidget()@Base" 1.0.0
+ (c++)"non-virtual thunk to XdgMenuWidget::~XdgMenuWidget()@Base" 1.0.0
+ (c++)"operator<<(QDebug, QDomElement const&)@Base" 1.0.0
+ (c++)"operator+(QString const&, QString const&)@Base" 1.0.0
