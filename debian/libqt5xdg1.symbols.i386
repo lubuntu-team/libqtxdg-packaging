@@ -1,0 +1,4 @@
+libQt5Xdg.so.1 libqt5xdg1 #MINVER#
+#include "libqt5xdg1.symbols.common"
+ (c++)"QList<QSize>::append(QSize const&)@Base" 1.0.0
+ (c++)"QList<QSize>::QList(QList<QSize> const&)@Base" 1.0.0
