@@ -1,2 +1,3 @@
 version=3
-https://github.com/lxde/libqtxdg/releases .*/([\d\.]+).tar.gz
+opts="pgpsigurlmangle=s/$/.asc/" \
+    http://downloads.lxqt.org/libqtxdg/([\d\.]+)/ libqtxdg-([\d\.]+)\.tar\.xz
