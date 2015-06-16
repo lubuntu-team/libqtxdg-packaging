@@ -2,4 +2,7 @@
 #export DH_VERBOSE = 1
 
 %:
-	dh ${@} --buildsystem cmake --parallel --dbg-package=libqt5xdg1-dbg --fail-missing
+	dh ${@} --buildsystem cmake --parallel \
+	        --dbg-package=libqt5xdg1-dbg \
+		--list-missing \
+		--fail-missing 
