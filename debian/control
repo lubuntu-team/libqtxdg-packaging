@@ -4,7 +4,8 @@ Priority: optional
 Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
 Uploaders:
  Alf Gaida <agaida@siduction.org>,
- ChangZhuo Chen (陳昌倬) <czchen@gmail.com>
+ ChangZhuo Chen (陳昌倬) <czchen@gmail.com>,
+ Andrew Lee (李健秋) <ajqlee@debian.org>
 Build-Depends:
  cmake (>= 3.0.2),
  debhelper (>= 9),
