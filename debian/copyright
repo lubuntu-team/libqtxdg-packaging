@@ -18,6 +18,7 @@ License: LGPL-2.1-with-Nokia-Qt-LGPL-Exception or GPL-3
 Files: debian/*
 Copyright: 2014-2015 ChangZhuo Chen (陳昌倬) <czchen@gmail.com>
            2013-2015 Alf Gaida <agaida@siduction.org>
+	   2015      Andrew Lee (李健秋) <ajqlee@debian.org>
 License: LGPL-2.1+
 
 License: LGPL-2.1+
