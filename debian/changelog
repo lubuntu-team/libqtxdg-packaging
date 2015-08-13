@@ -1,4 +1,4 @@
-libqtxdg (1.2.0-1) unstable; urgency=medium
+libqtxdg (1.2.0+20150807-1) unstable; urgency=medium
 
   [ ChangZhuo Chen (陳昌倬) ]
   * Update copyright
@@ -12,5 +12,8 @@ libqtxdg (1.2.0-1) unstable; urgency=medium
   [ Andrew Lee (李健秋) ]
   * Removing whitespaces at EOL and EOF.
   * Added myself as Uploader.
+  * Merging upstream version 1.2.0+20150807.
+  * Use whitespace separated instead of commas to fit the machine-readable
+    copyright format.
 
- -- Andrew Lee (李健秋) <ajqlee@debian.org>  Thu, 13 Aug 2015 22:14:16 +0800
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Fri, 14 Aug 2015 04:07:21 +0800
