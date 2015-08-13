@@ -26,7 +26,6 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 
-
 #include "xdgmenu.h"
 #include "xdgmenu_p.h"
 #include "xdgmenureader.h"
@@ -55,36 +54,14 @@
 void installTranslation(const QString &name);
 bool isParent(const QDomElement& parent, const QDomElement& child);
 
-void installTranslation(const QString &name)
-{
-    static bool alreadyLoaded = false;
 
-    if (alreadyLoaded)
-        return;
-
-    QString locale = QLocale::system().name();
-    QTranslator *translator = new QTranslator(qApp);
-    translator->load(QString("%1/%2_%3.qm").arg(TRANSLATIONS_DIR, name, locale));
-
-    QCoreApplication::installTranslator(translator);
-    alreadyLoaded = true;
-}
-
-
-/************************************************
-
- ************************************************/
 XdgMenu::XdgMenu(QObject *parent) :
     QObject(parent),
     d_ptr(new XdgMenuPrivate(this))
 {
-    installTranslation("libqtxdg");
 }
 
 
-/************************************************
-
- ************************************************/
 XdgMenu::~XdgMenu()
 {
     Q_D(XdgMenu);
@@ -92,9 +69,6 @@ XdgMenu::~XdgMenu()
 }
 
 
-/************************************************
-
- ************************************************/
 XdgMenuPrivate::XdgMenuPrivate(XdgMenu *parent):
     mOutDated(true),
     q_ptr(parent)
@@ -111,9 +85,6 @@ XdgMenuPrivate::XdgMenuPrivate(XdgMenu *parent):
 }
 
 
-/************************************************
-
- ************************************************/
 const QString XdgMenu::logDir() const
 {
     Q_D(const XdgMenu);
@@ -121,9 +92,6 @@ const QString XdgMenu::logDir() const
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenu::setLogDir(const QString& directory)
 {
     Q_D(XdgMenu);
@@ -131,9 +99,6 @@ void XdgMenu::setLogDir(const QString& directory)
 }
 
 
-/************************************************
-
- ************************************************/
 const QDomDocument XdgMenu::xml() const
 {
     Q_D(const XdgMenu);
@@ -141,9 +106,6 @@ const QDomDocument XdgMenu::xml() const
 }
 
 
-/************************************************
-
- ************************************************/
 QString XdgMenu::menuFileName() const
 {
     Q_D(const XdgMenu);
@@ -151,28 +113,26 @@ QString XdgMenu::menuFileName() const
 }
 
 
-/************************************************
-
- ************************************************/
 QStringList XdgMenu::environments()
 {
     Q_D(XdgMenu);
     return d->mEnvironments;
 }
 
+
 void XdgMenu::setEnvironments(const QStringList &envs)
 {
     Q_D(XdgMenu);
     d->mEnvironments = envs;
 }
+
+
 void XdgMenu::setEnvironments(const QString &env)
 {
     setEnvironments(QStringList() << env);
 }
 
-/************************************************
 
- ************************************************/
 const QString XdgMenu::errorString() const
 {
     Q_D(const XdgMenu);
@@ -180,9 +140,6 @@ const QString XdgMenu::errorString() const
 }
 
 
-/************************************************
-
- ************************************************/
 bool XdgMenu::read(const QString& menuFileName)
 {
     Q_D(XdgMenu);
@@ -241,9 +198,6 @@ bool XdgMenu::read(const QString& menuFileName)
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenu::save(const QString& fileName)
 {
     Q_D(const XdgMenu);
@@ -279,9 +233,6 @@ void XdgMenuPrivate::load(const QString& fileName)
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenuPrivate::saveLog(const QString& logFileName)
 {
     Q_Q(XdgMenu);
@@ -290,9 +241,6 @@ void XdgMenuPrivate::saveLog(const QString& logFileName)
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenuPrivate::mergeMenus(QDomElement& element)
 {
     QHash<QString, QDomElement> menus;
@@ -333,9 +281,6 @@ void XdgMenuPrivate::mergeMenus(QDomElement& element)
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenuPrivate::simplify(QDomElement& element)
 {
     MutableDomElementIterator it(element);
@@ -393,9 +338,6 @@ void XdgMenuPrivate::simplify(QDomElement& element)
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenuPrivate::prependChilds(QDomElement& srcElement, QDomElement& destElement)
 {
     MutableDomElementIterator it(srcElement);
@@ -419,9 +361,6 @@ void XdgMenuPrivate::prependChilds(QDomElement& srcElement, QDomElement& destEle
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenuPrivate::appendChilds(QDomElement& srcElement, QDomElement& destElement)
 {
     MutableDomElementIterator it(srcElement);
@@ -487,9 +426,6 @@ QDomElement XdgMenu::findMenu(QDomElement& baseElement, const QString& path, boo
 }
 
 
-/************************************************
-
- ************************************************/
 bool isParent(const QDomElement& parent, const QDomElement& child)
 {
     QDomNode  n = child;
@@ -574,9 +510,6 @@ void XdgMenuPrivate::deleteDeletedMenus(QDomElement& element)
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenuPrivate::processDirectoryEntries(QDomElement& element, const QStringList& parentDirs)
 {
     QStringList dirs;
@@ -631,9 +564,6 @@ void XdgMenuPrivate::processDirectoryEntries(QDomElement& element, const QString
 }
 
 
-/************************************************
-
- ************************************************/
 bool XdgMenuPrivate::loadDirectoryFile(const QString& fileName, QDomElement& element)
 {
     XdgDesktopFile file;
@@ -653,9 +583,6 @@ bool XdgMenuPrivate::loadDirectoryFile(const QString& fileName, QDomElement& ele
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenuPrivate::processApps(QDomElement& element)
 {
     Q_Q(XdgMenu);
@@ -664,9 +591,6 @@ void XdgMenuPrivate::processApps(QDomElement& element)
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenuPrivate::deleteEmpty(QDomElement& element)
 {
     MutableDomElementIterator it(element, "Menu");
@@ -686,9 +610,6 @@ void XdgMenuPrivate::deleteEmpty(QDomElement& element)
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenuPrivate::processLayouts(QDomElement& element)
 {
     XdgMenuLayoutProcessor proc(element);
@@ -696,9 +617,6 @@ void XdgMenuPrivate::processLayouts(QDomElement& element)
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenuPrivate::fixSeparators(QDomElement& element)
 {
 
@@ -768,9 +686,6 @@ QString XdgMenu::getMenuFileName(const QString& baseName)
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenu::addWatchPath(const QString &path)
 {
     Q_D(XdgMenu);
@@ -785,9 +700,6 @@ void XdgMenu::addWatchPath(const QString &path)
 }
 
 
-/************************************************
-
- ************************************************/
 bool XdgMenu::isOutDated() const
 {
     Q_D(const XdgMenu);
@@ -795,9 +707,6 @@ bool XdgMenu::isOutDated() const
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenuPrivate::rebuild()
 {
     Q_Q(XdgMenu);
@@ -812,9 +721,6 @@ void XdgMenuPrivate::rebuild()
 }
 
 
-/************************************************
-
- ************************************************/
 void XdgMenuPrivate::clearWatcher()
 {
     QStringList sl;
