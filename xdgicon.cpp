@@ -25,8 +25,6 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-
-
 #include "xdgicon.h"
 
 #include <QString>
@@ -35,18 +33,11 @@
 #include <QStringList>
 #include <QFileInfo>
 #include <QCache>
-#if QT_VERSION < QT_VERSION_CHECK(5,0,0)
-#include "qiconfix/qiconloader_p_qt4.h"
-#else
 #include "qiconfix/qiconloader_p.h"
-#endif
 #include <QCoreApplication>
 
 #define DEFAULT_APP_ICON "application-x-executable"
 
-/************************************************
-
- ************************************************/
 static void qt_cleanup_icon_cache();
 typedef QCache<QString, QIcon> IconCache;
 
@@ -67,18 +58,11 @@ static void qt_cleanup_icon_cache()
 }
 
 
-
-/************************************************
-
- ************************************************/
 XdgIcon::XdgIcon()
 {
 }
 
 
-/************************************************
-
- ************************************************/
 XdgIcon::~XdgIcon()
 {
 }
@@ -163,9 +147,6 @@ QIcon XdgIcon::fromTheme(const QStringList& iconNames, const QIcon& fallback)
 }
 
 
-/************************************************
-
- ************************************************/
 QIcon XdgIcon::fromTheme(const QString &iconName,
                          const QString &fallbackIcon1,
                          const QString &fallbackIcon2,
@@ -182,18 +163,13 @@ QIcon XdgIcon::fromTheme(const QString &iconName,
     return fromTheme(icons);
 }
 
-/************************************************
 
- ************************************************/
 QIcon XdgIcon::defaultApplicationIcon()
 {
     return fromTheme(DEFAULT_APP_ICON);
 }
 
 
-/************************************************
-
- ************************************************/
 QString XdgIcon::defaultApplicationIconName()
 {
     return DEFAULT_APP_ICON;
