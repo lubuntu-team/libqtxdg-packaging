@@ -1,3 +1,13 @@
+libqtxdg (1.2.0+20150807-2) unstable; urgency=medium
+
+  * cme fix dpkg-control
+  * remove not needed breaks and replaces
+  * removed unused files and paragraphs from copyright
+  * use only github in watchfile
+  * update upstream signing key
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 31 Aug 2015 23:37:19 +0200
+
 libqtxdg (1.2.0+20150807-1) unstable; urgency=medium
 
   [ ChangZhuo Chen (陳昌倬) ]
