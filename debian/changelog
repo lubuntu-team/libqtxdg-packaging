@@ -1,3 +1,11 @@
+libqtxdg (1.3.0-2) unstable; urgency=medium
+
+  * Merge to unstable.
+  * Update Vcs-*.
+  * Update gbp.conf.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Thu, 12 Nov 2015 19:03:47 +0800
+
 libqtxdg (1.3.0-1) experimental; urgency=medium
 
   * Cherry-picking upstream version 1.3.0.
