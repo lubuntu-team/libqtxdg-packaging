@@ -6,4 +6,4 @@ usr/lib/*/pkgconfig/Qt5XdgIconLoader.pc
 usr/share/cmake/qt5xdgiconloader/qt5xdgiconloader-config-version.cmake
 usr/share/cmake/qt5xdgiconloader/qt5xdgiconloader-config.cmake
 usr/share/cmake/qt5xdgiconloader/qt5xdgiconloader-targets.cmake
-usr/share/cmake/qt5xdgiconloader/qt5xdgiconloader-targets-none.cmake
+usr/share/cmake/qt5xdgiconloader/qt5xdgiconloader-targets-relwithdebinfo.cmake

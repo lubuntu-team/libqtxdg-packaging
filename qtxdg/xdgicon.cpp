@@ -33,10 +33,10 @@
 #include <QStringList>
 #include <QFileInfo>
 #include <QCache>
-#include "qiconfix/qiconloader_p.h"
+#include "../xdgiconloader/xdgiconloader_p.h"
 #include <QCoreApplication>
 
-#define DEFAULT_APP_ICON "application-x-executable"
+static const QLatin1String DEFAULT_APP_ICON("application-x-executable");
 
 static void qt_cleanup_icon_cache();
 typedef QCache<QString, QIcon> IconCache;
@@ -83,7 +83,7 @@ QString XdgIcon::themeName()
 void XdgIcon::setThemeName(const QString& themeName)
 {
     QIcon::setThemeName(themeName);
-    QtXdg::QIconLoader::instance()->updateSystemTheme();
+    XdgIconLoader::instance()->updateSystemTheme();
 }
 
 
@@ -96,12 +96,12 @@ QIcon XdgIcon::fromTheme(const QString& iconName, const QIcon& fallback)
     if (iconName.isEmpty())
         return fallback;
 
-    bool isAbsolute = (iconName[0] == '/');
+    bool isAbsolute = (iconName[0] == QLatin1Char('/'));
 
     QString name = QFileInfo(iconName).fileName();
-    if (name.endsWith(".png", Qt::CaseInsensitive) ||
-        name.endsWith(".svg", Qt::CaseInsensitive) ||
-        name.endsWith(".xpm", Qt::CaseInsensitive))
+    if (name.endsWith(QLatin1String(".png"), Qt::CaseInsensitive) ||
+        name.endsWith(QLatin1String(".svg"), Qt::CaseInsensitive) ||
+        name.endsWith(QLatin1String(".xpm"), Qt::CaseInsensitive))
     {
         name.truncate(name.length() - 4);
     }
@@ -113,11 +113,12 @@ QIcon XdgIcon::fromTheme(const QString& iconName, const QIcon& fallback)
     } else {
         QIcon *cachedIcon;
         if (!isAbsolute)
-            cachedIcon = new QIcon(new QtXdg::QIconLoaderEngineFixed(name));
+            cachedIcon = new QIcon(new XdgIconLoaderEngine(name));
         else
             cachedIcon = new QIcon(iconName);
-        qtIconCache()->insert(name, cachedIcon);
         icon = *cachedIcon;
+
+        qtIconCache()->insert(name, cachedIcon);
     }
 
     // Note the qapp check is to allow lazy loading of static icons
@@ -136,7 +137,7 @@ QIcon XdgIcon::fromTheme(const QString& iconName, const QIcon& fallback)
  ************************************************/
 QIcon XdgIcon::fromTheme(const QStringList& iconNames, const QIcon& fallback)
 {
-    foreach (QString iconName, iconNames)
+    foreach (const QString &iconName, iconNames)
     {
         QIcon icon = fromTheme(iconName);
         if (!icon.isNull())

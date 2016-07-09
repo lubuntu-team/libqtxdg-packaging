@@ -79,7 +79,7 @@ public:
         - ApplicationType, "value" should be the Exec value;
         - LinkType, "value" should be the URL;
         - DirectoryType, "value" should be omitted */
-    XdgDesktopFile(XdgDesktopFile::Type type, const QString& name, const QString& value = 0);
+    XdgDesktopFile(XdgDesktopFile::Type type, const QString& name, const QString& value = QString());
 
     //! Destroys the object.
     virtual ~XdgDesktopFile();
@@ -146,11 +146,18 @@ public:
     //! Returns an icon name specified in this file.
     QString const iconName() const;
 
+    //! Returns an list of mimetypes specified in this file.
+    /*! @return  Returns a list of the "MimeType=" entries.
+     *  If the file doens't contain the MimeType entry, an empty QStringList is
+     *  returned. Empty values are removed from the returned list.
+     */
+    QStringList mimeTypes() const;
+
     //! This function is provided for convenience. It's equivalent to calling localizedValue("Name").toString().
-    QString name() const { return localizedValue("Name").toString(); }
+    QString name() const { return localizedValue(QLatin1String("Name")).toString(); }
 
     //! This function is provided for convenience. It's equivalent to calling localizedValue("Comment").toString().
-    QString comment() const { return localizedValue("Comment").toString(); }
+    QString comment() const { return localizedValue(QLatin1String("Comment")).toString(); }
 
     /*! Returns the desktop file type.
         @see XdgDesktopFile::Type */
@@ -177,9 +184,16 @@ public:
     /*! Returns the URL for the Link desktop file; otherwise an empty string is returned.  */
     QString url() const;
 
-    /*! The desktop entry specification defines a number of fields to control the visibility of the application menu. This function
-         checks whether to display a this application or not. */
-    QTXDG_DEPRECATED bool isShow(const QString& environment = "Razor") const;
+    /*! Computes the desktop file ID. It is the identifier of an installed
+     *  desktop entry file.
+     * @par fileName - The desktop file complete name.
+     * @par checkFileExists If true and the file doesn't exist the computed ID
+     * will be an empty QString(). Defaults to true.
+     * @return The computed ID. Returns an empty QString() if it's impossible to
+     * compute the ID. Reference:
+     * https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html#desktop-file-id
+     */
+    static QString id(const QString &fileName, bool checkFileExists = true);
 
     /*! The desktop entry specification defines a number of fields to control
         the visibility of the application menu. Thisfunction checks whether
@@ -191,12 +205,6 @@ public:
             desktop environment name are case insensitive.
     */
     bool isShown(const QString &environment = QString()) const;
-
-    /*! This fuction returns true if the desktop file is applicable to the current environment.
-        @par excludeHidden - if set to true (default), files with "Hidden=true" will be considered "not applicable".
-                             Setting this to false is be useful when the user wants to enable/disable items and wants to see those
-                             that are Hidden */
-    QTXDG_DEPRECATED bool isApplicable(bool excludeHidden = true, const QString& environment = "Razor") const;
 
     /*! This fuction returns true if the desktop file is applicable to the
         current environment.
@@ -213,7 +221,7 @@ public:
     bool isSuitable(bool excludeHidden = true, const QString &environment = QString()) const;
 
 protected:
-    virtual QString prefix() const { return "Desktop Entry"; }
+    virtual QString prefix() const { return QLatin1String("Desktop Entry"); }
     virtual bool check() const { return true; }
 private:
     /*! Returns the localized version of the key if the Desktop File already contains a localized version of it.
@@ -261,5 +269,3 @@ private:
 
 
 #endif // QTXDG_XDGDESKTOPFILE_H
-
-
