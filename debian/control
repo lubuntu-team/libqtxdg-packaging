@@ -12,9 +12,9 @@ Build-Depends: cmake (>= 3.0.2),
                qtbase5-private-dev,
                qttools5-dev,
                qttools5-dev-tools
-Standards-Version: 3.9.6
-Vcs-Browser: http://anonscm.debian.org/cgit/pkg-lxqt/libqtxdg.git/?h=debian/sid
-Vcs-Git: git://anonscm.debian.org/pkg-lxqt/libqtxdg.git -b debian/sid
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/git/pkg-lxqt/libqtxdg.git/?h=debian/experimental
+Vcs-Git: https://anonscm.debian.org/git/pkg-lxqt/libqtxdg.git -b debian/experimental
 Homepage: https://github.com/lxde/libqtxdg
 
 Package: libqt5xdg1
@@ -24,9 +24,22 @@ Depends: ${shlibs:Depends},
          ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Provides: libqt5xdg
-Description: Implementation of the XDG Specifications for Qt, libs
+Description: Implementation of the XDG Specifications for Qt (shared lib)
  This library implements functions of the XDG Specifications in Qt.  It is part
  of LXQt.
+ .
+ This package provides the shared library.
+
+Package: libqt5xdgiconloader1
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Provides: libqt5xdgiconloader
+Description: Implementation of the XDG Iconloader for Qt (shared lib)
+ This library implements the backend to load icons which are handled according
+ to the XDG Icon Theme Specification in Qt. It is part of LXQt.
  .
  This package provides the shared library.
 
@@ -34,9 +47,21 @@ Package: libqt5xdg-dev
 Architecture: any
 Section: libdevel
 Depends: ${misc:Depends},
-         libqt5xdg1 (= ${binary:Version})
+         libqt5xdg1 (= ${binary:Version}),
+         libqt5xdgiconloader-dev (= ${binary:Version})
 Description: Development files for libqtxdg
- This library implements functions of the XDG Specifications in Qt.  It is part
+ This library implements functions of the XDG Specifications in Qt. It is part
  of LXQt.
+ .
+ This package provides development files.
+
+Package: libqt5xdgiconloader-dev
+Architecture: any
+Section: libdevel
+Depends: ${misc:Depends},
+         libqt5xdgiconloader1 (= ${binary:Version})
+Description: Development files for libqtxdgiconloader
+ This library implements the backend to load icons which are handled according
+ to the XDG Icon Theme Specification in Qt. It is part of LXQt.
  .
  This package provides development files.

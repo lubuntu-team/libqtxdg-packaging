@@ -1,0 +1,27 @@
+libQt5XdgIconLoader.so.1 libqt5xdgiconloader1 #MINVER#
+ (c++)"XdgIconLoader::XdgIconLoader()@Base" 1.3.1~
+ (c++)"XdgIconLoader::ensureInitialized()@Base" 1.3.1~
+ (c++)"XdgIconLoader::findIconHelper(QString const&, QString const&, QStringList&) const@Base" 1.3.1~
+ (c++)"XdgIconLoader::instance()@Base" 1.3.1~
+ (c++)"XdgIconLoader::loadIcon(QString const&) const@Base" 1.3.1~
+ (c++)"XdgIconLoader::setThemeName(QString const&)@Base" 1.3.1~
+ (c++)"XdgIconLoader::setThemeSearchPath(QStringList const&)@Base" 1.3.1~
+ (c++)"XdgIconLoader::themeSearchPaths() const@Base" 1.3.1~
+ (c++)"XdgIconLoader::updateSystemTheme()@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::XdgIconLoaderEngine(QString const&)@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::XdgIconLoaderEngine(XdgIconLoaderEngine const&)@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::actualSize(QSize const&, QIcon::Mode, QIcon::State)@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::clone() const@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::ensureLoaded()@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::entryForSize(QSize const&)@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::hasIcon() const@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::key() const@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::paint(QPainter*, QRect const&, QIcon::Mode, QIcon::State)@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::pixmap(QSize const&, QIcon::Mode, QIcon::State)@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::read(QDataStream&)@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::virtual_hook(int, void*)@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::write(QDataStream&) const@Base" 1.3.1~
+ (c++)"XdgIconLoaderEngine::~XdgIconLoaderEngine()@Base" 1.3.1~
+ (c++)"typeinfo for XdgIconLoaderEngine@Base" 1.3.1~
+ (c++)"typeinfo name for XdgIconLoaderEngine@Base" 1.3.1~
+ (c++)"vtable for XdgIconLoaderEngine@Base" 1.3.1~
