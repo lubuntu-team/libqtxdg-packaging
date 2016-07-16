@@ -1,3 +1,11 @@
+libqtxdg (1.3.1~50-g4fde773-2) experimental; urgency=medium
+
+  * Added build dependencies gcc (>= 4:6), g++ (>= 4:6)
+  * Exported  LC_ALL=C.UTF-8 - define language settings for 
+    reproducable builds
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 16 Jul 2016 20:26:26 +0200
+
 libqtxdg (1.3.1~50-g4fde773-1) experimental; urgency=medium
 
   * New pre-release 1.3.1~50-g4fde773
