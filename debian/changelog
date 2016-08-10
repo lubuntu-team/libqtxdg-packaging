@@ -1,3 +1,18 @@
+libqtxdg (1.3.0-4) unstable; urgency=medium
+
+  * Added libfile-mimeinfo-perl as dependency, we really need this, a
+    recommendation is not enough. Thanks tsujan. 
+  * Bumped standards to 3.9.8, no changes needed
+  * Bump years in copyright
+  * Added README to debian/docs
+  * Added hardening=+all
+  * Exported  LC_ALL=C.UTF-8 - define language settings for 
+    reproducible builds
+  * Fixed VCS-fields, use https and plain /git/
+  * Fixed copyrights Format field to https
+    
+ -- Alf Gaida <agaida@siduction.org>  Wed, 10 Aug 2016 23:06:12 +0200
+
 libqtxdg (1.3.0-3) unstable; urgency=medium
 
   * Remove dbg package in favor of dbgsym.
