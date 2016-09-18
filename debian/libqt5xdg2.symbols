@@ -1,4 +1,4 @@
-libQt5Xdg.so.1 libqt5xdg1 #MINVER#
+libQt5Xdg.so.2 libqt5xdg2 #MINVER#
  (c++)"XdgAction::XdgAction(QObject*)@Base" 1.0.0
  (c++)"XdgAction::XdgAction(QString const&, QObject*)@Base" 1.0.0
  (c++)"XdgAction::XdgAction(XdgAction const&, QObject*)@Base" 1.0.0
@@ -26,7 +26,7 @@ libQt5Xdg.so.1 libqt5xdg1 #MINVER#
  (c++)"XdgDesktopFile::fileName() const@Base" 1.0.0
  (c++)"XdgDesktopFile::icon(QIcon const&) const@Base" 1.0.0
  (c++)"XdgDesktopFile::iconName() const@Base" 1.0.0
- (c++)"XdgDesktopFile::id(QString const&, bool)@Base" 1.3.1~
+ (c++)"XdgDesktopFile::id(QString const&, bool)@Base" 2.0.0
  (c++)"XdgDesktopFile::isShown(QString const&) const@Base" 1.0.0
  (c++)"XdgDesktopFile::isSuitable(bool, QString const&) const@Base" 1.0.0
  (c++)"XdgDesktopFile::isValid() const@Base" 1.0.0

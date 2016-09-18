@@ -5,9 +5,8 @@
 /files
 
 
-/libqt5xdg1/
-/libqt5xdg1-dbg/
+/libqt5xdg2/
 /libqt5xdg-dev/
 /libqt5xdgiconloader-dev/
-/libqt5xdgiconloader1/
+/libqt5xdgiconloader2/
 /tmp

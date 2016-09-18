@@ -1,3 +1,19 @@
+libqtxdg (2.0.0-1) experimental; urgency=medium
+
+  * Cherry-picked new upstream release 2.0.0.
+  * Added current signing key
+  * Bumped compat to 10
+  * Bumped debhelper to (>=10)
+  * Added build dependency libqt5svg5-dev
+  * Renamed package libqt5xdg1 -> libqt5xdg2 (soname bump)
+  * Renamed package libqt5xdgiconloader1 -> libqt5xdgiconloader2 (soname bump)
+  * Added dependency gtk-update-icon-cache to libqt5xdgiconloader2
+  * Renamed install and symbols files
+  * Fixed symbols
+  * Fixed .gitignore
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 18 Sep 2016 02:28:47 +0200
+
 libqtxdg (1.3.1~50-g4fde773-4) experimental; urgency=medium
 
   * Added libfile-mimeinfo-perl as dependency, we really need this, a
