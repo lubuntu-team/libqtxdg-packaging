@@ -36,8 +36,8 @@ Package: libqt5xdgiconloader2
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         gtk-update-icon-cache
+         ${misc:Depends}
+Recommmends: gtk-update-icon-cache
 Pre-Depends: ${misc:Pre-Depends}
 Provides: libqt5xdgiconloader
 Description: Implementation of the XDG Iconloader for Qt (shared lib)
