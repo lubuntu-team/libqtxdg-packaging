@@ -1,3 +1,9 @@
+libqtxdg (2.0.0-3) experimental; urgency=medium
+
+  * Fixed typo Recommmends -> Recommends
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 04 Oct 2016 21:20:53 +0200
+
 libqtxdg (2.0.0-2) experimental; urgency=medium
 
   * XdgIconLoader: Recommend gtk-update-icon-cache instead depend on it.
