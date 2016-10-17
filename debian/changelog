@@ -1,3 +1,24 @@
+libqtxdg (2.0.0-4) unstable; urgency=medium
+
+  * Cherry-picked new upstream release 2.0.0.
+  * Added current signing key
+  * Bumped compat to 10
+  * Bumped debhelper to (>= 10)
+  * Added build dependency libqt5svg5-dev
+  * Renamed package libqt5xdg1 -> libqt5xdg2 (soname bump)
+  * Added packages libqt5xdgiconloader2 and libqt5xdgiconloader-dev
+  * XdgIconLoader: Recommend gtk-update-icon-cache
+    Thanks Rohan Garg <rohan@kde.org>
+  * Renamed install and symbols files
+  * Fixed symbols
+  * Fixed .gitignore
+  * Reworked descriptions in debian/control to prevent lintian whining
+  * Fixed copyright for xdgiconloader
+  * Added README.md to debian/docs
+  * Set CMAKE_BUILD_TYPE=RelWithDebInfo
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 09 Jul 2016 20:16:32 +0200
+
 libqtxdg (1.3.0-4) unstable; urgency=medium
 
   * Added libfile-mimeinfo-perl as dependency, we really need this, a

@@ -31,7 +31,7 @@
 **
 ****************************************************************************/
 #ifndef QT_NO_ICON
-#include "qiconloader_p.h"
+#include "xdgiconloader_p.h"
 
 #include <private/qguiapplication_p.h>
 #include <private/qicon_p.h>
@@ -42,12 +42,11 @@
 #include <QtGui/QIconEngine>
 #include <QtGui/QPalette>
 #include <QtCore/QList>
-#include <QtCore/QHash>
 #include <QtCore/QDir>
 #include <QtCore/QSettings>
 #include <QtGui/QPainter>
 
-#ifdef Q_WS_MAC
+#ifdef Q_DEAD_CODE_FROM_QT4_MAC
 #include <private/qt_cocoa_helpers_mac_p.h>
 #endif
 
@@ -55,9 +54,8 @@
 
 //QT_BEGIN_NAMESPACE
 
-namespace QtXdg {
 
-Q_GLOBAL_STATIC(QIconLoader, iconLoaderInstance)
+Q_GLOBAL_STATIC(XdgIconLoader, iconLoaderInstance)
 
 /* Theme to use in last resort, if the theme does not have the icon, neither the parents  */
 static QString fallbackTheme()
@@ -67,16 +65,13 @@ static QString fallbackTheme()
         if (themeHint.isValid())
             return themeHint.toString();
     }
-    return QString("hicolor");
+    return QLatin1String("hicolor");
 }
 
-QIconLoader::QIconLoader() :
+XdgIconLoader::XdgIconLoader() :
         m_themeKey(1), m_supportsSvg(false), m_initialized(false)
 {
 }
-
-// We lazily initialize the loader to make static icons
-// work. Though we do not officially support this.
 
 static inline QString systemThemeName()
 {
@@ -102,7 +97,7 @@ static inline QStringList systemIconSearchPaths()
 //extern QFactoryLoader *qt_iconEngineFactoryLoader(); // qicon.cpp
 #endif
 
-void QIconLoader::ensureInitialized()
+void XdgIconLoader::ensureInitialized()
 {
     if (!m_initialized) {
         m_initialized = true;
@@ -120,7 +115,7 @@ void QIconLoader::ensureInitialized()
     }
 }
 
-QIconLoader *QIconLoader::instance()
+XdgIconLoader *XdgIconLoader::instance()
 {
    iconLoaderInstance()->ensureInitialized();
    return iconLoaderInstance();
@@ -128,7 +123,7 @@ QIconLoader *QIconLoader::instance()
 
 // Queries the system theme and invalidates existing
 // icons if the theme has changed.
-void QIconLoader::updateSystemTheme()
+void XdgIconLoader::updateSystemTheme()
 {
     // Only change if this is not explicitly set by the user
     if (m_userTheme.isEmpty()) {
@@ -142,20 +137,20 @@ void QIconLoader::updateSystemTheme()
     }
 }
 
-void QIconLoader::setThemeName(const QString &themeName)
+void XdgIconLoader::setThemeName(const QString &themeName)
 {
     m_userTheme = themeName;
     invalidateKey();
 }
 
-void QIconLoader::setThemeSearchPath(const QStringList &searchPaths)
+void XdgIconLoader::setThemeSearchPath(const QStringList &searchPaths)
 {
     m_iconDirs = searchPaths;
     themeList.clear();
     invalidateKey();
 }
 
-QStringList QIconLoader::themeSearchPaths() const
+QStringList XdgIconLoader::themeSearchPaths() const
 {
     if (m_iconDirs.isEmpty()) {
         m_iconDirs = systemIconSearchPaths();
@@ -163,6 +158,141 @@ QStringList QIconLoader::themeSearchPaths() const
         m_iconDirs.append(QLatin1String(":/icons"));
     }
     return m_iconDirs;
+}
+
+/*!
+    \class QIconCacheGtkReader
+    \internal
+    Helper class that reads and looks up into the icon-theme.cache generated with
+    gtk-update-icon-cache. If at any point we detect a corruption in the file
+    (because the offsets point at wrong locations for example), the reader
+    is marked as invalid.
+*/
+class QIconCacheGtkReader
+{
+public:
+    explicit QIconCacheGtkReader(const QString &themeDir);
+    QVector<const char *> lookup(const QString &);
+    bool isValid() const { return m_isValid; }
+private:
+    QFile m_file;
+    const unsigned char *m_data;
+    quint64 m_size;
+    bool m_isValid;
+
+    quint16 read16(uint offset)
+    {
+        if (offset > m_size - 2 || (offset & 0x1)) {
+            m_isValid = false;
+            return 0;
+        }
+        return m_data[offset+1] | m_data[offset] << 8;
+    }
+    quint32 read32(uint offset)
+    {
+        if (offset > m_size - 4 || (offset & 0x3)) {
+            m_isValid = false;
+            return 0;
+        }
+        return m_data[offset+3] | m_data[offset+2] << 8
+            | m_data[offset+1] << 16 | m_data[offset] << 24;
+    }
+};
+
+
+QIconCacheGtkReader::QIconCacheGtkReader(const QString &dirName)
+    : m_isValid(false)
+{
+    QFileInfo info(dirName + QLatin1Literal("/icon-theme.cache"));
+    if (!info.exists() || info.lastModified() < QFileInfo(dirName).lastModified())
+        return;
+    m_file.setFileName(info.absoluteFilePath());
+    if (!m_file.open(QFile::ReadOnly))
+        return;
+    m_size = m_file.size();
+    m_data = m_file.map(0, m_size);
+    if (!m_data)
+        return;
+    if (read16(0) != 1) // VERSION_MAJOR
+        return;
+
+    m_isValid = true;
+
+    // Check that all the directories are older than the cache
+    auto lastModified = info.lastModified();
+    quint32 dirListOffset = read32(8);
+    quint32 dirListLen = read32(dirListOffset);
+    for (uint i = 0; i < dirListLen; ++i) {
+        quint32 offset = read32(dirListOffset + 4 + 4 * i);
+        if (!m_isValid || offset >= m_size || lastModified < QFileInfo(dirName + QLatin1Char('/')
+                + QString::fromUtf8(reinterpret_cast<const char*>(m_data + offset))).lastModified()) {
+            m_isValid = false;
+            return;
+        }
+    }
+}
+
+static quint32 icon_name_hash(const char *p)
+{
+    quint32 h = static_cast<signed char>(*p);
+    for (p += 1; *p != '\0'; p++)
+        h = (h << 5) - h + *p;
+    return h;
+}
+
+/*! \internal
+    lookup the icon name and return the list of subdirectories in which an icon
+    with this name is present. The char* are pointers to the mapped data.
+    For example, this would return { "32x32/apps", "24x24/apps" , ... }
+ */
+QVector<const char *> QIconCacheGtkReader::lookup(const QString &name)
+{
+    QVector<const char *> ret;
+    if (!isValid())
+        return ret;
+
+    QByteArray nameUtf8 = name.toUtf8();
+    quint32 hash = icon_name_hash(nameUtf8.data());
+
+    quint32 hashOffset = read32(4);
+    quint32 hashBucketCount = read32(hashOffset);
+
+    if (!isValid() || hashBucketCount == 0) {
+        m_isValid = false;
+        return ret;
+    }
+
+    quint32 bucketIndex = hash % hashBucketCount;
+    quint32 bucketOffset = read32(hashOffset + 4 + bucketIndex * 4);
+    while (bucketOffset > 0 && bucketOffset <= m_size - 12) {
+        quint32 nameOff = read32(bucketOffset + 4);
+        if (nameOff < m_size && strcmp(reinterpret_cast<const char*>(m_data + nameOff), nameUtf8.constData()) == 0) {
+            quint32 dirListOffset = read32(8);
+            quint32 dirListLen = read32(dirListOffset);
+
+            quint32 listOffset = read32(bucketOffset+8);
+            quint32 listLen = read32(listOffset);
+
+            if (!m_isValid || listOffset + 4 + 8 * listLen > m_size) {
+                m_isValid = false;
+                return ret;
+            }
+
+            ret.reserve(listLen);
+            for (uint j = 0; j < listLen && m_isValid; ++j) {
+                quint32 dirIndex = read16(listOffset + 4 + 8 * j);
+                quint32 o = read32(dirListOffset + 4 + dirIndex*4);
+                if (!m_isValid || dirIndex >= dirListLen || o >= m_size) {
+                    m_isValid = false;
+                    return ret;
+                }
+                ret.append(reinterpret_cast<const char*>(m_data) + o);
+            }
+            return ret;
+        }
+        bucketOffset = read32(bucketOffset);
+    }
+    return ret;
 }
 
 QIconTheme::QIconTheme(const QString &themeName)
@@ -174,19 +304,17 @@ QIconTheme::QIconTheme(const QString &themeName)
     for ( int i = 0 ; i < iconDirs.size() ; ++i) {
         QDir iconDir(iconDirs[i]);
         QString themeDir = iconDir.path() + QLatin1Char('/') + themeName;
-        themeIndex.setFileName(themeDir + QLatin1String("/index.theme"));
-        if (themeIndex.exists()) {
+        QFileInfo themeDirInfo(themeDir);
+
+        if (themeDirInfo.isDir()) {
             m_contentDirs << themeDir;
-            m_valid = true;
+            m_gtkCaches << QSharedPointer<QIconCacheGtkReader>::create(themeDir);
+        }
 
-            QStringList themeSearchPaths = QIcon::themeSearchPaths();
-            foreach (QString path, themeSearchPaths)
-            {
-                if (!path.startsWith(':') && QFileInfo(path).isDir())
-                    m_contentDirs.append(path + QLatin1Char('/') + themeName);
-            }
-
-            break;
+        if (!m_valid) {
+            themeIndex.setFileName(themeDir + QLatin1String("/index.theme"));
+            if (themeIndex.exists())
+                m_valid = true;
         }
     }
 #ifndef QT_NO_SETTINGS
@@ -201,18 +329,18 @@ QIconTheme::QIconTheme(const QString &themeName)
                 // slashes in key names, hence we have to cheat
                 if (int size = indexReader.value(key).toInt()) {
                     QString directoryKey = key.left(key.size() - 5);
-                    QIconDirInfo dirInfo(directoryKey);
+                    XdgIconDirInfo dirInfo(directoryKey);
                     dirInfo.size = size;
                     QString type = indexReader.value(directoryKey +
                                                      QLatin1String("/Type")
                                                      ).toString();
 
                     if (type == QLatin1String("Fixed"))
-                        dirInfo.type = QIconDirInfo::Fixed;
+                        dirInfo.type = XdgIconDirInfo::Fixed;
                     else if (type == QLatin1String("Scalable"))
-                        dirInfo.type = QIconDirInfo::Scalable;
+                        dirInfo.type = XdgIconDirInfo::Scalable;
                     else
-                        dirInfo.type = QIconDirInfo::Threshold;
+                        dirInfo.type = XdgIconDirInfo::Threshold;
 
                     dirInfo.threshold = indexReader.value(directoryKey +
                                                         QLatin1String("/Threshold"),
@@ -249,7 +377,7 @@ QIconTheme::QIconTheme(const QString &themeName)
 #endif //QT_NO_SETTINGS
 }
 
-QThemeIconInfo QIconLoader::findIconHelper(const QString &themeName,
+QThemeIconInfo XdgIconLoader::findIconHelper(const QString &themeName,
                                  const QString &iconName,
                                  QStringList &visited) const
 {
@@ -271,7 +399,6 @@ QThemeIconInfo QIconLoader::findIconHelper(const QString &themeName,
     }
 
     const QStringList contentDirs = theme.contentDirs();
-    const QVector<QIconDirInfo> subDirs = theme.keyList();
 
     const QString svgext(QLatin1String(".svg"));
     const QString pngext(QLatin1String(".png"));
@@ -288,9 +415,32 @@ QThemeIconInfo QIconLoader::findIconHelper(const QString &themeName,
 
         // Add all relevant files
         for (int i = 0; i < contentDirs.size(); ++i) {
+            QVector<XdgIconDirInfo> subDirs = theme.keyList();
+
+            // Try to reduce the amount of subDirs by looking in the GTK+ cache in order to save
+            // a massive amount of file stat (especially if the icon is not there)
+            auto cache = theme.m_gtkCaches.at(i);
+            if (cache->isValid()) {
+                auto result = cache->lookup(iconNameFallback);
+                if (cache->isValid()) {
+                    const QVector<XdgIconDirInfo> subDirsCopy = subDirs;
+                    subDirs.clear();
+                    subDirs.reserve(result.count());
+                    foreach (const char *s, result) {
+                        QString path = QString::fromUtf8(s);
+                        auto it = std::find_if(subDirsCopy.cbegin(), subDirsCopy.cend(),
+                                               [&](const XdgIconDirInfo &info) {
+                                                   return info.path == path; } );
+                        if (it != subDirsCopy.cend()) {
+                            subDirs.append(*it);
+                        }
+                    }
+                }
+            }
+
             QString contentDir = contentDirs.at(i) + QLatin1Char('/');
             for (int j = 0; j < subDirs.size() ; ++j) {
-                const QIconDirInfo &dirInfo = subDirs.at(j);
+                const XdgIconDirInfo &dirInfo = subDirs.at(j);
                 QString subdir = dirInfo.path;
                 QDir currentDir(contentDir + subdir);
                 if (currentDir.exists(pngIconName)) {
@@ -390,7 +540,7 @@ QThemeIconInfo QIconLoader::findIconHelper(const QString &themeName,
         const QString pixmaps(QLatin1String("/usr/share/pixmaps"));
 
         const QDir currentDir(pixmaps);
-        const QIconDirInfo dirInfo(pixmaps);
+        const XdgIconDirInfo dirInfo(pixmaps);
         if (currentDir.exists(iconName + pngext)) {
             PixmapEntry *iconEntry = new PixmapEntry;
             iconEntry->dir = dirInfo;
@@ -418,7 +568,7 @@ QThemeIconInfo QIconLoader::findIconHelper(const QString &themeName,
     return info;
 }
 
-QThemeIconInfo QIconLoader::loadIcon(const QString &name) const
+QThemeIconInfo XdgIconLoader::loadIcon(const QString &name) const
 {
     if (!themeName().isEmpty()) {
         QStringList visited;
@@ -432,63 +582,63 @@ QThemeIconInfo QIconLoader::loadIcon(const QString &name) const
 // -------- Icon Loader Engine -------- //
 
 
-QIconLoaderEngineFixed::QIconLoaderEngineFixed(const QString& iconName)
+XdgIconLoaderEngine::XdgIconLoaderEngine(const QString& iconName)
         : m_iconName(iconName), m_key(0)
 {
 }
 
-QIconLoaderEngineFixed::~QIconLoaderEngineFixed()
+XdgIconLoaderEngine::~XdgIconLoaderEngine()
 {
     qDeleteAll(m_info.entries);
 }
 
-QIconLoaderEngineFixed::QIconLoaderEngineFixed(const QIconLoaderEngineFixed &other)
+XdgIconLoaderEngine::XdgIconLoaderEngine(const XdgIconLoaderEngine &other)
         : QIconEngine(other),
         m_iconName(other.m_iconName),
         m_key(0)
 {
 }
 
-QIconEngine *QIconLoaderEngineFixed::clone() const
+QIconEngine *XdgIconLoaderEngine::clone() const
 {
-    return new QIconLoaderEngineFixed(*this);
+    return new XdgIconLoaderEngine(*this);
 }
 
-bool QIconLoaderEngineFixed::read(QDataStream &in) {
+bool XdgIconLoaderEngine::read(QDataStream &in) {
     in >> m_iconName;
     return true;
 }
 
-bool QIconLoaderEngineFixed::write(QDataStream &out) const
+bool XdgIconLoaderEngine::write(QDataStream &out) const
 {
     out << m_iconName;
     return true;
 }
 
-bool QIconLoaderEngineFixed::hasIcon() const
+bool XdgIconLoaderEngine::hasIcon() const
 {
     return !(m_info.entries.isEmpty());
 }
 
 // Lazily load the icon
-void QIconLoaderEngineFixed::ensureLoaded()
+void XdgIconLoaderEngine::ensureLoaded()
 {
-    if (!(QIconLoader::instance()->themeKey() == m_key)) {
+    if (!(XdgIconLoader::instance()->themeKey() == m_key)) {
         qDeleteAll(m_info.entries);
         m_info.entries.clear();
         m_info.iconName.clear();
 
         Q_ASSERT(m_info.entries.size() == 0);
-        m_info = QIconLoader::instance()->loadIcon(m_iconName);
-        m_key = QIconLoader::instance()->themeKey();
+        m_info = XdgIconLoader::instance()->loadIcon(m_iconName);
+        m_key = XdgIconLoader::instance()->themeKey();
     }
 }
 
-void QIconLoaderEngineFixed::paint(QPainter *painter, const QRect &rect,
+void XdgIconLoaderEngine::paint(QPainter *painter, const QRect &rect,
                              QIcon::Mode mode, QIcon::State state)
 {
     QSize pixmapSize = rect.size();
-#if defined(Q_WS_MAC)
+#if defined(Q_DEAD_CODE_FROM_QT4_MAC)
     pixmapSize *= qt_mac_get_scalefactor();
 #endif
     painter->drawPixmap(rect, pixmap(pixmapSize, mode, state));
@@ -498,16 +648,16 @@ void QIconLoaderEngineFixed::paint(QPainter *painter, const QRect &rect,
  * This algorithm is defined by the freedesktop spec:
  * http://standards.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html
  */
-static bool directoryMatchesSize(const QIconDirInfo &dir, int iconsize)
+static bool directoryMatchesSize(const XdgIconDirInfo &dir, int iconsize)
 {
-    if (dir.type == QIconDirInfo::Fixed) {
+    if (dir.type == XdgIconDirInfo::Fixed) {
         return dir.size == iconsize;
 
-    } else if (dir.type == QIconDirInfo::Scalable) {
-        return dir.size <= dir.maxSize &&
+    } else if (dir.type == XdgIconDirInfo::Scalable) {
+        return iconsize <= dir.maxSize &&
                 iconsize >= dir.minSize;
 
-    } else if (dir.type == QIconDirInfo::Threshold) {
+    } else if (dir.type == XdgIconDirInfo::Threshold) {
         return iconsize >= dir.size - dir.threshold &&
                 iconsize <= dir.size + dir.threshold;
     }
@@ -520,12 +670,12 @@ static bool directoryMatchesSize(const QIconDirInfo &dir, int iconsize)
  * This algorithm is defined by the freedesktop spec:
  * http://standards.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html
  */
-static int directorySizeDistance(const QIconDirInfo &dir, int iconsize)
+static int directorySizeDistance(const XdgIconDirInfo &dir, int iconsize)
 {
-    if (dir.type == QIconDirInfo::Fixed) {
+    if (dir.type == XdgIconDirInfo::Fixed) {
         return qAbs(dir.size - iconsize);
 
-    } else if (dir.type == QIconDirInfo::Scalable) {
+    } else if (dir.type == XdgIconDirInfo::Scalable) {
         if (iconsize < dir.minSize)
             return dir.minSize - iconsize;
         else if (iconsize > dir.maxSize)
@@ -533,7 +683,7 @@ static int directorySizeDistance(const QIconDirInfo &dir, int iconsize)
         else
             return 0;
 
-    } else if (dir.type == QIconDirInfo::Threshold) {
+    } else if (dir.type == XdgIconDirInfo::Threshold) {
         if (iconsize < dir.size - dir.threshold)
             return dir.minSize - iconsize;
         else if (iconsize > dir.size + dir.threshold)
@@ -545,7 +695,7 @@ static int directorySizeDistance(const QIconDirInfo &dir, int iconsize)
     return INT_MAX;
 }
 
-QIconLoaderEngineEntry *QIconLoaderEngineFixed::entryForSize(const QSize &size)
+XdgIconLoaderEngineEntry *XdgIconLoaderEngine::entryForSize(const QSize &size)
 {
     int iconsize = qMin(size.width(), size.height());
 
@@ -556,7 +706,7 @@ QIconLoaderEngineEntry *QIconLoaderEngineFixed::entryForSize(const QSize &size)
 
     // Search for exact matches first
     for (int i = 0; i < numEntries; ++i) {
-        QIconLoaderEngineEntry *entry = m_info.entries.at(i);
+        XdgIconLoaderEngineEntry *entry = m_info.entries.at(i);
         if (directoryMatchesSize(entry->dir, iconsize)) {
             return entry;
         }
@@ -564,9 +714,9 @@ QIconLoaderEngineEntry *QIconLoaderEngineFixed::entryForSize(const QSize &size)
 
     // Find the minimum distance icon
     int minimalSize = INT_MAX;
-    QIconLoaderEngineEntry *closestMatch = 0;
+    XdgIconLoaderEngineEntry *closestMatch = 0;
     for (int i = 0; i < numEntries; ++i) {
-        QIconLoaderEngineEntry *entry = m_info.entries.at(i);
+        XdgIconLoaderEngineEntry *entry = m_info.entries.at(i);
         int distance = directorySizeDistance(entry->dir, iconsize);
         if (distance < minimalSize) {
             minimalSize  = distance;
@@ -582,18 +732,27 @@ QIconLoaderEngineEntry *QIconLoaderEngineFixed::entryForSize(const QSize &size)
  * we can never return a bigger size than the requested size.
  *
  */
-QSize QIconLoaderEngineFixed::actualSize(const QSize &size, QIcon::Mode mode,
+QSize XdgIconLoaderEngine::actualSize(const QSize &size, QIcon::Mode mode,
                                    QIcon::State state)
 {
     ensureLoaded();
 
-    QIconLoaderEngineEntry *entry = entryForSize(size);
+    XdgIconLoaderEngineEntry *entry = entryForSize(size);
     if (entry) {
-        const QIconDirInfo &dir = entry->dir;
-        if (dir.type == QIconDirInfo::Scalable)
+        const XdgIconDirInfo &dir = entry->dir;
+        if (dir.type == XdgIconDirInfo::Scalable || dynamic_cast<ScalableEntry *>(entry))
             return size;
         else {
-            int result = qMin<int>(dir.size, qMin(size.width(), size.height()));
+            int dir_size = dir.size;
+            //Note: fallback for directories that don't have its content size defined
+            //  -> get the actual size based on the image if possible
+            PixmapEntry * pix_e;
+            if (0 == dir_size && nullptr != (pix_e = dynamic_cast<PixmapEntry *>(entry)))
+            {
+                QSize pix_size = pix_e->basePixmap.size();
+                dir_size = qMin(pix_size.width(), pix_size.height());
+            }
+            int result = qMin(dir_size, qMin(size.width(), size.height()));
             return QSize(result, result);
         }
     }
@@ -644,24 +803,24 @@ QPixmap ScalableEntry::pixmap(const QSize &size, QIcon::Mode mode, QIcon::State 
     return svgIcon.pixmap(size, mode, state);
 }
 
-QPixmap QIconLoaderEngineFixed::pixmap(const QSize &size, QIcon::Mode mode,
+QPixmap XdgIconLoaderEngine::pixmap(const QSize &size, QIcon::Mode mode,
                                  QIcon::State state)
 {
     ensureLoaded();
 
-    QIconLoaderEngineEntry *entry = entryForSize(size);
+    XdgIconLoaderEngineEntry *entry = entryForSize(size);
     if (entry)
         return entry->pixmap(size, mode, state);
 
     return QPixmap();
 }
 
-QString QIconLoaderEngineFixed::key() const
+QString XdgIconLoaderEngine::key() const
 {
-    return QLatin1String("QIconLoaderEngineFixed");
+    return QLatin1String("XdgIconLoaderEngine");
 }
 
-void QIconLoaderEngineFixed::virtual_hook(int id, void *data)
+void XdgIconLoaderEngine::virtual_hook(int id, void *data)
 {
     ensureLoaded();
 
@@ -685,15 +844,21 @@ void QIconLoaderEngineFixed::virtual_hook(int id, void *data)
     case QIconEngine::IconNameHook:
         {
             QString &name = *reinterpret_cast<QString*>(data);
-            name = m_iconName;
+            name = m_info.iconName;
         }
         break;
+#if QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)
+    case QIconEngine::IsNullHook:
+        {
+            *reinterpret_cast<bool*>(data) = m_info.entries.isEmpty();
+        }
+        break;
+#endif
     default:
         QIconEngine::virtual_hook(id, data);
     }
 }
 
-} // QtXdg
 
 //QT_END_NAMESPACE
 

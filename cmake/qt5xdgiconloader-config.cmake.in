@@ -1,0 +1,11 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+find_dependency(Qt5Gui)
+find_dependency(Qt5Svg)
+
+if (CMAKE_VERSION VERSION_GREATER 2.8.12)
+    cmake_policy(SET CMP0024 OLD)
+endif()
+include("${CMAKE_CURRENT_LIST_DIR}/qt5xdgiconloader-targets.cmake")
