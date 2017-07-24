@@ -25,6 +25,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          libfile-mimeinfo-perl,
          shared-mime-info
+Recommends: qttranslations5-l10n
 Pre-Depends: ${misc:Pre-Depends}
 Provides: libqt5xdg
 Description: Implementation of the XDG Specifications for Qt (shared lib)

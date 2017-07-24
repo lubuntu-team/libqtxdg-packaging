@@ -1,3 +1,11 @@
+libqtxdg (2.0.0-7) unstable; urgency=medium
+
+  * Added qttranslations5-l10n to Recommends - without this packagage there are
+    no working shortcuts in localized LXQt desktops. So we want to make sure
+    that the package is at least recommended for qtxdg based packages.
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 24 Jul 2017 21:54:16 +0200
+
 libqtxdg (2.0.0-6) unstable; urgency=medium
 
   * Bump Standards to 4.0.0 - no changes needed
