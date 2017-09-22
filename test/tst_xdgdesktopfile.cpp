@@ -27,20 +27,20 @@ class Language
 {
 public:
     Language (const QString& lang)
-    : mPreviousLang(QString::fromLocal8Bit(qgetenv("LANG")))
+    : mPreviousLang(QString::fromLocal8Bit(qgetenv("LC_MESSAGES")))
     {
-        qputenv("LANG", lang.toLocal8Bit());
+        qputenv("LC_MESSAGES", lang.toLocal8Bit());
     }
     ~Language()
     {
-        qputenv("LANG", mPreviousLang.toLocal8Bit());
+        qputenv("LC_MESSAGES", mPreviousLang.toLocal8Bit());
     }
 private:
     QString mPreviousLang;
 };
 
 
-QTEST_MAIN(tst_xdgdesktopfile);
+QTEST_MAIN(tst_xdgdesktopfile)
 
 void tst_xdgdesktopfile::testRead()
 {

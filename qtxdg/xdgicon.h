@@ -44,8 +44,19 @@ public:
                            const QString &fallbackIcon4 = QString());
     static QIcon fromTheme(const QStringList& iconNames, const QIcon& fallback = QIcon());
 
-    static QString themeName();
-    static void setThemeName(const QString& themeName);
+    /*!
+     * Flag if the "FollowsColorScheme" hint (the KDE extension to XDG
+     * themes) should be honored. If enabled and the icon theme supports
+     * this, the icon engine "colorizes" icons based on the application's
+     * palette.
+     *
+     * Default is true (use this extension).
+     */
+    static bool followColorScheme();
+    static void setFollowColorScheme(bool enable);
+    /* TODO: deprecate & remove all QIcon wrappers */
+    static QString themeName() { return QIcon::themeName(); }
+    static void setThemeName(const QString& themeName) { QIcon::setThemeName(themeName); }
 
     static QIcon defaultApplicationIcon();
     static QString defaultApplicationIconName();

@@ -15,7 +15,7 @@ License: LGPL-2.1-or-3-with-Digia-1.1-exception
 
 Files: debian/*
 Copyright: 2014-2016 ChangZhuo Chen (陳昌倬) <czchen@debian.org>
-           2013-2016 Alf Gaida <agaida@siduction.org>
+           2013-2017 Alf Gaida <agaida@siduction.org>
 	   2015      Andrew Lee (李健秋) <ajqlee@debian.org>
 License: LGPL-2.1+
 

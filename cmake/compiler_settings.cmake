@@ -1,5 +1,6 @@
 #=============================================================================
 # Copyright 2015 Luís Pereira <luis.artur.pereira@gmail.com>
+# Copyright 2013 Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -66,6 +67,14 @@ endif()
 
 
 #-----------------------------------------------------------------------------
+# Global definitions
+#-----------------------------------------------------------------------------
+if (CMAKE_BUILD_TYPE MATCHES "Debug")
+  add_definitions(-DQT_STRICT_ITERATORS)
+endif()
+
+
+#-----------------------------------------------------------------------------
 # Set visibility to hidden to hide symbols, unless they're exported manually
 # in the code
 #-----------------------------------------------------------------------------
@@ -80,18 +89,25 @@ if (CMAKE_COMPILER_IS_GNUCXX OR QTXDG_COMPILER_IS_CLANGCXX)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-exceptions")
 endif()
 
-
 #-----------------------------------------------------------------------------
 # Common warning flags
 #-----------------------------------------------------------------------------
-set(QTXDG_COMMON_WARNING_FLAGS "-Wall")
+set(QTXDG_COMMON_WARNING_FLAGS "-Wall -Wextra -Wchar-subscripts -Wno-long-long -Wpointer-arith -Wundef -Wformat-security")
 
 
 #-----------------------------------------------------------------------------
 # Warning flags
 #-----------------------------------------------------------------------------
+if (CMAKE_COMPILER_IS_GNUCXX OR QTXDG_COMPILER_IS_CLANGCXX)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${__QTXDG_COMMON_WARNING_FLAGS} -Wnon-virtual-dtor -Woverloaded-virtual -Wpedantic")
+endif()
+
+if (QTXDG_COMPILER_IS_CLANGCXX)
+    # qCDebug(), qCWarning, etc trigger a very verbose warning, about.... nothing. Disable it.
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-gnu-zero-variadic-macro-arguments")
+endif()
+
 list(APPEND QTXDG_WARNING_FLAGS ${QTXDG_COMMON_WARNING_FLAGS})
-add_definitions(${QTXDG_WARNING_FLAGS})
 
 #-----------------------------------------------------------------------------
 # String conversion flags
@@ -103,3 +119,53 @@ add_definitions(
     -DQT_NO_URL_CAST_FROM_STRING
     -DQT_NO_CAST_FROM_BYTEARRAY
 )
+
+#-----------------------------------------------------------------------------
+# Linker flags
+# Do not allow undefined symbols
+#-----------------------------------------------------------------------------
+if (CMAKE_COMPILER_IS_GNUCXX OR QTXDG_COMPILER_IS_CLANGCXX)
+    # -Bsymbolic-functions: replace dynamic symbols used internally in
+    #                       shared libs with direct addresses.
+    set(SYMBOLIC_FLAGS
+        "-Wl,-Bsymbolic-functions -Wl,-Bsymbolic"
+    )
+    set(CMAKE_SHARED_LINKER_FLAGS
+        "-Wl,--no-undefined ${SYMBOLIC_FLAGS} ${CMAKE_SHARED_LINKER_FLAGS}"
+    )
+    set(CMAKE_MODULE_LINKER_FLAGS
+        "-Wl,--no-undefined ${SYMBOLIC_FLAGS} ${CMAKE_MODULE_LINKER_FLAGS}"
+    )
+    set(CMAKE_EXE_LINKER_FLAGS
+        "${SYMBOLIC_FLAGS} ${CMAKE_EXE_LINKER_FLAGS}"
+    )
+
+endif()
+
+#-----------------------------------------------------------------------------
+# Turn on more aggrassive optimizations not supported by CMake
+# References: https://wiki.qt.io/Performance_Tip_Startup_Time
+#-----------------------------------------------------------------------------
+if (CMAKE_COMPILER_IS_GNUCXX OR QTXDG_COMPILER_IS_CLANGCXX)
+    # -flto: use link-time optimizations to generate more efficient code
+    if (CMAKE_COMPILER_IS_GNUCXX)
+        set(LTO_FLAGS "-flto -fuse-linker-plugin")
+        # When building static libraries with LTO in gcc >= 4.9,
+        # "gcc-ar" and "gcc-ranlib" should be used instead of "ar" and "ranlib".
+        # references:
+        #   https://gcc.gnu.org/gcc-4.9/changes.html
+        #   http://hubicka.blogspot.tw/2014/04/linktime-optimization-in-gcc-2-firefox.html
+        #   https://github.com/monero-project/monero/pull/1065/commits/1855213c8fb8f8727f4107716aab8e7ba826462b
+        if (NOT CMAKE_CXX_COMPILER_VERSION VERSION_LESS "4.9.0")  # gcc >= 4.9
+            set(CMAKE_AR "gcc-ar")
+            set(CMAKE_RANLIB "gcc-ranlib")
+        endif()
+    elseif (QTXDG_COMPILER_IS_CLANGCXX)
+        # The link-time optimization of clang++/llvm seems to be too aggrassive.
+        # After testing, it breaks the signal/slots of QObject sometimes.
+        # So disable it for now until there is a solution.
+        # set(LTO_FLAGS "-flto")
+    endif()
+    # apply these options to "Release" build type only
+    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} ${LTO_FLAGS}")
+endif()
