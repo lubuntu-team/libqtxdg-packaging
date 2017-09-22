@@ -50,7 +50,7 @@ struct QtIconCache: public IconCache
     }
 };
 }
-Q_GLOBAL_STATIC(IconCache, qtIconCache);
+Q_GLOBAL_STATIC(IconCache, qtIconCache)
 
 static void qt_cleanup_icon_cache()
 {
@@ -65,25 +65,6 @@ XdgIcon::XdgIcon()
 
 XdgIcon::~XdgIcon()
 {
-}
-
-
-/************************************************
- Returns the name of the current icon theme.
- ************************************************/
-QString XdgIcon::themeName()
-{
-    return QIcon::themeName();
-}
-
-
-/************************************************
- Sets the current icon theme to name.
- ************************************************/
-void XdgIcon::setThemeName(const QString& themeName)
-{
-    QIcon::setThemeName(themeName);
-    XdgIconLoader::instance()->updateSystemTheme();
 }
 
 
@@ -137,7 +118,7 @@ QIcon XdgIcon::fromTheme(const QString& iconName, const QIcon& fallback)
  ************************************************/
 QIcon XdgIcon::fromTheme(const QStringList& iconNames, const QIcon& fallback)
 {
-    foreach (const QString &iconName, iconNames)
+    for (const QString &iconName : iconNames)
     {
         QIcon icon = fromTheme(iconName);
         if (!icon.isNull())
@@ -162,6 +143,17 @@ QIcon XdgIcon::fromTheme(const QString &iconName,
     if (!fallbackIcon4.isEmpty())   icons << fallbackIcon4;
 
     return fromTheme(icons);
+}
+
+bool XdgIcon::followColorScheme()
+{
+    return XdgIconLoader::instance()->followColorScheme();
+}
+
+
+void XdgIcon::setFollowColorScheme(bool enable)
+{
+    XdgIconLoader::instance()->setFollowColorScheme(enable);
 }
 
 

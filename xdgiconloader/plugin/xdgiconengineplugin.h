@@ -1,14 +1,12 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LXQt - a lightweight, Qt based, desktop toolset
+ * LXQt - a lightweight Qt based desktop
  * http://lxqt.org
  *
- * Copyright: 2013~2014 LXQt team
+ * Copyright: 2017 LXQt team
  * Authors:
- *   Christian Surlykke <christian@surlykke.dk>
- *   Luís Pereira <luis.artur.pereira@gmail.com>
- *   Jerome Leclanche <jerome@leclan.ch>
+ *   Palo Kisa <palo.kisa@gmail.com>
  *
  * This program or library is free software; you can redistribute it
  * and/or modify it under the terms of the GNU Lesser General Public
@@ -27,32 +25,14 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
+#include <QIconEnginePlugin>
 
-#ifndef QTXDG_TEST_H
-#define QTXDG_TEST_H
-
-#include <QObject>
-#include <QString>
-#include <QDebug>
-
-class QtXdgTest : public QObject
+class XdgIconEnginePlugin : public QIconEnginePlugin
 {
     Q_OBJECT
-
-private Q_SLOTS:
-    void testCustomFormat();
-
-private:
-    // Test that XdgDesktopFile and xdg-mime script agree on
-    // default application for each mime-type.
-    void testDefaultApp();
-
-    void testTextHtml();
-    void testMeldComparison();
-    void compare(QString mimetype);
-    QString xdgDesktopFileDefaultApp(QString mimetype);
-    QString xdgUtilDefaultApp(QString mimetype);
-
+    Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QIconEngineFactoryInterface" FILE "xdgiconengineplugin.json")
+public:
+    using QIconEnginePlugin::QIconEnginePlugin;
+    virtual QIconEngine * create(const QString & filename = QString{}) override;
 };
 
-#endif /* QTXDG_TEST_H */

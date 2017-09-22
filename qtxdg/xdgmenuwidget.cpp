@@ -44,7 +44,7 @@ class XdgMenuWidgetPrivate
 {
 private:
     XdgMenuWidget* const q_ptr;
-    Q_DECLARE_PUBLIC(XdgMenuWidget);
+    Q_DECLARE_PUBLIC(XdgMenuWidget)
 
 public:
     explicit XdgMenuWidgetPrivate(XdgMenuWidget* parent):
@@ -186,7 +186,7 @@ void XdgMenuWidgetPrivate::buildMenu()
 
     QAction* first = 0;
     if (!q->actions().isEmpty())
-        first = q->actions().last();
+        first = q->actions().constLast();
 
 
     DomElementIterator it(mXml, QString());
