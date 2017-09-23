@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 10),
                qtbase5-private-dev,
                qttools5-dev,
                qttools5-dev-tools
-Standards-Version: 4.1.0
+Standards-Version: 4.1.1
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-lxqt/libqtxdg.git/?h=debian/experimental
 Vcs-Git: https://anonscm.debian.org/git/pkg-lxqt/libqtxdg.git -b debian/experimental
 Homepage: https://github.com/lxde/libqtxdg
@@ -64,6 +64,8 @@ Package: libqt5xdgiconloader-dev
 Architecture: any
 Section: libdevel
 Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libqt5svg5-dev,
          libqt5xdgiconloader3 (= ${binary:Version})
 Description: Development files for libqtxdgiconloader
  This library implements the backend to load icons which are handled according
@@ -79,4 +81,3 @@ Depends: ${shlibs:Depends},
          libqt5xdgiconloader3 (= ${binary:Version})
 Description: Development tools for libqtxdgiconloader
  This package provide some development tools for qtxdg.
-

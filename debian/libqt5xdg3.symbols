@@ -94,11 +94,11 @@ libQt5Xdg.so.3 libqt5xdg3 #MINVER#
 
  (c++)"XdgIcon::defaultApplicationIcon()@Base" 1.0.0
  (c++)"XdgIcon::defaultApplicationIconName()@Base" 1.0.0
- (c++)"XdgIcon::followColorScheme()@Base" 2.0.1~
+ (c++)"XdgIcon::followColorScheme()@Base" 3.0.0
  (c++)"XdgIcon::fromTheme(QString const&, QIcon const&)@Base" 1.0.0
  (c++)"XdgIcon::fromTheme(QString const&, QString const&, QString const&, QString const&, QString const&)@Base" 1.0.0
  (c++)"XdgIcon::fromTheme(QStringList const&, QIcon const&)@Base" 1.0.0
- (c++)"XdgIcon::setFollowColorScheme(bool)@Base" 2.0.1~
+ (c++)"XdgIcon::setFollowColorScheme(bool)@Base" 3.0.0
  (c++)"XdgIcon::~XdgIcon()@Base" 1.0.0
  (c++)"XdgIcon::XdgIcon()@Base" 1.0.0
 

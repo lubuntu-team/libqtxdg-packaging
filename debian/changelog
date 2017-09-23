@@ -1,11 +1,16 @@
-libqtxdg (2.96.0-1) experimental; urgency=medium
+libqtxdg (3.0.0-1) experimental; urgency=medium
 
-  * New snapshot: 2.0.0-58-gbc64037
+  * Imported new upstream release: 3.0.0
   * Switched to experimental
   * Renamed packages to reflect the new soname
-  * Bumped standards to 4.0.0, no changes needed
+  * Added dependency libqt5svg5-dev to QtXdgIconloader dev package.
+  * Bumped Standards to 4.1.0
+  * Added override_dh_missing 
+  * Added tools package
+  * Fixed symbols
+  * Reworked copyright
 
- -- Alf Gaida <agaida@siduction.org>  Tue, 25 Jul 2017 00:42:08 +0200
+ -- Alf Gaida <agaida@siduction.org>  Fri, 06 Oct 2017 23:02:29 +0200
 
 libqtxdg (2.0.0-7) unstable; urgency=medium
 
