@@ -1,3 +1,12 @@
+libqtxdg (2.0.0-8) unstable; urgency=medium
+
+  * Added dependency libqt5svg5-dev to QtXdgIconloader dev package.
+    (Closes: #877569)- Thanks Tim Dengel <tim.dengel.debian@gmail.com>
+  * Bumped Standards to 4.1.1
+  * added override_dh_missing to rules
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 03 Oct 2017 16:32:20 +0200
+
 libqtxdg (2.0.0-7) unstable; urgency=medium
 
   * Added qttranslations5-l10n to Recommends - without this packagage there are
