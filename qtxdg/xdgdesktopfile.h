@@ -130,6 +130,9 @@ public:
     //! Returns the entry Categories. It supports X-Categories extensions.
     QStringList categories() const;
 
+    //! Returns list of values in entry Actions.
+    QStringList actions() const;
+
     //! Returns true if there exists a setting called key; returns false otherwise.
     bool contains(const QString& key) const;
 
@@ -142,9 +145,13 @@ public:
 
     //! Returns an icon specified in this file.
     QIcon const icon(const QIcon& fallback = QIcon()) const;
+    //! Returns an icon for application action \param action.
+    QIcon const actionIcon(const QString & action, const QIcon& fallback = QIcon()) const;
 
     //! Returns an icon name specified in this file.
     QString const iconName() const;
+    //! Returns an icon name for application action \param action.
+    QString const actionIconName(const QString & action) const;
 
     //! Returns an list of mimetypes specified in this file.
     /*! @return  Returns a list of the "MimeType=" entries.
@@ -155,6 +162,8 @@ public:
 
     //! This function is provided for convenience. It's equivalent to calling localizedValue("Name").toString().
     QString name() const { return localizedValue(QLatin1String("Name")).toString(); }
+    //! Returns an (localized) name for application action \param action.
+    QString actionName(const QString & action) const;
 
     //! This function is provided for convenience. It's equivalent to calling localizedValue("Comment").toString().
     QString comment() const { return localizedValue(QLatin1String("Comment")).toString(); }
@@ -174,6 +183,19 @@ public:
 
     //! This function is provided for convenience. It's equivalent to calling startDetached(QStringList(url)).
     bool startDetached(const QString& url = QString()) const;
+
+    /*! For file with Application type. Activates action defined by the \param action. Action is activated
+     * either with the [Desktop Action %s]/Exec or by the D-Bus if the [Desktop Entry]/DBusActivatable is set.
+     * \note Starting is done the same way as \sa startDetached()
+     *
+     * \return true on success; otherwise returns false.
+     * \param urls - A list of files or URLS. Each file is passed as a separate argument to the executable program.
+     *
+     * For file with Link type, do nothing.
+     *
+     * For file with Directory type, do nothing.
+    */
+    bool actionActivate(const QString & action, const QStringList & urls) const;
 
     /*! A Exec value consists of an executable program optionally followed by one or more arguments.
         This function expands this arguments and returns command line string parts.
