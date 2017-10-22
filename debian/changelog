@@ -1,3 +1,11 @@
+libqtxdg (3.1.0-1) experimental; urgency=medium
+
+  * Cherry-picked new upstream-release 3.1.0
+  * Added lintian-overrides for tools package
+  * Added new symbols for action handling 
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 22 Oct 2017 13:53:34 +0200
+
 libqtxdg (3.0.0-1) experimental; urgency=medium
 
   * Imported new upstream release: 3.0.0

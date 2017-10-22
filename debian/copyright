@@ -3,7 +3,7 @@ Upstream-Name: libqtxdg
 Source: https://github.com/lxde/libqtxdg
 
 Files: *
-Copyright: 2012-2016, LXQt team
+Copyright: 2012-2017, LXQt team
            2010-2012, Razor team
 License: LGPL-2.1+
 
