@@ -1,6 +1,13 @@
+libqtxdg (3.1.0-3) experimental; urgency=medium
+
+  * Removed superfluous line from symbols
+  * Removed trailing whitespaces from changelog
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 30 Nov 2017 21:26:44 +0100
+
 libqtxdg (3.1.0-2) experimental; urgency=medium
 
-  * Pick up Qt 5.9.2 
+  * Pick up Qt 5.9.2
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 27 Oct 2017 19:11:33 +0200
 
@@ -8,7 +15,7 @@ libqtxdg (3.1.0-1) experimental; urgency=medium
 
   * Cherry-picked new upstream-release 3.1.0
   * Added lintian-overrides for tools package
-  * Added new symbols for action handling 
+  * Added new symbols for action handling
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 22 Oct 2017 13:53:34 +0200
 
