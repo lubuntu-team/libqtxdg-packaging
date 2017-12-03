@@ -25,10 +25,12 @@ else()
   set(CMAKE_CXX_STANDARD 11)
 endif()
 
-set(QTXDG_MAJOR_VERSION 2)
-set(QTXDG_MINOR_VERSION 0)
+set(QTXDG_MAJOR_VERSION 3)
+set(QTXDG_MINOR_VERSION 1)
 set(QTXDG_PATCH_VERSION 0)
 set(QTXDG_VERSION_STRING ${QTXDG_MAJOR_VERSION}.${QTXDG_MINOR_VERSION}.${QTXDG_PATCH_VERSION})
+
+set(QT_MINIMUM_VERSION "5.6.1")
 
 include(GNUInstallDirs)             # Standard directories for installation
 include(CMakePackageConfigHelpers)
@@ -37,13 +39,12 @@ include(create_portable_headers)
 include(create_pkgconfig_file)
 include(compiler_settings NO_POLICY_SCOPE)
 
-find_package(Qt5Widgets REQUIRED QUIET)
-find_package(Qt5Svg REQUIRED QUIET)
-find_package(Qt5Xml REQUIRED QUIET)
-find_package(Qt5DBus REQUIRED QUIET)
+set(CMAKE_AUTOMOC ON)
+
+find_package(Qt5 ${QT_MINIMUM_VERSION} CONFIG REQUIRED Widgets Svg Xml DBus)
 
 if (BUILD_TESTS)
-    find_package(Qt5Test REQUIRED QUIET)
+    find_package(Qt5 ${QT_MINIMUM_VERSION} CONFIG REQUIRED Test)
 endif()
 
 
@@ -52,12 +53,13 @@ set(QTXDGX_FILE_NAME "qt5xdg")
 
 set(QTXDGX_ICONLOADER_LIBRARY_NAME "Qt5XdgIconLoader")
 set(QTXDGX_ICONLOADER_FILE_NAME "qt5xdgiconloader")
+set(QTXDGX_ICONENGINEPLUGIN_LIBRARY_NAME "Qt5XdgIconPlugin")
 
 set(QTXDGX_PKG_CONFIG_DESCRIPTION "Qt5Xdg, a Qt5 implementation of XDG standards")
-set(QTXDGX_PKG_CONFIG_REQUIRES "Qt5Core, Qt5Xml, Qt5Widgets, Qt5DBus, Qt5XdgIconLoader")
+set(QTXDGX_PKG_CONFIG_REQUIRES "Qt5Core >= ${QT_MINIMUM_VERSION}, Qt5Xml >= ${QT_MINIMUM_VERSION}, Qt5Widgets >= ${QT_MINIMUM_VERSION}, Qt5DBus >= ${QT_MINIMUM_VERSION}, Qt5XdgIconLoader = ${QTXDG_VERSION_STRING}")
 
 set(QTXDGX_ICONLOADER_PKG_CONFIG_DESCRIPTION "Qt5XdgIconLader, a Qt5 XDG Icon Loader")
-set(QTXDGX_ICONLOADER_PKG_CONFIG_REQUIRES "Qt5Gui, Qt5Svg")
+set(QTXDGX_ICONLOADER_PKG_CONFIG_REQUIRES "Qt5Gui >= ${QT_MINIMUM_VERSION}, Qt5Svg >= ${QT_MINIMUM_VERSION}")
 
 set(QTXDGX_INTREE_INCLUDEDIR "${CMAKE_CURRENT_BINARY_DIR}/InTreeBuild/include")
 
@@ -65,7 +67,7 @@ if (NOT CMAKE_BUILD_TYPE)
     set ( CMAKE_BUILD_TYPE Release )
 endif (NOT CMAKE_BUILD_TYPE)
 
-message(STATUS "Building with Qt ${Qt5Core_VERSION_STRING}")
+message(STATUS "Building ${PROJECT_NAME} with Qt ${Qt5Core_VERSION}")
 
 add_subdirectory(xdgiconloader)
 add_subdirectory(qtxdg)
@@ -167,16 +169,5 @@ configure_file(
     "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake"
     IMMEDIATE @ONLY)
 
-add_custom_target(uninstall
-    COMMAND ${CMAKE_COMMAND} -P "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake")
-
-
-# building tarball with CPack -------------------------------------------------
-include (InstallRequiredSystemLibraries)
-set (CPACK_PACKAGE_VERSION_MAJOR ${QTXDG_MAJOR_VERSION})
-set (CPACK_PACKAGE_VERSION_MINOR ${QTXDG_MINOR_VERSION})
-set (CPACK_PACKAGE_VERSION_PATCH ${QTXDG_PATCH_VERSION})
-set (CPACK_GENERATOR TBZ2)
-set (CPACK_SOURCE_GENERATOR TBZ2)
-set (CPACK_SOURCE_IGNORE_FILES /build/;.gitignore;.*~;.git;.kdev4;temp)
-include (CPack)
+#add_custom_target(uninstall
+#    COMMAND ${CMAKE_COMMAND} -P "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake")

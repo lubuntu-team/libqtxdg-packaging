@@ -108,7 +108,7 @@ QString userDirFallback(XdgDirs::UserDirectory dir)
     if (home.isEmpty())
         return QString::fromLatin1("/tmp");
     else if (dir == XdgDirs::Desktop)
-        fallback = QString::fromLatin1("%1/%2").arg(home).arg(QLatin1String("Desktop"));
+        fallback = QString::fromLatin1("%1/%2").arg(home, QLatin1String("Desktop"));
     else
         fallback = home;
 
@@ -178,10 +178,12 @@ bool XdgDirs::setUserDir(XdgDirs::UserDirectory dir, const QString& value, bool 
     if (dir < XdgDirs::Desktop || dir > XdgDirs::Videos)
         return false;
 
+    const QString home = QFile::decodeName(qgetenv("HOME"));
     if (!(value.startsWith(QLatin1String("$HOME"))
                            || value.startsWith(QLatin1String("~/"))
-                           || value.startsWith(QFile::decodeName(qgetenv("HOME")))))
-        return false;
+                           || value.startsWith(home)
+                           || value.startsWith(QDir(home).canonicalPath())))
+	return false;
 
     QString folderName = userDirectoryString[dir];
 
@@ -215,7 +217,7 @@ bool XdgDirs::setUserDir(XdgDirs::UserDirectory dir, const QString& value, bool 
     stream.reset();
     configFile.resize(0);
     if (!foundVar)
-        stream << QString::fromLatin1("XDG_%1_DIR=\"%2\"\n").arg(folderName.toUpper()).arg(value);
+        stream << QString::fromLatin1("XDG_%1_DIR=\"%2\"\n").arg(folderName.toUpper(),(value));
 
     for (QVector<QString>::iterator i = lines.begin(); i != lines.end(); ++i)
         stream << *i << QLatin1Char('\n');
@@ -334,7 +336,7 @@ QStringList XdgDirs::autostartDirs(const QString &postfix)
 {
     QStringList dirs;
     const QStringList s = configDirs();
-    foreach(const QString &dir, s)
+    for (const QString &dir : s)
         dirs << QString::fromLatin1("%1/autostart").arg(dir) + postfix;
 
     return dirs;

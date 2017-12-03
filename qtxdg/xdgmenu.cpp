@@ -205,8 +205,7 @@ void XdgMenu::save(const QString& fileName)
     if (!file.open(QFile::WriteOnly | QFile::Text))
     {
         qWarning() << QString::fromLatin1("Cannot write file %1:\n%2.")
-                .arg(fileName)
-                .arg(file.errorString());
+                .arg(fileName, file.errorString());
         return;
     }
 
@@ -225,7 +224,7 @@ void XdgMenuPrivate::load(const QString& fileName)
     QFile file(fileName);
     if (!file.open(QFile::ReadOnly | QFile::Text))
     {
-        qWarning() << QString::fromLatin1("%1 not loading: %2").arg(fileName).arg(file.errorString());
+        qWarning() << QString::fromLatin1("%1 not loading: %2").arg(fileName, file.errorString());
         return;
     }
     mXml.setContent(&file, true);
@@ -413,7 +412,7 @@ QDomElement XdgMenu::findMenu(QDomElement& baseElement, const QString& path, boo
 
     const QStringList names = path.split(QLatin1Char('/'), QString::SkipEmptyParts);
     QDomElement el = baseElement;
-    foreach (const QString &name, names)
+    for (const QString &name : names)
     {
         QDomElement p = el;
         el = d->mXml.createElement(QLatin1String("Menu"));
@@ -538,12 +537,12 @@ void XdgMenuPrivate::processDirectoryEntries(QDomElement& element, const QString
     dirs << parentDirs;
 
     bool found = false;
-    foreach(const QString &file, files){
+    for (const QString &file : const_cast<const QStringList&>(files)){
         if (file.startsWith(QLatin1Char('/')))
             found = loadDirectoryFile(file, element);
         else
         {
-            foreach (const QString &dir, dirs)
+            for (const QString &dir : const_cast<const QStringList&>(dirs))
             {
                 found = loadDirectoryFile(dir + QLatin1Char('/') + file, element);
                 if (found) break;
@@ -652,7 +651,7 @@ QString XdgMenu::getMenuFileName(const QString& baseName)
     const QStringList configDirs = XdgDirs::configDirs();
     QString menuPrefix = QString::fromLocal8Bit(qgetenv("XDG_MENU_PREFIX"));
 
-    foreach(const QString &configDir, configDirs)
+    for (const QString &configDir : configDirs)
     {
         QFileInfo file(QString::fromLatin1("%1/menus/%2%3").arg(configDir, menuPrefix, baseName));
         if (file.exists())
@@ -670,9 +669,9 @@ QString XdgMenu::getMenuFileName(const QString& baseName)
     wellKnownFiles << QLatin1String("gnome-applications.menu");
     wellKnownFiles << QLatin1String("lxde-applications.menu");
 
-    foreach(const QString &configDir, configDirs)
+    for (const QString &configDir : configDirs)
     {
-        foreach (const QString &f, wellKnownFiles)
+        for (const QString &f : const_cast<const QStringList&>(wellKnownFiles))
         {
             QFileInfo file(QString::fromLatin1("%1/menus/%2").arg(configDir, f));
             if (file.exists())
@@ -715,7 +714,7 @@ void XdgMenuPrivate::rebuild()
     if (prevHash != mHash)
     {
         mOutDated = true;
-        emit changed();
+        Q_EMIT changed();
     }
 }
 
