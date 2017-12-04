@@ -89,7 +89,7 @@ libqtxdg (2.0.0-4) unstable; urgency=medium
 libqtxdg (1.3.0-4) unstable; urgency=medium
 
   * Added libfile-mimeinfo-perl as dependency, we really need this, a
-    recommendation is not enough. Thanks tsujan. 
+    recommendation is not enough. Thanks tsujan.
   * Bumped standards to 3.9.8, no changes needed
   * Bump years in copyright
   * Added README to debian/docs
