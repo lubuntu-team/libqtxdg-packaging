@@ -1,3 +1,11 @@
+libqtxdg (3.1.0-5) unstable; urgency=medium
+
+  * Bumped Standards to 4.1.2, no changes needed
+  * Removed debian/gbp.conf
+  * Removed branch from VCS fields 
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 14 Dec 2017 01:52:34 +0100
+
 libqtxdg (3.1.0-4) unstable; urgency=medium
 
   * Switch to unstable
