@@ -1,8 +1,26 @@
+libqtxdg (3.1.0-6) unstable; urgency=medium
+
+  * Bumped debhelper to >= 11~
+  * Bumped compat to 11
+  * Installed examples
+  * Removed cmake minimum version, not needed any longer
+  * Bumped Standards to 4.1.4, no changes needed
+  * Removed trailing whitespaces
+  * Changed VCS fields to salsa
+  * Fixed homepage link
+  * Added dependency file to libqtxdg
+  * Added dependency libmagic-dev to libqtxdg-dev
+  * Use a secure link to copyright-format
+  * Fixed Source link
+  * Fixed years in copyright
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 26 Apr 2018 20:32:25 +0200
+
 libqtxdg (3.1.0-5) unstable; urgency=medium
 
   * Bumped Standards to 4.1.2, no changes needed
   * Removed debian/gbp.conf
-  * Removed branch from VCS fields 
+  * Removed branch from VCS fields
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 14 Dec 2017 01:52:34 +0100
 
