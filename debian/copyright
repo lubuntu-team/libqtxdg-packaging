@@ -29,6 +29,7 @@ License: LGPL-2.1+
 
 Files: cmake/create_pkgconfig_file.cmake
        cmake/create_portable_headers.cmake
+       cmake/prevent_in_source_builds.cmake
 Copyright: 2015, Luís Pereira <luis.artur.pereira@gmail.com>
 License: BSD-3-clause
 
