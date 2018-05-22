@@ -1,6 +1,7 @@
 libqtxdg (3.2.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Update Vcs-* and Maintainer to Lubuntu values.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 21 May 2018 21:05:57 -0500
 
