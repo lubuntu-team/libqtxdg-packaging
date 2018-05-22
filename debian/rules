@@ -15,4 +15,3 @@ override_dh_auto_configure:
 	dh_auto_configure -- \
 		-DBUILD_DEV_UTILS=YES \
 		-DCMAKE_BUILD_TYPE=RelWithDebInfo
-

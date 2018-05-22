@@ -5,6 +5,7 @@ libqtxdg (3.2.0-0ubuntu1) UNRELEASED; urgency=medium
   * Update copyright file.
   * Remove "~" from debhelper depends.
   * Update the watch file to point to the new upstream location.
+  * Remove trailing whitespace from rules.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 21 May 2018 21:05:57 -0500
 
