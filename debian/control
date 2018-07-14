@@ -14,7 +14,7 @@ Build-Depends: debhelper (>= 11),
                qtbase5-private-dev,
                qttools5-dev,
                qttools5-dev-tools
-Standards-Version: 4.1.4
+Standards-Version: 4.1.5
 Vcs-Browser: https://phab.lubuntu.me/source/libqtxdg/
 Vcs-Git: https://phab.lubuntu.me/source/libqtxdg.git
 XS-Debian-Vcs-Browser: https://salsa.debian.org/lxqt-team/libqtxdg
