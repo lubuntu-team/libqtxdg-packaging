@@ -26,6 +26,7 @@ Architecture: any
 Multi-Arch: same
 Depends: file,
          libfile-mimeinfo-perl,
+         libglib2.0-bin,
          shared-mime-info,
          ${misc:Depends},
          ${shlibs:Depends}
