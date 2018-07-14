@@ -1,4 +1,4 @@
-libqtxdg (3.2.0-0ubuntu2) cosmic; urgency=medium
+libqtxdg (3.2.0-2ubuntu1) cosmic; urgency=medium
 
   * Bump Standards-version to 4.1.5, no changes needed.
   * Run wrap-and-sort.
@@ -7,6 +7,21 @@ libqtxdg (3.2.0-0ubuntu2) cosmic; urgency=medium
     (Closes: #902054, #902055).
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Fri, 13 Jul 2018 23:02:19 -0500
+
+libqtxdg (3.2.0-2) unstable; urgency=medium
+
+  * Added libqtxdg dependency libglib2.0-bin
+    (Closes: #902054, #902055)
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 23 Jun 2018 14:35:01 +0200
+
+libqtxdg (3.2.0-1) unstable; urgency=medium
+
+  * Cherry-picked new upstream-release 3.2.0
+  * Fixed watchfile lxde -> lxqt
+  * Moved ./debian/.gitignore to ./.gitignore
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 23 May 2018 01:44:48 +0200
 
 libqtxdg (3.2.0-0ubuntu1) cosmic; urgency=medium
 
