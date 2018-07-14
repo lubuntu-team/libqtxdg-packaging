@@ -6,8 +6,8 @@ Uploaders: Alf Gaida <agaida@siduction.org>,
            Andrew Lee (李健秋) <ajqlee@debian.org>
 Section: libs
 Priority: optional
-Build-Depends: debhelper (>= 11),
-               cmake,
+Build-Depends: cmake,
+               debhelper (>= 11),
                libmagic-dev,
                libqt5svg5-dev,
                pkg-config,
@@ -24,11 +24,11 @@ Homepage: https://github.com/lxqt/libqtxdg
 Package: libqt5xdg3
 Architecture: any
 Multi-Arch: same
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         file,
+Depends: file,
          libfile-mimeinfo-perl,
-         shared-mime-info
+         shared-mime-info,
+         ${misc:Depends},
+         ${shlibs:Depends}
 Recommends: qttranslations5-l10n
 Pre-Depends: ${misc:Pre-Depends}
 Provides: libqt5xdg
@@ -41,8 +41,7 @@ Description: Implementation of the XDG Specifications for Qt (shared lib)
 Package: libqt5xdgiconloader3
 Architecture: any
 Multi-Arch: same
-Depends: ${shlibs:Depends},
-         ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Recommends: gtk-update-icon-cache
 Pre-Depends: ${misc:Pre-Depends}
 Provides: libqt5xdgiconloader
@@ -55,10 +54,10 @@ Description: Implementation of the XDG Iconloader for Qt (shared lib)
 Package: libqt5xdg-dev
 Architecture: any
 Section: libdevel
-Depends: ${misc:Depends},
-         libmagic-dev,
+Depends: libmagic-dev,
          libqt5xdg3 (= ${binary:Version}),
-         libqt5xdgiconloader-dev (= ${binary:Version})
+         libqt5xdgiconloader-dev (= ${binary:Version}),
+         ${misc:Depends}
 Description: Development files for libqtxdg
  This library implements functions of the XDG Specifications in Qt. It is part
  of LXQt.
@@ -68,10 +67,10 @@ Description: Development files for libqtxdg
 Package: libqt5xdgiconloader-dev
 Architecture: any
 Section: libdevel
-Depends: ${shlibs:Depends},
+Depends: libqt5svg5-dev,
+         libqt5xdgiconloader3 (= ${binary:Version}),
          ${misc:Depends},
-         libqt5svg5-dev,
-         libqt5xdgiconloader3 (= ${binary:Version})
+         ${shlibs:Depends}
 Description: Development files for libqtxdgiconloader
  This library implements the backend to load icons which are handled according
  to the XDG Icon Theme Specification in Qt. It is part of LXQt.
@@ -81,8 +80,8 @@ Description: Development files for libqtxdgiconloader
 Package: qtxdg-dev-tools
 Architecture: any
 Section: devel
-Depends: ${shlibs:Depends},
+Depends: libqt5xdgiconloader3 (= ${binary:Version}),
          ${misc:Depends},
-         libqt5xdgiconloader3 (= ${binary:Version})
+         ${shlibs:Depends}
 Description: Development tools for libqtxdgiconloader
  This package provide some development tools for qtxdg.
