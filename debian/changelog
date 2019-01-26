@@ -1,11 +1,11 @@
-libqtxdg (3.3.0-0ubuntu1) UNRELEASED; urgency=medium
+libqtxdg (3.3.0-0ubuntu1) disco; urgency=medium
 
   * New upstream release.
     - Remove reverse-applicable patches.
   * Bump Standards-version to 4.3.0, no changes needed.
   * Bump debhelper compat to 12, no changes needed.
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Fri, 25 Jan 2019 21:40:31 -0600
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Fri, 25 Jan 2019 21:47:42 -0600
 
 libqtxdg (3.2.0-2ubuntu1) cosmic; urgency=medium
 
