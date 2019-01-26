@@ -7,7 +7,7 @@ Uploaders: Alf Gaida <agaida@siduction.org>,
 Section: libs
 Priority: optional
 Build-Depends: cmake,
-               debhelper (>= 11),
+               debhelper (>= 12),
                libmagic-dev,
                libqt5svg5-dev,
                pkg-config,
