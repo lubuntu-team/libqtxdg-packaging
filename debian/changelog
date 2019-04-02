@@ -1,3 +1,9 @@
+libqtxdg (3.3.1-0ubuntu2) disco; urgency=medium
+
+  * No change rebuild against qtbase-abi-5-12-2.
+
+ -- Rik Mills <rikmills@kubuntu.org>  Wed, 27 Mar 2019 14:40:02 +0000
+
 libqtxdg (3.3.1-0ubuntu1) disco; urgency=medium
 
   * New upstream release.
