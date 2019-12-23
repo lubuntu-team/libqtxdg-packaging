@@ -10,12 +10,12 @@ Build-Depends: cmake,
                debhelper (>= 12),
                libmagic-dev,
                libqt5svg5-dev,
-               lxqt-build-tools,
+               lxqt-build-tools (>= 0.6.0),
                pkg-config,
                qtbase5-private-dev,
                qttools5-dev,
                qttools5-dev-tools
-Standards-Version: 4.3.0
+Standards-Version: 4.4.1
 Vcs-Browser: https://phab.lubuntu.me/source/libqtxdg/
 Vcs-Git: https://phab.lubuntu.me/source/libqtxdg.git
 XS-Debian-Vcs-Browser: https://salsa.debian.org/lxqt-team/libqtxdg
@@ -60,6 +60,7 @@ Depends: libmagic-dev,
          libqt5xdg3 (= ${binary:Version}),
          libqt5xdgiconloader-dev (= ${binary:Version}),
          ${misc:Depends}
+Recommends: qtxdg-dev-tools (= ${source:Version})
 Description: Development files for libqtxdg
  This library implements functions of the XDG Specifications in Qt. It is part
  of LXQt.
@@ -84,6 +85,10 @@ Architecture: any
 Section: devel
 Depends: libqt5xdgiconloader3 (= ${binary:Version}),
          ${misc:Depends},
-         ${shlibs:Depends}
-Description: Development tools for libqtxdgiconloader
- This package provide some development tools for qtxdg.
+         ${shlibs:Depends},
+         libqt5xdg3 (= ${binary:Version})
+Description: Tools for QtXdg
+ This package provide some tools for qtxdg:
+ * qtxdg-desktop-file-start - QtXdg XdgDesktopFile start Tester
+ * qtxdg-iconfinder - Find icons the QtXdg way
+ * qtxdg-mat - Mime tool for QtXdg

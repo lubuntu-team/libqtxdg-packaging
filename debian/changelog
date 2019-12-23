@@ -1,3 +1,20 @@
+libqtxdg (3.4.0-1ubuntu1) focal; urgency=medium
+
+  [ Alf Gaida ]
+  * New upstream version 3.4.0
+  * Switched to gbp
+  * Bumped Standards to 4.4.1, no changes needed
+  * Added new symbols
+  * Fixed tools packaging and descriptions
+  * Added qtxdg-dev-tools to libqtxdg recommends
+
+  [ apt-ghetto ]
+  * Take the package from salsa.debian.org
+  * Update it for ci/unstable
+  * Update debian/copyright
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 27 Oct 2019 18:28:10 +0100
+
 libqtxdg (3.3.1-0ubuntu2) disco; urgency=medium
 
   * No change rebuild against qtbase-abi-5-12-2.

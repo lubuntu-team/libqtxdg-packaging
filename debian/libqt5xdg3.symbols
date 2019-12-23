@@ -115,6 +115,23 @@ libQt5Xdg.so.3 libqt5xdg3 #MINVER#
  (c++)"XdgMenuWidget::qt_metacast(char const*)@Base" 1.0.0
  (c++)"XdgMenuWidget::staticMetaObject@Base" 1.0.0
  (c++)"XdgMenuWidget::~XdgMenuWidget()@Base" 1.0.0
+ (c++)"XdgMimeApps::XdgMimeApps(QObject*)@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::addSupport(QString const&, XdgDesktopFile const&)@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::allApps()@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::apps(QString const&)@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::categoryApps(QString const&)@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::changed()@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::defaultApp(QString const&)@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::fallbackApps(QString const&)@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::metaObject() const@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::qt_metacall(QMetaObject::Call, int, void**)@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::qt_metacast(char const*)@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::recommendedApps(QString const&)@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::removeSupport(QString const&, XdgDesktopFile const&)@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::reset(QString const&)@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::setDefaultApp(QString const&, XdgDesktopFile const&)@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::staticMetaObject@Base" 3.4.0+git20191223
+ (c++)"XdgMimeApps::~XdgMimeApps()@Base" 3.4.0+git20191223
  (c++)"XdgMimeType::XdgMimeType()@Base" 1.0.0
  (c++)"XdgMimeType::XdgMimeType(QMimeType const&)@Base" 1.0.0
  (c++)"XdgMimeType::XdgMimeType(XdgMimeType const&)@Base" 1.0.0
@@ -128,14 +145,16 @@ libQt5Xdg.so.3 libqt5xdg3 #MINVER#
  (c++)"typeinfo for XdgIcon@Base" 1.0.0
  (c++)"typeinfo for XdgMenu@Base" 1.0.0
  (c++)"typeinfo for XdgMenuWidget@Base" 1.0.0
+ (c++)"typeinfo for XdgMimeApps@Base" 3.4.0+git20191223
  (c++)"typeinfo name for XdgAction@Base" 1.0.0
  (c++)"typeinfo name for XdgDesktopFile@Base" 1.0.0
  (c++)"typeinfo name for XdgIcon@Base" 1.0.0
  (c++)"typeinfo name for XdgMenu@Base" 1.0.0
  (c++)"typeinfo name for XdgMenuWidget@Base" 1.0.0
+ (c++)"typeinfo name for XdgMimeApps@Base" 3.4.0+git20191223
  (c++)"vtable for XdgAction@Base" 1.0.0
  (c++)"vtable for XdgDesktopFile@Base" 1.0.0
  (c++)"vtable for XdgIcon@Base" 1.0.0
  (c++)"vtable for XdgMenu@Base" 1.0.0
  (c++)"vtable for XdgMenuWidget@Base" 1.0.0
-libQt5Xdg.so.3 libqt5xdg3 #MINVER#
+ (c++)"vtable for XdgMimeApps@Base" 3.4.0+git20191223
