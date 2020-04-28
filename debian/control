@@ -83,10 +83,10 @@ Description: Development files for libqtxdgiconloader
 Package: qtxdg-dev-tools
 Architecture: any
 Section: devel
-Depends: libqt5xdgiconloader3 (= ${binary:Version}),
+Depends: libqt5xdg3 (= ${binary:Version}),
+         libqt5xdgiconloader3 (= ${binary:Version}),
          ${misc:Depends},
-         ${shlibs:Depends},
-         libqt5xdg3 (= ${binary:Version})
+         ${shlibs:Depends}
 Description: Tools for QtXdg
  This package provide some tools for qtxdg:
  * qtxdg-desktop-file-start - QtXdg XdgDesktopFile start Tester
