@@ -3,6 +3,7 @@ libqtxdg (3.5.0-0ubuntu1) UNRELEASED; urgency=medium
   * New upstream release.
     - Update upstream signing key.
     - Update LXQt build dependencies.
+    - Update symbols from amd64 build logs.
   * Bump Standards-version to 4.5.0, no changes needed.
   * debhelper -> debhelper-compat.
   * Run wrap-and-sort.
