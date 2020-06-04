@@ -7,6 +7,7 @@ libqtxdg (3.5.0-0ubuntu1) UNRELEASED; urgency=medium
   * Bump Standards-version to 4.5.0, no changes needed.
   * debhelper -> debhelper-compat.
   * Run wrap-and-sort.
+  * Update binary-without-manpage overrides.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Tue, 28 Apr 2020 17:55:01 -0500
 
