@@ -8,6 +8,7 @@ libqtxdg (3.5.0-0ubuntu1) UNRELEASED; urgency=medium
   * debhelper -> debhelper-compat.
   * Run wrap-and-sort.
   * Update binary-without-manpage overrides.
+  * Fix possible-unindented-list-in-extended-description.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Tue, 28 Apr 2020 17:55:01 -0500
 
