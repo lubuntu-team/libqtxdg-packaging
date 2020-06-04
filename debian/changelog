@@ -1,4 +1,4 @@
-libqtxdg (3.5.0-0ubuntu1) UNRELEASED; urgency=medium
+libqtxdg (3.5.0-0ubuntu1) groovy; urgency=medium
 
   * New upstream release.
     - Update upstream signing key.
@@ -10,7 +10,7 @@ libqtxdg (3.5.0-0ubuntu1) UNRELEASED; urgency=medium
   * Update binary-without-manpage overrides.
   * Fix possible-unindented-list-in-extended-description.
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Tue, 28 Apr 2020 17:55:01 -0500
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 03 Jun 2020 23:01:42 -0500
 
 libqtxdg (3.4.0-1ubuntu1) focal; urgency=medium
 
