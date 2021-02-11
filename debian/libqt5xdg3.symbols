@@ -139,7 +139,17 @@ libQt5Xdg.so.3 libqt5xdg3 #MINVER#
  (c++)"XdgMimeType::iconName() const@Base" 1.0.0
  (c++)"XdgMimeType::operator=(XdgMimeType const&)@Base" 1.0.0
  (c++)"XdgMimeType::~XdgMimeType()@Base" 1.0.0
- (c++)"XdgMimeType::swap(XdgMimeType&)@Base" 3.5.0
+ _ZN11XdgMimeType4swapERS_@Base 3.6.0
+ _ZN14XdgDefaultApps10webBrowserEv@Base 3.6.0
+ _ZN14XdgDefaultApps11emailClientEv@Base 3.6.0
+ _ZN14XdgDefaultApps11fileManagerEv@Base 3.6.0
+ _ZN14XdgDefaultApps11webBrowsersEv@Base 3.6.0
+ _ZN14XdgDefaultApps12emailClientsEv@Base 3.6.0
+ _ZN14XdgDefaultApps12fileManagersEv@Base 3.6.0
+ _ZN14XdgDefaultApps13setWebBrowserERK14XdgDesktopFile@Base 3.6.0
+ _ZN14XdgDefaultApps14setEmailClientERK14XdgDesktopFile@Base 3.6.0
+ _ZN14XdgDefaultApps14setFileManagerERK14XdgDesktopFile@Base 3.6.0
+ _ZNSt6vectorISt10unique_ptrI14XdgDesktopFileSt14default_deleteIS1_EESaIS4_EE17_M_realloc_insertIJS4_EEEvN9__gnu_cxx17__normal_iteratorIPS4_S6_EEDpOT_@Base 3.6.0
  (c++)"non-virtual thunk to XdgMenuWidget::~XdgMenuWidget()@Base" 1.0.0
  (c++)"typeinfo for XdgAction@Base" 1.0.0
  (c++)"typeinfo for XdgDesktopFile@Base" 1.0.0
