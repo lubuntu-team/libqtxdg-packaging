@@ -1,7 +1,15 @@
+libqtxdg (3.6.0-1ubuntu2) hirsute; urgency=medium
+
+  * Fixed s390x symbols errors.
+  * fixed previous changelog too.
+
+ -- Raman Sarda <theloudspeaker@disroot.org>  Fri, 12 Feb 2021 02:28:10 +0530
+
 libqtxdg (3.6.0-1ubuntu1) hirsute; urgency=medium
 
   * Merge from Debian unstable.
   * Updated debhelper-compat to 13.
+  * Updated symbols file.
 
  -- Raman Sarda <theloudspeaker@disroot.org>  Fri, 12 Feb 2021 00:25:21 +0530
 

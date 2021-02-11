@@ -149,7 +149,7 @@ libQt5Xdg.so.3 libqt5xdg3 #MINVER#
  _ZN14XdgDefaultApps13setWebBrowserERK14XdgDesktopFile@Base 3.6.0
  _ZN14XdgDefaultApps14setEmailClientERK14XdgDesktopFile@Base 3.6.0
  _ZN14XdgDefaultApps14setFileManagerERK14XdgDesktopFile@Base 3.6.0
- _ZNSt6vectorISt10unique_ptrI14XdgDesktopFileSt14default_deleteIS1_EESaIS4_EE17_M_realloc_insertIJS4_EEEvN9__gnu_cxx17__normal_iteratorIPS4_S6_EEDpOT_@Base 3.6.0
+ (arch=!s390x)_ZNSt6vectorISt10unique_ptrI14XdgDesktopFileSt14default_deleteIS1_EESaIS4_EE17_M_realloc_insertIJS4_EEEvN9__gnu_cxx17__normal_iteratorIPS4_S6_EEDpOT_@Base 3.6.0
  (c++)"non-virtual thunk to XdgMenuWidget::~XdgMenuWidget()@Base" 1.0.0
  (c++)"typeinfo for XdgAction@Base" 1.0.0
  (c++)"typeinfo for XdgDesktopFile@Base" 1.0.0
