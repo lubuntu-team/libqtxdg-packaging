@@ -1,3 +1,9 @@
+libqtxdg (3.6.0-1ubuntu3) hirsute; urgency=medium
+
+  * No change rebuild with fixed ownership.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Tue, 16 Feb 2021 16:58:55 +0000
+
 libqtxdg (3.6.0-1ubuntu2) hirsute; urgency=medium
 
   * Fixed s390x symbols errors.
