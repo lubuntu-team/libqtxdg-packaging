@@ -1,3 +1,46 @@
+libqtxdg (3.6.0-1ubuntu3) hirsute; urgency=medium
+
+  * No change rebuild with fixed ownership.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Tue, 16 Feb 2021 16:58:55 +0000
+
+libqtxdg (3.6.0-1ubuntu2) hirsute; urgency=medium
+
+  * Fixed s390x symbols errors.
+  * fixed previous changelog too.
+
+ -- Raman Sarda <theloudspeaker@disroot.org>  Fri, 12 Feb 2021 02:28:10 +0530
+
+libqtxdg (3.6.0-1ubuntu1) hirsute; urgency=medium
+
+  * Merge from Debian unstable.
+  * Updated debhelper-compat to 13.
+  * Updated symbols file.
+
+ -- Raman Sarda <theloudspeaker@disroot.org>  Fri, 12 Feb 2021 00:25:21 +0530
+
+libqtxdg (3.6.0-1) unstable; urgency=medium
+
+  [ Andrew Lee (李健秋) ]
+  * New upstream version 3.6.0.
+  * refresh debian/libqt5xdg3.symbols file.
+  * Fix unindented lines.
+  * Add salsa-ci.yml file.
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Fri, 25 Dec 2020 10:53:00 +0800
+
+libqtxdg (3.5.0-0ubuntu3) hirsute; urgency=medium
+
+  * No-change rebuild against qtbase-abi-5-15-2.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Fri, 27 Nov 2020 14:09:29 +0300
+
+libqtxdg (3.5.0-0ubuntu2) hirsute; urgency=medium
+
+  * No-change rebuild against qtbase-abi-5-15-1.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Fri, 30 Oct 2020 15:40:52 +0300
+
 libqtxdg (3.5.0-0ubuntu1) groovy; urgency=medium
 
   * New upstream release.
@@ -29,6 +72,32 @@ libqtxdg (3.4.0-1ubuntu1) focal; urgency=medium
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 27 Oct 2019 18:28:10 +0100
 
+libqtxdg (3.4.0-1) unstable; urgency=medium
+
+  * New upstream version 3.4.0
+  * Switched to gbp
+  * Bumped Standards to 4.4.1, no changes needed
+  * Removed Dbus patch, fixed upstream
+  * Added new symbols
+  * Fixed tools packaging and descriptions 
+  * Added qtxdg-dev-tools to libqtxdg recommends
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 27 Oct 2019 18:28:10 +0100
+
+libqtxdg (3.3.1-2) unstable; urgency=medium
+
+  * Upstream patch: Avoid freeze for DBusActivatable apps (Closes: #928721)
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 09 May 2019 17:57:01 +0200
+
+libqtxdg (3.3.1-1) unstable; urgency=medium
+
+  * Cherry-picked new upstream-release 3.3.1.
+  * Added build dependency lxqt-build-tools (>= 0.6.0)
+  * Removed some cmake files from debian/copyright
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 24 Feb 2019 17:18:32 +0100
+
 libqtxdg (3.3.1-0ubuntu2) disco; urgency=medium
 
   * No change rebuild against qtbase-abi-5-12-2.
@@ -41,6 +110,17 @@ libqtxdg (3.3.1-0ubuntu1) disco; urgency=medium
   * Add lxqt-build-tools to build dependencies.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Fri, 08 Mar 2019 23:13:56 -0600
+
+libqtxdg (3.3.0-1) unstable; urgency=medium
+
+  * Cherry-picked new upstream-release 3.3.0
+  * Bumped Standards to 4.3.0, no changes needed
+  * Dropped d/compat, use debhelper-compat = 12, no changes needed
+  * Added Build-Depends-Package field to symbols
+  * Fixed the location of some files in d/copyright
+  * Fixed years in d/copyright
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 27 Jan 2019 12:49:28 +0100
 
 libqtxdg (3.3.0-0ubuntu1) disco; urgency=medium
 
@@ -271,3 +351,4 @@ libqtxdg (1.2.0+20150807-1) unstable; urgency=medium
     copyright format.
 
  -- Andrew Lee (李健秋) <ajqlee@debian.org>  Fri, 14 Aug 2015 04:07:21 +0800
+
