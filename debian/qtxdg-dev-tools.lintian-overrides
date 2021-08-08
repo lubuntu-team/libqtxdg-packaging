@@ -1,4 +1,4 @@
 # https://github.com/lxqt/libqtxdg/issues/209
-qtxdg-dev-tools: binary-without-manpage usr/bin/qtxdg-desktop-file-start
-qtxdg-dev-tools: binary-without-manpage usr/bin/qtxdg-iconfinder
-qtxdg-dev-tools: binary-without-manpage usr/bin/qtxdg-mat
+qtxdg-dev-tools: no-manual-page usr/bin/qtxdg-desktop-file-start
+qtxdg-dev-tools: no-manual-page usr/bin/qtxdg-iconfinder
+qtxdg-dev-tools: no-manual-page usr/bin/qtxdg-mat

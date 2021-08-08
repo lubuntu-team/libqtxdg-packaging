@@ -1,3 +1,17 @@
+libqtxdg (3.7.1-0ubuntu1) impish; urgency=medium
+
+  * New upstream version 3.7.1
+  * Bump Standards-Version to 4.5.1
+  * Bump build dependency lxqt-build-tools to 0.9.0
+  * Update and fix debian/copyright
+  * Update symbols
+    - Demangle symbols
+    - Remove unused symbols
+    - Add Build-Depends-Package metadata field
+  * Update debian/qtxdg-dev-tools.lintian-overrides
+
+ -- apt-ghetto <apt-ghetto@protonmail.com>  Sat, 07 Aug 2021 16:19:54 +0200
+
 libqtxdg (3.6.0-1ubuntu3) hirsute; urgency=medium
 
   * No change rebuild with fixed ownership.

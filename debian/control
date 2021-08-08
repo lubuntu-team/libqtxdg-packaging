@@ -10,12 +10,12 @@ Build-Depends: cmake,
                debhelper-compat (= 13),
                libmagic-dev,
                libqt5svg5-dev,
-               lxqt-build-tools (>= 0.7.0),
+               lxqt-build-tools (>= 0.9.0),
                pkg-config,
                qtbase5-private-dev,
                qttools5-dev,
                qttools5-dev-tools
-Standards-Version: 4.5.0
+Standards-Version: 4.5.1
 Vcs-Browser: https://phab.lubuntu.me/source/libqtxdg/
 Vcs-Git: https://phab.lubuntu.me/source/libqtxdg.git
 XS-Debian-Vcs-Browser: https://salsa.debian.org/lxqt-team/libqtxdg

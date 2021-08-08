@@ -7,24 +7,45 @@ Copyright: 2012-2018, LXQt team
            2010-2012, Razor team
 License: LGPL-2.1+
 
-Files: qtxdg/desktopenvironment_p.cpp
-       qtxdg/xdgdesktopfile_p.h
+Files: src/qtxdg/desktopenvironment_p.cpp
+       src/qtxdg/xdgdesktopfile_p.h
        test/qtxdg_test.cpp
        test/qtxdg_test.h
        test/tst_xdgdirs.cpp
-       xdgiconloader/plugin/xdgiconengineplugin.cpp
-       xdgiconloader/plugin/xdgiconengineplugin.h
+       src/xdgiconloader/plugin/xdgiconengineplugin.cpp
+       src/xdgiconloader/plugin/xdgiconengineplugin.h
 Copyright: 2013-2017, LXQt team
 License: LGPL-2.1+
 
-Files: qtxdg/xdgmacros.h
-       qtxdg/xdgmimetype.cpp
-       qtxdg/xdgmimetype.h
+Files: src/qtxdg/qtxdglogging.cpp
+       src/qtxdg/qtxdglogging.h
+       src/qtxdg/xdgmacros.h
+       src/qtxdg/xdgmimeapps.cpp
+       src/qtxdg/xdgmimeapps.h
+       src/qtxdg/xdgmimeapps_p.h
+       src/qtxdg/xdgmimeappsbackendinterface.cpp
+       src/qtxdg/xdgmimeappsbackendinterface.h
+       src/qtxdg/xdgmimeappsglibbackend.cpp
+       src/qtxdg/xdgmimeappsglibbackend.h
+       src/qtxdg/xdgmimetype.cpp
+       src/qtxdg/xdgmimetype.h
        test/tst_xdgdesktopfile.cpp
        test/tst_xdgdesktopfile.h
+       src/tools/mat/defappmatcommand.cpp
+       src/tools/mat/defappmatcommand.h
+       src/tools/mat/matcommandinterface.cpp
+       src/tools/mat/matcommandinterface.h
+       src/tools/mat/matcommandmanager.cpp
+       src/tools/mat/matcommandmanager.h
+       src/tools/mat/matglobals.h
+       src/tools/mat/mimetypematcommand.cpp
+       src/tools/mat/mimetypematcommand.h
+       src/tools/mat/openmatcommand.cpp
+       src/tools/mat/openmatcommand.h
+       src/tools/mat/qtxdg-mat.cpp
        util/qtxdg-desktop-file-start.cpp
        util/qtxdg-iconfinder.cpp
-Copyright: 2014-2018, Luís Pereira <luis.artur.pereira@gmail.com>
+Copyright: 2014, 2016-2018, Luís Pereira <luis.artur.pereira@gmail.com>
 License: LGPL-2.1+
 
 Files: cmake/compiler_settings.cmake
@@ -33,41 +54,42 @@ Copyright: 2013, Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 License: BSD-3-clause
 
 Files: debian/*
-Copyright: 2013-2018, Alf Gaida <agaida@siduction.org>
+Copyright: 2021, Lubuntu Developers <lubuntu-devel@lists.ubuntu.com>
+           2013-2018, Alf Gaida <agaida@siduction.org>
            2015, Andrew Lee (李健秋) <ajqlee@debian.org>
            2014-2016, ChangZhuo Chen (陳昌倬) <czchen@debian.org>
 License: LGPL-2.1+
 
-Files: qtxdg/xdgaction.cpp
-       qtxdg/xdgaction.h
-       qtxdg/xdgautostart.cpp
-       qtxdg/xdgautostart.h
-       qtxdg/xdgdesktopfile.cpp
-       qtxdg/xdgdesktopfile.h
-       qtxdg/xdgdirs.cpp
-       qtxdg/xdgdirs.h
-       qtxdg/xdgicon.cpp
-       qtxdg/xdgicon.h
-       qtxdg/xdgmenu.cpp
-       qtxdg/xdgmenu.h
-       qtxdg/xdgmenu_p.h
-       qtxdg/xdgmenuapplinkprocessor.cpp
-       qtxdg/xdgmenuapplinkprocessor.h
-       qtxdg/xdgmenulayoutprocessor.cpp
-       qtxdg/xdgmenulayoutprocessor.h
-       qtxdg/xdgmenureader.cpp
-       qtxdg/xdgmenureader.h
-       qtxdg/xdgmenurules.cpp
-       qtxdg/xdgmenurules.h
-       qtxdg/xdgmenuwidget.cpp
-       qtxdg/xdgmenuwidget.h
-       qtxdg/xmlhelper.cpp
-       qtxdg/xmlhelper.h
+Files: src/qtxdg/xdgaction.cpp
+       src/qtxdg/xdgaction.h
+       src/qtxdg/xdgautostart.cpp
+       src/qtxdg/xdgautostart.h
+       src/qtxdg/xdgdesktopfile.cpp
+       src/qtxdg/xdgdesktopfile.h
+       src/qtxdg/xdgdirs.cpp
+       src/qtxdg/xdgdirs.h
+       src/qtxdg/xdgicon.cpp
+       src/qtxdg/xdgicon.h
+       src/qtxdg/xdgmenu.cpp
+       src/qtxdg/xdgmenu.h
+       src/qtxdg/xdgmenu_p.h
+       src/qtxdg/xdgmenuapplinkprocessor.cpp
+       src/qtxdg/xdgmenuapplinkprocessor.h
+       src/qtxdg/xdgmenulayoutprocessor.cpp
+       src/qtxdg/xdgmenulayoutprocessor.h
+       src/qtxdg/xdgmenureader.cpp
+       src/qtxdg/xdgmenureader.h
+       src/qtxdg/xdgmenurules.cpp
+       src/qtxdg/xdgmenurules.h
+       src/qtxdg/xdgmenuwidget.cpp
+       src/qtxdg/xdgmenuwidget.h
+       src/qtxdg/xmlhelper.cpp
+       src/qtxdg/xmlhelper.h
 Copyright: 2010-2012, Razor team
 License: LGPL-2.1+
 
-Files: xdgiconloader/xdgiconloader.cpp
-       xdgiconloader/xdgiconloader_p.h
+Files: src/xdgiconloader/xdgiconloader.cpp
+       src/xdgiconloader/xdgiconloader_p.h
 Copyright: 2014, Digia Plc and/or its subsidiary(-ies)
 License: LGPL-2.1-or-3-with-Digia-1.1-exception
 

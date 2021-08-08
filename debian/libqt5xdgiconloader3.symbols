@@ -1,4 +1,5 @@
 libQt5XdgIconLoader.so.3 libqt5xdgiconloader3 #MINVER#
+* Build-Depends-Package: libqt4xdgiconloader3-dev
  (c++)"XdgIconLoader::findIconHelper(QString const&, QString const&, QStringList&, bool) const@Base" 3.0.0
  (c++)"XdgIconLoader::instance()@Base" 2.0.0
  (c++)"XdgIconLoader::loadIcon(QString const&) const@Base" 2.0.0
