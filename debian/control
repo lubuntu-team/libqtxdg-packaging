@@ -6,8 +6,8 @@ Uploaders: Alf Gaida <agaida@siduction.org>,
            Andrew Lee (李健秋) <ajqlee@debian.org>
 Section: libs
 Priority: optional
-Build-Depends: cmake,
-               debhelper-compat (= 13),
+Build-Depends: debhelper-compat (= 13),
+               cmake,
                libmagic-dev,
                libqt5svg5-dev,
                lxqt-build-tools (>= 0.10.0),
