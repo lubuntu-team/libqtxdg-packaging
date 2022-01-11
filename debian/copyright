@@ -54,10 +54,10 @@ Copyright: 2013, Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 License: BSD-3-clause
 
 Files: debian/*
-Copyright: 2021-2022, Lubuntu Developers <lubuntu-devel@lists.ubuntu.com>
-           2013-2018, Alf Gaida <agaida@siduction.org>
-           2015, Andrew Lee (李健秋) <ajqlee@debian.org>
+Copyright: 2013-2019, Alf Gaida <agaida@siduction.org>
+           2015-2022, Andrew Lee (李健秋) <ajqlee@debian.org>
            2014-2016, ChangZhuo Chen (陳昌倬) <czchen@debian.org>
+           2022,      S. 7 <severusseptimius7@gmail.com>
 License: LGPL-2.1+
 
 Files: src/qtxdg/xdgaction.cpp
