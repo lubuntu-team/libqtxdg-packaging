@@ -115,7 +115,7 @@ libqtxdg (3.4.0-1) unstable; urgency=medium
   * Bumped Standards to 4.4.1, no changes needed
   * Removed Dbus patch, fixed upstream
   * Added new symbols
-  * Fixed tools packaging and descriptions 
+  * Fixed tools packaging and descriptions
   * Added qtxdg-dev-tools to libqtxdg recommends
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 27 Oct 2019 18:28:10 +0100
