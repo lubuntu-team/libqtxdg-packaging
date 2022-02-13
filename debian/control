@@ -16,6 +16,7 @@ Build-Depends: debhelper-compat (= 13),
                qttools5-dev,
                qttools5-dev-tools
 Standards-Version: 4.6.0
+Rules-Requires-Root: no
 Vcs-Browser: https://salsa.debian.org/lxqt-team/libqtxdg
 Vcs-Git: https://salsa.debian.org/lxqt-team/libqtxdg.git
 Homepage: https://github.com/lxqt/libqtxdg
