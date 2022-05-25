@@ -1,3 +1,9 @@
+libqtxdg (3.7.1-0ubuntu2) jammy; urgency=medium
+
+  * No-change rebuild against Qt 5.15.3.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Thu, 17 Mar 2022 18:37:20 +0300
+
 libqtxdg (3.7.1-0ubuntu1) impish; urgency=medium
 
   * New upstream version 3.7.1
