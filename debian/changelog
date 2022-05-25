@@ -4,6 +4,7 @@ libqtxdg (3.9.1-0ubuntu1) UNRELEASED; urgency=medium
   * Bump Standards-version to 4.6.1, no changes needed.
   * Update symbols.
   * Update install files.
+  * Update copyright.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 25 May 2022 14:50:21 -0500
 
