@@ -1,1 +1,4 @@
 usr/lib/*/libQt5Xdg.so.*
+
+etc/xdg/lxqt-qtxdg.conf
+etc/xdg/qtxdg.conf
