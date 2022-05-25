@@ -1,3 +1,9 @@
+libqtxdg (3.7.1-0ubuntu3) kinetic; urgency=medium
+
+  * No-change rebuild against Qt 5.15.4.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Tue, 17 May 2022 13:01:44 +0300
+
 libqtxdg (3.7.1-0ubuntu2) jammy; urgency=medium
 
   * No-change rebuild against Qt 5.15.3.
