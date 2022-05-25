@@ -138,6 +138,10 @@ libQt5Xdg.so.3 libqt5xdg3 #MINVER#
  (c++)"XdgMimeType::operator=(XdgMimeType const&)@Base" 1.0.0
  (c++)"XdgMimeType::swap(XdgMimeType&)@Base" 3.6.0
  (c++)"XdgMimeType::~XdgMimeType()@Base" 1.0.0
+ (c++)"XdgDefaultApps::setTerminal(XdgDesktopFile const&)@Base" 3.9.1
+ (c++)"XdgDefaultApps::terminal()@Base" 3.9.1
+ (c++)"XdgDefaultApps::terminals()@Base" 3.9.1
+ (c++)"XdgDesktopFile::tryExec() const@Base" 3.9.1
  (c++)"non-virtual thunk to XdgMenuWidget::~XdgMenuWidget()@Base" 1.0.0
  (c++)"typeinfo for XdgAction@Base" 1.0.0
  (c++)"typeinfo for XdgDesktopFile@Base" 1.0.0
