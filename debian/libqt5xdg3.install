@@ -2,6 +2,3 @@ usr/lib/*/libQt5Xdg.so.*
 
 etc/xdg/lxqt-qtxdg.conf
 etc/xdg/qtxdg.conf
-
-usr/share/lxqt/lxqt-qtxdg.conf
-usr/share/lxqt/qtxdg.conf
