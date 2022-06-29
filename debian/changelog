@@ -1,7 +1,7 @@
 libqtxdg (3.9.1-2) experimental; urgency=medium
 
   * Bumped Standards-Version to 4.6.1, no change required.
-  * Updated symbols file for libqt5xdgiconloader3.
+  * Upstreamed symbols file for libqt5xdgiconloader3 from Ubuntu.
   * Changed "binary-without-manpage" to "no-manual-page" in
     qtxdg-dev-tools.lintian-overrides.
   * Upstreamed watch file from Ubuntu.
