@@ -1,5 +1,6 @@
 libqtxdg (3.9.1-2) experimental; urgency=medium
 
+  * Non-maintainer upload.
   * Bumped Standards-Version to 4.6.1, no change required.
   * Upstreamed symbols file for libqt5xdgiconloader3 from Ubuntu.
   * Changed "binary-without-manpage" to "no-manual-page" in
