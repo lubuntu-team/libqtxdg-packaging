@@ -10,42 +10,21 @@ License: LGPL-2.1+
 Files: src/qtxdg/desktopenvironment_p.cpp
        src/qtxdg/xdgdesktopfile_p.h
        test/qtxdg_test.cpp
-       test/qtxdg_test.h
-       test/tst_xdgdirs.cpp
        src/xdgiconloader/plugin/xdgiconengineplugin.cpp
        src/xdgiconloader/plugin/xdgiconengineplugin.h
+       test/qtxdg_test.h
+       test/tst_xdgdirs.cpp
 Copyright: 2013-2017, LXQt team
 License: LGPL-2.1+
 
-Files: src/qtxdg/qtxdglogging.cpp
-       src/qtxdg/qtxdglogging.h
-       src/qtxdg/xdgmacros.h
-       src/qtxdg/xdgmimeapps.cpp
-       src/qtxdg/xdgmimeapps.h
-       src/qtxdg/xdgmimeapps_p.h
-       src/qtxdg/xdgmimeappsbackendinterface.cpp
-       src/qtxdg/xdgmimeappsbackendinterface.h
-       src/qtxdg/xdgmimeappsglibbackend.cpp
-       src/qtxdg/xdgmimeappsglibbackend.h
+Files: src/qtxdg/xdgmacros.h
        src/qtxdg/xdgmimetype.cpp
        src/qtxdg/xdgmimetype.h
        test/tst_xdgdesktopfile.cpp
        test/tst_xdgdesktopfile.h
-       src/tools/mat/defappmatcommand.cpp
-       src/tools/mat/defappmatcommand.h
-       src/tools/mat/matcommandinterface.cpp
-       src/tools/mat/matcommandinterface.h
-       src/tools/mat/matcommandmanager.cpp
-       src/tools/mat/matcommandmanager.h
-       src/tools/mat/matglobals.h
-       src/tools/mat/mimetypematcommand.cpp
-       src/tools/mat/mimetypematcommand.h
-       src/tools/mat/openmatcommand.cpp
-       src/tools/mat/openmatcommand.h
-       src/tools/mat/qtxdg-mat.cpp
        util/qtxdg-desktop-file-start.cpp
        util/qtxdg-iconfinder.cpp
-Copyright: 2014, 2016-2018, Luís Pereira <luis.artur.pereira@gmail.com>
+Copyright: 2014-2019, Luís Pereira <luis.artur.pereira@gmail.com>
 License: LGPL-2.1+
 
 Files: cmake/compiler_settings.cmake
