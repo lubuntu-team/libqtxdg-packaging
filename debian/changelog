@@ -5,6 +5,7 @@ libqtxdg (3.9.1-2) experimental; urgency=medium
   * Changed "binary-without-manpage" to "no-manual-page" in
     qtxdg-dev-tools.lintian-overrides.
   * Upstreamed watch file from Ubuntu.
+  * Ran wrap-and-sort.
 
  -- Aaron Rainbolt <arraybolt3@gmail.com>  Tue, 28 Jun 2022 23:10:20 -0500
 
