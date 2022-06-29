@@ -1,6 +1,5 @@
 Source: libqtxdg
-Maintainer: Lubuntu Developers <lubuntu-devel@lists.ubuntu.com>
-XSBC-Original-Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
+Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
 Uploaders: Alf Gaida <agaida@siduction.org>,
            ChangZhuo Chen (陳昌倬) <czchen@debian.org>,
            Andrew Lee (李健秋) <ajqlee@debian.org>,
@@ -89,6 +88,7 @@ Depends: libqt5xdg3 (= ${binary:Version}),
          ${shlibs:Depends}
 Description: Tools for QtXdg
  This package provide some tools for qtxdg:
+ .
   * qtxdg-desktop-file-start - QtXdg XdgDesktopFile start Tester
   * qtxdg-iconfinder - Find icons the QtXdg way
   * qtxdg-mat - Mime app tool for QtXdg

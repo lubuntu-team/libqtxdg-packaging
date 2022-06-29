@@ -7,6 +7,7 @@ libqtxdg (3.9.1-2) experimental; urgency=medium
   * Upstreamed watch file from Ubuntu.
   * Ran wrap-and-sort.
   * Imported copyright file from upstream.
+  * Imported control file from upstream.
 
  -- Aaron Rainbolt <arraybolt3@gmail.com>  Tue, 28 Jun 2022 23:10:20 -0500
 
