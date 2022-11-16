@@ -3,49 +3,28 @@ Upstream-Name: libqtxdg
 Source: https://github.com/lxqt/libqtxdg
 
 Files: *
-Copyright: 2012-2018, LXQt team
+Copyright: 2012-2021, LXQt team
            2010-2012, Razor team
 License: LGPL-2.1+
 
 Files: src/qtxdg/desktopenvironment_p.cpp
        src/qtxdg/xdgdesktopfile_p.h
        test/qtxdg_test.cpp
-       test/qtxdg_test.h
-       test/tst_xdgdirs.cpp
        src/xdgiconloader/plugin/xdgiconengineplugin.cpp
        src/xdgiconloader/plugin/xdgiconengineplugin.h
+       test/qtxdg_test.h
+       test/tst_xdgdirs.cpp
 Copyright: 2013-2017, LXQt team
 License: LGPL-2.1+
 
-Files: src/qtxdg/qtxdglogging.cpp
-       src/qtxdg/qtxdglogging.h
-       src/qtxdg/xdgmacros.h
-       src/qtxdg/xdgmimeapps.cpp
-       src/qtxdg/xdgmimeapps.h
-       src/qtxdg/xdgmimeapps_p.h
-       src/qtxdg/xdgmimeappsbackendinterface.cpp
-       src/qtxdg/xdgmimeappsbackendinterface.h
-       src/qtxdg/xdgmimeappsglibbackend.cpp
-       src/qtxdg/xdgmimeappsglibbackend.h
+Files: src/qtxdg/xdgmacros.h
        src/qtxdg/xdgmimetype.cpp
        src/qtxdg/xdgmimetype.h
        test/tst_xdgdesktopfile.cpp
        test/tst_xdgdesktopfile.h
-       src/tools/mat/defappmatcommand.cpp
-       src/tools/mat/defappmatcommand.h
-       src/tools/mat/matcommandinterface.cpp
-       src/tools/mat/matcommandinterface.h
-       src/tools/mat/matcommandmanager.cpp
-       src/tools/mat/matcommandmanager.h
-       src/tools/mat/matglobals.h
-       src/tools/mat/mimetypematcommand.cpp
-       src/tools/mat/mimetypematcommand.h
-       src/tools/mat/openmatcommand.cpp
-       src/tools/mat/openmatcommand.h
-       src/tools/mat/qtxdg-mat.cpp
        util/qtxdg-desktop-file-start.cpp
        util/qtxdg-iconfinder.cpp
-Copyright: 2014, 2016-2018, Luís Pereira <luis.artur.pereira@gmail.com>
+Copyright: 2014-2019, Luís Pereira <luis.artur.pereira@gmail.com>
 License: LGPL-2.1+
 
 Files: cmake/compiler_settings.cmake
@@ -54,10 +33,10 @@ Copyright: 2013, Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 License: BSD-3-clause
 
 Files: debian/*
-Copyright: 2021-2022, Lubuntu Developers <lubuntu-devel@lists.ubuntu.com>
-           2013-2018, Alf Gaida <agaida@siduction.org>
-           2015, Andrew Lee (李健秋) <ajqlee@debian.org>
+Copyright: 2013-2019, Alf Gaida <agaida@siduction.org>
+           2015-2022, Andrew Lee (李健秋) <ajqlee@debian.org>
            2014-2016, ChangZhuo Chen (陳昌倬) <czchen@debian.org>
+           2022,      S. 7 <severusseptimius7@gmail.com>
 License: LGPL-2.1+
 
 Files: src/qtxdg/xdgaction.cpp

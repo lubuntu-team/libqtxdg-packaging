@@ -1,59 +1,40 @@
-libqtxdg (3.9.1-0ubuntu1) kinetic; urgency=medium
+libqtxdg (3.9.1-1) experimental; urgency=medium
 
-  * New upstream release.
-  * Bump Standards-version to 4.6.1, no changes needed.
-  * Update symbols.
-  * Update install files.
-  * Update copyright.
+  * New upstream release (Closes: #1013334).
+  * Add back symbols file.
+  * Update install file.
+  * Add my name to Uploaders.
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 25 May 2022 15:19:00 -0500
+ -- Simon Quigley <tsimonq2@debian.org>  Mon, 27 Jun 2022 22:28:56 -0500
 
-libqtxdg (3.7.1-0ubuntu3) kinetic; urgency=medium
+libqtxdg (3.8.0-2) experimental; urgency=medium
 
-  * No-change rebuild against Qt 5.15.4.
+  * Fix upstream metadata.
+  * Add Rules-Requires-Root: no.
+  * Remove unnecessary -Wl,--as-needed.
 
- -- Dmitry Shachnev <mitya57@ubuntu.com>  Tue, 17 May 2022 13:01:44 +0300
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sun, 13 Feb 2022 23:24:53 +0800
 
-libqtxdg (3.7.1-0ubuntu2) jammy; urgency=medium
+libqtxdg (3.8.0-1) experimental; urgency=medium
 
-  * No-change rebuild against Qt 5.15.3.
+  [ Andrew Lee (李健秋) ]
+  * New upstream version 3.8.0
 
- -- Dmitry Shachnev <mitya57@ubuntu.com>  Thu, 17 Mar 2022 18:37:20 +0300
+  [ S. 7 ]
+  * Update copyright
+  * Bump Standards to 4.6.0 (no changes)
+  * Refresh debian/libqt5xdg3.symbols file.
+  * Refresh debian/libqt5xdgiconloader3.symbols file
+  * debian/libqt5xdg3.install: install lxqt-qtxdg.conf and qtxdg.conf.
+  * Update changelog
 
-libqtxdg (3.7.1-0ubuntu1) impish; urgency=medium
+  [ Andrew Lee (李健秋) ]
+  * Update debian/copyright.
+  * Use debhelper-compat = 13, no changes needed.
+  * Rework on symbols for i386.
+  * debian/rules: Add cmake fix to make reprotest happy.
 
-  * New upstream version 3.7.1
-  * Bump Standards-Version to 4.5.1
-  * Bump build dependency lxqt-build-tools to 0.9.0
-  * Update and fix debian/copyright
-  * Update symbols
-    - Demangle symbols
-    - Remove unused symbols
-    - Add Build-Depends-Package metadata field
-  * Update debian/qtxdg-dev-tools.lintian-overrides
-
- -- apt-ghetto <apt-ghetto@protonmail.com>  Sat, 07 Aug 2021 16:19:54 +0200
-
-libqtxdg (3.6.0-1ubuntu3) hirsute; urgency=medium
-
-  * No change rebuild with fixed ownership.
-
- -- Dimitri John Ledkov <xnox@ubuntu.com>  Tue, 16 Feb 2021 16:58:55 +0000
-
-libqtxdg (3.6.0-1ubuntu2) hirsute; urgency=medium
-
-  * Fixed s390x symbols errors.
-  * fixed previous changelog too.
-
- -- Raman Sarda <theloudspeaker@disroot.org>  Fri, 12 Feb 2021 02:28:10 +0530
-
-libqtxdg (3.6.0-1ubuntu1) hirsute; urgency=medium
-
-  * Merge from Debian unstable.
-  * Updated debhelper-compat to 13.
-  * Updated symbols file.
-
- -- Raman Sarda <theloudspeaker@disroot.org>  Fri, 12 Feb 2021 00:25:21 +0530
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Tue, 11 Jan 2022 15:09:23 +0800
 
 libqtxdg (3.6.0-1) unstable; urgency=medium
 
@@ -65,49 +46,6 @@ libqtxdg (3.6.0-1) unstable; urgency=medium
 
  -- Andrew Lee (李健秋) <ajqlee@debian.org>  Fri, 25 Dec 2020 10:53:00 +0800
 
-libqtxdg (3.5.0-0ubuntu3) hirsute; urgency=medium
-
-  * No-change rebuild against qtbase-abi-5-15-2.
-
- -- Dmitry Shachnev <mitya57@ubuntu.com>  Fri, 27 Nov 2020 14:09:29 +0300
-
-libqtxdg (3.5.0-0ubuntu2) hirsute; urgency=medium
-
-  * No-change rebuild against qtbase-abi-5-15-1.
-
- -- Dmitry Shachnev <mitya57@ubuntu.com>  Fri, 30 Oct 2020 15:40:52 +0300
-
-libqtxdg (3.5.0-0ubuntu1) groovy; urgency=medium
-
-  * New upstream release.
-    - Update upstream signing key.
-    - Update LXQt build dependencies.
-    - Update symbols from amd64 build logs.
-  * Bump Standards-version to 4.5.0, no changes needed.
-  * debhelper -> debhelper-compat.
-  * Run wrap-and-sort.
-  * Update binary-without-manpage overrides.
-  * Fix possible-unindented-list-in-extended-description.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 03 Jun 2020 23:01:42 -0500
-
-libqtxdg (3.4.0-1ubuntu1) focal; urgency=medium
-
-  [ Alf Gaida ]
-  * New upstream version 3.4.0
-  * Switched to gbp
-  * Bumped Standards to 4.4.1, no changes needed
-  * Added new symbols
-  * Fixed tools packaging and descriptions
-  * Added qtxdg-dev-tools to libqtxdg recommends
-
-  [ apt-ghetto ]
-  * Take the package from salsa.debian.org
-  * Update it for ci/unstable
-  * Update debian/copyright
-
- -- Alf Gaida <agaida@siduction.org>  Sun, 27 Oct 2019 18:28:10 +0100
-
 libqtxdg (3.4.0-1) unstable; urgency=medium
 
   * New upstream version 3.4.0
@@ -115,7 +53,7 @@ libqtxdg (3.4.0-1) unstable; urgency=medium
   * Bumped Standards to 4.4.1, no changes needed
   * Removed Dbus patch, fixed upstream
   * Added new symbols
-  * Fixed tools packaging and descriptions 
+  * Fixed tools packaging and descriptions
   * Added qtxdg-dev-tools to libqtxdg recommends
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 27 Oct 2019 18:28:10 +0100
@@ -134,19 +72,6 @@ libqtxdg (3.3.1-1) unstable; urgency=medium
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 24 Feb 2019 17:18:32 +0100
 
-libqtxdg (3.3.1-0ubuntu2) disco; urgency=medium
-
-  * No change rebuild against qtbase-abi-5-12-2.
-
- -- Rik Mills <rikmills@kubuntu.org>  Wed, 27 Mar 2019 14:40:02 +0000
-
-libqtxdg (3.3.1-0ubuntu1) disco; urgency=medium
-
-  * New upstream release.
-  * Add lxqt-build-tools to build dependencies.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Fri, 08 Mar 2019 23:13:56 -0600
-
 libqtxdg (3.3.0-1) unstable; urgency=medium
 
   * Cherry-picked new upstream-release 3.3.0
@@ -157,25 +82,6 @@ libqtxdg (3.3.0-1) unstable; urgency=medium
   * Fixed years in d/copyright
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 27 Jan 2019 12:49:28 +0100
-
-libqtxdg (3.3.0-0ubuntu1) disco; urgency=medium
-
-  * New upstream release.
-    - Remove reverse-applicable patches.
-  * Bump Standards-version to 4.3.0, no changes needed.
-  * Bump debhelper compat to 12, no changes needed.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Fri, 25 Jan 2019 21:47:42 -0600
-
-libqtxdg (3.2.0-2ubuntu1) cosmic; urgency=medium
-
-  * Bump Standards-version to 4.1.5, no changes needed.
-  * Run wrap-and-sort.
-  * Fix inability to drag a menu item to the desktop.
-  * Following Debian, add a runtime dependency of libglib2.0-bin to libqtxdg3
-    (Closes: #902054, #902055).
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Fri, 13 Jul 2018 23:02:19 -0500
 
 libqtxdg (3.2.0-2) unstable; urgency=medium
 
@@ -191,17 +97,6 @@ libqtxdg (3.2.0-1) unstable; urgency=medium
   * Moved ./debian/.gitignore to ./.gitignore
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 23 May 2018 01:44:48 +0200
-
-libqtxdg (3.2.0-0ubuntu1) cosmic; urgency=medium
-
-  * New upstream release.
-  * Update Vcs-* and Maintainer to Lubuntu values.
-  * Update copyright file.
-  * Remove "~" from debhelper depends.
-  * Update the watch file to point to the new upstream location.
-  * Remove trailing whitespace from rules.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 21 May 2018 21:18:58 -0500
 
 libqtxdg (3.1.0-6) unstable; urgency=medium
 
@@ -387,4 +282,3 @@ libqtxdg (1.2.0+20150807-1) unstable; urgency=medium
     copyright format.
 
  -- Andrew Lee (李健秋) <ajqlee@debian.org>  Fri, 14 Aug 2015 04:07:21 +0800
-
