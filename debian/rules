@@ -2,7 +2,8 @@
 #export DH_VERBOSE = 1
 
 export LC_ALL=C.UTF-8
-export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all optimize=+lto
+
 
 %:
 	dh ${@} --buildsystem cmake
