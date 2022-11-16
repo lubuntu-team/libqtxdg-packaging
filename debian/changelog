@@ -2,6 +2,7 @@ libqtxdg (3.10.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * Add back symbols files.
   * New upstream release.
+  * Actually fix the upstream uscan file.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 16 Nov 2022 17:24:23 -0600
 
