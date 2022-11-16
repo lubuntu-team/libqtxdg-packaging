@@ -1,4 +1,4 @@
-libqtxdg (3.10.0-0ubuntu1) UNRELEASED; urgency=medium
+libqtxdg (3.10.0-0ubuntu1) lunar; urgency=medium
 
   * Add back symbols files.
   * New upstream release.
@@ -7,7 +7,7 @@ libqtxdg (3.10.0-0ubuntu1) UNRELEASED; urgency=medium
   * Bump the lxqt-build-tools build dependency version.
   * Update symbols from amd64 build logs.
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 16 Nov 2022 17:24:23 -0600
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 16 Nov 2022 17:43:14 -0600
 
 libqtxdg (3.9.1-3) sid; urgency=medium
 
