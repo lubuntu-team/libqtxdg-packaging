@@ -155,7 +155,6 @@ libQt5Xdg.so.3 libqt5xdg3 #MINVER#
  (c++)"typeinfo name for XdgMenu@Base" 1.0.0
  (c++)"typeinfo name for XdgMenuWidget@Base" 1.0.0
  (c++)"typeinfo name for XdgMimeApps@Base" 3.4.0+git20191223
- (c++|arch=!s390x)"void std::vector<std::unique_ptr<XdgDesktopFile, std::default_delete<XdgDesktopFile> >, std::allocator<std::unique_ptr<XdgDesktopFile, std::default_delete<XdgDesktopFile> > > >::_M_realloc_insert<std::unique_ptr<XdgDesktopFile, std::default_delete<XdgDesktopFile> > >(__gnu_cxx::__normal_iterator<std::unique_ptr<XdgDesktopFile, std::default_delete<XdgDesktopFile> >*, std::vector<std::unique_ptr<XdgDesktopFile, std::default_delete<XdgDesktopFile> >, std::allocator<std::unique_ptr<XdgDesktopFile, std::default_delete<XdgDesktopFile> > > > >, std::unique_ptr<XdgDesktopFile, std::default_delete<XdgDesktopFile> >&&)@Base" 3.6.0
  (c++)"vtable for XdgAction@Base" 1.0.0
  (c++)"vtable for XdgDesktopFile@Base" 1.0.0
  (c++)"vtable for XdgIcon@Base" 1.0.0

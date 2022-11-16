@@ -5,6 +5,7 @@ libqtxdg (3.10.0-0ubuntu1) UNRELEASED; urgency=medium
   * Actually fix the upstream uscan file.
   * Lubuntuify the package slightly, to make debhelper happy.
   * Bump the lxqt-build-tools build dependency version.
+  * Update symbols from amd64 build logs.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 16 Nov 2022 17:24:23 -0600
 
