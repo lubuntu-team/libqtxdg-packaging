@@ -1,5 +1,6 @@
 Source: libqtxdg
-Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
+Maintainer: Lubuntu Developers <lubuntu-devel@lists.ubuntu.com>
+XSBC-Original-Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
 Uploaders: Alf Gaida <agaida@siduction.org>,
            ChangZhuo Chen (陳昌倬) <czchen@debian.org>,
            Andrew Lee (李健秋) <ajqlee@debian.org>,
@@ -17,8 +18,10 @@ Build-Depends: cmake,
                qttools5-dev-tools
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
-Vcs-Browser: https://salsa.debian.org/lxqt-team/libqtxdg
-Vcs-Git: https://salsa.debian.org/lxqt-team/libqtxdg.git
+Vcs-Browser: https://git.lubuntu.me/Lubuntu/libqtxdg-packaging
+Vcs-Git: https://git.lubuntu.me/Lubuntu/libqtxdg-packaging.git
+XS-Debian-Vcs-Browser: https://salsa.debian.org/lxqt-team/libqtxdg
+XS-Debian-Vcs-Git: https://salsa.debian.org/lxqt-team/libqtxdg.git
 Homepage: https://github.com/lxqt/libqtxdg
 
 Package: libqt5xdg3
