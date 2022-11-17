@@ -1,3 +1,9 @@
+libqtxdg (3.10.0-0ubuntu1~ppa1) jammy; urgency=medium
+
+  * Upload to Backports.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 16 Nov 2022 17:56:43 -0600
+
 libqtxdg (3.10.0-0ubuntu1) lunar; urgency=medium
 
   * Add back symbols files.
