@@ -1,4 +1,5 @@
 libQt5XdgIconLoader.so.3 libqt5xdgiconloader3 #MINVER#
+* Build-Depends-Package: libqt5xdgiconloader-dev
  _ZN13XdgIconLoader20setFollowColorSchemeEb@Base 3.8.0
  _ZN13XdgIconLoader8instanceEv@Base 3.8.0
  _ZN19XdgIconLoaderEngine10actualSizeERK5QSizeN5QIcon4ModeENS3_5StateE@Base 3.8.0

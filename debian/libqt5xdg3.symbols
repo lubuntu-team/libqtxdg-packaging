@@ -1,5 +1,5 @@
 libQt5Xdg.so.3 libqt5xdg3 #MINVER#
-* Build-Depends-Package: libqt5xdg3-dev
+* Build-Depends-Package: libqt5xdg-dev
  (c++)"XdgAction::XdgAction(QObject*)@Base" 1.0.0
  (c++)"XdgAction::XdgAction(QString const&, QObject*)@Base" 1.0.0
  (c++)"XdgAction::XdgAction(XdgAction const&, QObject*)@Base" 1.0.0
