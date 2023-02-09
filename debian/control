@@ -16,7 +16,7 @@ Build-Depends: cmake,
                qtbase5-private-dev,
                qttools5-dev,
                qttools5-dev-tools
-Standards-Version: 4.6.1
+Standards-Version: 4.6.2
 Rules-Requires-Root: no
 Vcs-Browser: https://git.lubuntu.me/Lubuntu/libqtxdg-packaging
 Vcs-Git: https://git.lubuntu.me/Lubuntu/libqtxdg-packaging.git

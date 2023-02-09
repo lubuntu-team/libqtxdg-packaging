@@ -1,6 +1,7 @@
 libqtxdg (3.10.0-0ubuntu5) lunar; urgency=medium
 
   * Rebuild against lxqt-build-tools 0.12.0-0ubuntu3.
+  * Bumped Standards-Version to 4.6.2, no changes necessary.
 
  -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Thu, 09 Feb 2023 13:17:41 -0600
 
