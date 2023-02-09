@@ -1,3 +1,9 @@
+libqtxdg (3.10.0-0ubuntu5) lunar; urgency=medium
+
+  * Rebuild against lxqt-build-tools 0.12.0-0ubuntu3.
+
+ -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Thu, 09 Feb 2023 13:17:41 -0600
+
 libqtxdg (3.10.0-0ubuntu4) lunar; urgency=medium
 
   * No-change rebuild against Qt 5.15.8.
