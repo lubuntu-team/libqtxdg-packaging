@@ -1,3 +1,15 @@
+libqtxdg (3.10.0-0ubuntu4) lunar; urgency=medium
+
+  * No-change rebuild against Qt 5.15.8.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Sat, 14 Jan 2023 10:19:42 +0300
+
+libqtxdg (3.10.0-0ubuntu3) lunar; urgency=medium
+
+  * No-change rebuild against Qt 5.15.7.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Sat, 10 Dec 2022 12:51:12 +0300
+
 libqtxdg (3.10.0-0ubuntu2) lunar; urgency=medium
 
   * Fixed Build-Depends-Package fields in symbols files.
