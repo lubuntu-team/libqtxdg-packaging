@@ -1,4 +1,4 @@
-libqtxdg (3.10.0-0ubuntu6) lunar; urgency=medium
+libqtxdg (3.10.0-0ubuntu7) lunar; urgency=medium
 
   * Add support for translations defined via X-Ubuntu-Gettext-Domain.
 
