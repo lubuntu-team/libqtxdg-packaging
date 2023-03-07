@@ -1,3 +1,9 @@
+libqtxdg (3.10.0-0ubuntu6~ppa1) jammy; urgency=medium
+
+  * Upload to Backports.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 06 Mar 2023 19:22:09 -0600
+
 libqtxdg (3.10.0-0ubuntu6) lunar; urgency=medium
 
   * Add support for translations defined via X-Ubuntu-Gettext-Domain.
