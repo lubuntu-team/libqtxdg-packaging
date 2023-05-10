@@ -2,6 +2,7 @@ libqtxdg (3.11.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Update patches.
+  * Update copyright file.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 10 May 2023 11:46:25 -0500
 
