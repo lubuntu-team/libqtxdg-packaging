@@ -15,7 +15,7 @@ This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
  
  #include <QDebug>
  #include <QDBusInterface>
-@@ -921,7 +922,22 @@ QString XdgDesktopFile::localizedKey(con
+@@ -920,7 +921,22 @@ QString XdgDesktopFile::localizedKey(con
  
  QVariant XdgDesktopFile::localizedValue(const QString& key, const QVariant& defaultValue) const
  {
@@ -37,3 +37,5 @@ This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 +        return value(localizedKey(key), defaultValue);
 +    }
  }
+ 
+ 
