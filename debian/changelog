@@ -1,3 +1,9 @@
+libqtxdg (3.11.0-0ubuntu1~ppa1) jammy; urgency=medium
+
+  * Backport to Jammy.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Thu, 10 Aug 2023 16:32:51 -0500
+
 libqtxdg (3.11.0-0ubuntu1) mantic; urgency=medium
 
   * New upstream release.
