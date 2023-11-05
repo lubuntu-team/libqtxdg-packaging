@@ -1,9 +1,9 @@
-libqtxdg (3.12.0-0ubuntu1) UNRELEASED; urgency=medium
+libqtxdg (3.12.0-0ubuntu1) noble; urgency=medium
 
   * New upstream release.
   * Update copyright.
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Sun, 05 Nov 2023 17:04:20 +0200
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sun, 05 Nov 2023 17:11:47 +0200
 
 libqtxdg (3.11.0-0ubuntu3) mantic; urgency=medium
 
