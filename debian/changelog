@@ -1,3 +1,9 @@
+libqtxdg (3.12.0-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sun, 05 Nov 2023 17:04:20 +0200
+
 libqtxdg (3.11.0-0ubuntu3) mantic; urgency=medium
 
   * No-change rebuild against Qt 5.15.10.
