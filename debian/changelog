@@ -1,3 +1,9 @@
+libqtxdg (3.11.0-0ubuntu2) mantic; urgency=medium
+
+  * No-change rebuild against Qt 5.15.9.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Wed, 17 May 2023 00:10:29 +0300
+
 libqtxdg (3.11.0-0ubuntu1) mantic; urgency=medium
 
   * New upstream release.
