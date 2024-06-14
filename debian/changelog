@@ -4,6 +4,7 @@ libqtxdg (4.0.0-0ubuntu1) UNRELEASED; urgency=medium
   * Update copyright file.
   * Bump Standards-Version to 4.7.0, no changes necessary.
   * Update d/control for Qt6 and LXQt 2.
+  * Renamed pkg-config to pkgconf in d/control.
 
  -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Fri, 14 Jun 2024 13:46:09 -0500
 
