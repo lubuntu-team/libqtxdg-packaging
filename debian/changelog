@@ -2,6 +2,7 @@ libqtxdg (4.0.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Update copyright file.
+  * Bump Standards-Version to 4.7.0, no changes necessary.
 
  -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Fri, 14 Jun 2024 13:46:09 -0500
 
