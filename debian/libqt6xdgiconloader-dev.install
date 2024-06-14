@@ -1,0 +1,8 @@
+usr/include/qt6xdgiconloader
+usr/lib/*/libQt6XdgIconLoader.so
+usr/lib/*/pkgconfig/Qt6XdgIconLoader.pc
+usr/lib/*/qt6/plugins/iconengines/libQt6XdgIconPlugin.so
+usr/share/cmake/qt6xdgiconloader/qt6xdgiconloader-config-version.cmake
+usr/share/cmake/qt6xdgiconloader/qt6xdgiconloader-config.cmake
+usr/share/cmake/qt6xdgiconloader/qt6xdgiconloader-targets-relwithdebinfo.cmake
+usr/share/cmake/qt6xdgiconloader/qt6xdgiconloader-targets.cmake

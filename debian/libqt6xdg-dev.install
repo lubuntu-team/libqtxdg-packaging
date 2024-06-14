@@ -1,0 +1,4 @@
+usr/include/qt6xdg
+usr/lib/*/libQt6Xdg.so
+usr/lib/*/pkgconfig/Qt6Xdg.pc
+usr/share/cmake/qt6xdg/
