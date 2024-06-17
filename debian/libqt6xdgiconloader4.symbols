@@ -1,14 +1,18 @@
-libQt5XdgIconLoader.so.3 libqt5xdgiconloader3 #MINVER#
-* Build-Depends-Package: libqt5xdgiconloader-dev
+# SymbolsHelper-Confirmed: 4.0.0 amd64 arm64 armhf ppc64el riscv64 s390x
+libQt6XdgIconLoader.so.4 libqt6xdgiconloader4 #MINVER#
+* Build-Depends-Package: libqt6xdgiconloader-dev
  _ZN13XdgIconLoader20setFollowColorSchemeEb@Base 3.8.0
  _ZN13XdgIconLoader8instanceEv@Base 3.8.0
  _ZN19XdgIconLoaderEngine10actualSizeERK5QSizeN5QIcon4ModeENS3_5StateE@Base 3.8.0
  _ZN19XdgIconLoaderEngine12ensureLoadedEv@Base 3.8.0
- _ZN19XdgIconLoaderEngine12entryForSizeERK5QSizei@Base 3.8.0
- _ZN19XdgIconLoaderEngine12virtual_hookEiPv@Base 3.8.0
+ _ZN19XdgIconLoaderEngine12entryForSizeERK14QThemeIconInfoRK5QSizei@Base 4.0.0
+ _ZN19XdgIconLoaderEngine12scaledPixmapERK5QSizeN5QIcon4ModeENS3_5StateEd@Base 4.0.0
+ _ZN19XdgIconLoaderEngine14availableSizesEN5QIcon4ModeENS0_5StateE@Base 4.0.0
  _ZN19XdgIconLoaderEngine4readER11QDataStream@Base 3.8.0
  _ZN19XdgIconLoaderEngine5paintEP8QPainterRK5QRectN5QIcon4ModeENS5_5StateE@Base 3.8.0
+ _ZN19XdgIconLoaderEngine6isNullEv@Base 4.0.0
  _ZN19XdgIconLoaderEngine6pixmapERK5QSizeN5QIcon4ModeENS3_5StateE@Base 3.8.0
+ _ZN19XdgIconLoaderEngine8iconNameEv@Base 4.0.0
  _ZN19XdgIconLoaderEngineC1ERK7QString@Base 3.8.0
  _ZN19XdgIconLoaderEngineC1ERKS_@Base 3.8.0
  _ZN19XdgIconLoaderEngineC2ERK7QString@Base 3.8.0
@@ -16,8 +20,8 @@ libQt5XdgIconLoader.so.3 libqt5xdgiconloader3 #MINVER#
  _ZN19XdgIconLoaderEngineD0Ev@Base 3.8.0
  _ZN19XdgIconLoaderEngineD1Ev@Base 3.8.0
  _ZN19XdgIconLoaderEngineD2Ev@Base 3.8.0
- _ZNK13XdgIconLoader14findIconHelperERK7QStringS2_R11QStringListb@Base 3.8.0
- _ZNK13XdgIconLoader16unthemedFallbackERK7QStringRK11QStringList@Base 3.8.0
+ _ZNK13XdgIconLoader14findIconHelperERK7QStringS2_R5QListIS0_Eb@Base 4.0.0
+ _ZNK13XdgIconLoader16unthemedFallbackERK7QStringRK5QListIS0_E@Base 4.0.0
  _ZNK13XdgIconLoader8loadIconERK7QString@Base 3.8.0
  _ZNK19XdgIconLoaderEngine3keyEv@Base 3.8.0
  _ZNK19XdgIconLoaderEngine5cloneEv@Base 3.8.0

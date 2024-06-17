@@ -1,4 +1,4 @@
-libqtxdg (4.0.0-0ubuntu1~ppa1) oracular; urgency=medium
+libqtxdg (4.0.0-0ubuntu1~ppa3) oracular; urgency=medium
 
   * New upstream release.
   * Update copyright file.
@@ -6,6 +6,7 @@ libqtxdg (4.0.0-0ubuntu1~ppa1) oracular; urgency=medium
   * Update d/control for Qt6 and LXQt 2.
   * Rename installation guidance files to reflect new package names.
   * Renamed pkg-config to pkgconf in d/control.
+  * Update symbols files.
 
  -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Fri, 14 Jun 2024 18:23:14 -0500
 
