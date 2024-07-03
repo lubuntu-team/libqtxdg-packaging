@@ -35,6 +35,8 @@ Depends: file,
          ${shlibs:Depends}
 Recommends: qt6-translations-l10n
 Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libqt5xdg3 (< 3.12.0-0ubuntu7~)
+Replaces: libqt5xdg3 (< 3.12.0-0ubuntu7~)
 Provides: libqt6xdg
 Description: Implementation of the XDG Specifications for Qt (shared lib)
  This library implements functions of the XDG Specifications in Qt.  It is part
@@ -48,6 +50,8 @@ Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Recommends: gtk-update-icon-cache
 Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libqt5xdgiconloader3 (< 3.12.0-0ubuntu7~)
+Replaces: libqt5xdgiconloader3 (< 3.12.0-0ubuntu7~)
 Provides: libqt6xdgiconloader
 Description: Implementation of the XDG Iconloader for Qt (shared lib)
  This library implements the backend to load icons which are handled according
@@ -63,6 +67,8 @@ Depends: libmagic-dev,
          libqt6xdgiconloader-dev (= ${binary:Version}),
          ${misc:Depends}
 Recommends: qtxdg-dev-tools (= ${source:Version})
+Conflicts: libqt5xdg-dev (< 3.12.0-0ubuntu7~)
+Replaces: libqt5xdg-dev (< 3.12.0-0ubuntu7~)
 Description: Development files for libqtxdg
  This library implements functions of the XDG Specifications in Qt. It is part
  of LXQt.
@@ -76,6 +82,8 @@ Depends: qt6-svg-dev,
          libqt6xdgiconloader4 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
+Conflicts: libqt5xdgiconloader-dev (< 3.12.0-0ubuntu7~)
+Replaces: libqt5xdgiconloader-dev (< 3.12.0-0ubuntu7~)
 Description: Development files for libqtxdgiconloader
  This library implements the backend to load icons which are handled according
  to the XDG Icon Theme Specification in Qt. It is part of LXQt.
