@@ -78,8 +78,8 @@ Description: Development files for libqtxdg
 Package: libqt6xdgiconloader-dev
 Architecture: any
 Section: libdevel
-Depends: qt6-svg-dev,
-         libqt6xdgiconloader4 (= ${binary:Version}),
+Depends: libqt6xdgiconloader4 (= ${binary:Version}),
+         qt6-svg-dev,
          ${misc:Depends},
          ${shlibs:Depends}
 Conflicts: libqt5xdgiconloader-dev (< 3.12.0-0ubuntu7~)
