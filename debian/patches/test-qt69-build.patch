@@ -1,0 +1,39 @@
+Description: https://github.com/lxqt/libqtxdg/issues/310
+
+diff --git a/src/xdgiconloader/xdgiconloader.cpp b/src/xdgiconloader/xdgiconloader.cpp
+index c299cca..2353ba4 100644
+--- a/src/xdgiconloader/xdgiconloader.cpp
++++ b/src/xdgiconloader/xdgiconloader.cpp
+@@ -439,7 +439,11 @@ QThemeIconInfo XdgIconLoader::findIconHelper(const QString &themeName,
+                 } else if (gSupportsSvg) {
+                     const QString svgPath = subDir + svgIconName;
+                     if (QFile::exists(svgPath)) {
+-                        std::unique_ptr<ScalableEntry> iconEntry = (followColorScheme() && theme.followsColorScheme()) ? std::make_unique<ScalableFollowsColorEntry>() : std::make_unique<ScalableEntry>();
++                        std::unique_ptr<QIconLoaderEngineEntry> iconEntry;
++                        if (followColorScheme() && theme.followsColorScheme())
++                            iconEntry = std::make_unique<ScalableFollowsColorEntry>();
++                        else
++                            iconEntry = std::make_unique<ScalableEntry>();
+                         iconEntry->dir = dirInfo;
+                         iconEntry->filename = svgPath;
+                         info.entries.push_back(std::move(iconEntry));
+diff --git a/src/xdgiconloader/xdgiconloader_p.h b/src/xdgiconloader/xdgiconloader_p.h
+index 6c5f17f..cb990a9 100644
+--- a/src/xdgiconloader/xdgiconloader_p.h
++++ b/src/xdgiconloader/xdgiconloader_p.h
+@@ -61,13 +61,14 @@
+ 
+ class XdgIconLoader;
+ 
+-struct ScalableFollowsColorEntry : public ScalableEntry
++struct ScalableFollowsColorEntry : public QIconLoaderEngineEntry
+ {
+ #if (QT_VERSION >= QT_VERSION_CHECK(6,8,0))
+     QPixmap pixmap(const QSize &size, QIcon::Mode mode, QIcon::State state, qreal scale) override;
+ #else
+     QPixmap pixmap(const QSize &size, QIcon::Mode mode, QIcon::State state) override;
+ #endif
++    QIcon svgIcon;
+ };
+ 
+ //class QIconLoaderEngine : public QIconEngine
