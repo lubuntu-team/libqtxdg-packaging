@@ -1,3 +1,9 @@
+libqtxdg (4.1.0-0ubuntu5) plucky; urgency=medium
+
+  * No-change rebuild for Qt 6.8.2.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Tue, 04 Feb 2025 11:05:34 -0600
+
 libqtxdg (4.1.0-0ubuntu4) plucky; urgency=medium
 
   * No-change rebuild for lxqt-build-tools C++17 -> C++20.
