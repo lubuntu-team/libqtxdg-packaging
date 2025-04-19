@@ -1,6 +1,7 @@
 libqtxdg (4.2.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
+    - Update build dependencies.
   * Update Standards-Version to 4.7.2, no changes needed.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 19 Apr 2025 16:36:24 -0500
