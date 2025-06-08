@@ -4,7 +4,7 @@ libqtxdg (4.2.0-0ubuntu1) questing; urgency=medium
     - Update build dependencies.
   * Update Standards-Version to 4.7.2, no changes needed.
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 19 Apr 2025 17:18:09 -0500
+ -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Sat, 07 Jun 2025 23:44:05 -0500
 
 libqtxdg (4.1.0-0ubuntu6) plucky; urgency=medium
 
