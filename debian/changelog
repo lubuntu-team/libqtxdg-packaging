@@ -1,3 +1,9 @@
+libqtxdg (4.3.0-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Wed, 14 Jan 2026 18:05:51 +0000
+
 libqtxdg (4.2.0-0ubuntu1) questing; urgency=medium
 
   * New upstream release.
