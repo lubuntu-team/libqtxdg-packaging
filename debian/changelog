@@ -1,6 +1,7 @@
 libqtxdg (4.3.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Update copyright file.
 
  -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Wed, 14 Jan 2026 18:05:51 +0000
 
