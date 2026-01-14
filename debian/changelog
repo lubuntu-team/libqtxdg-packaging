@@ -4,6 +4,7 @@ libqtxdg (4.3.0-0ubuntu1) UNRELEASED; urgency=medium
     - Update build dependencies.
   * Update copyright file.
   * Update Standards-Version to 4.7.3, no changes needed.
+  * Remove redundant 'Rules-Requires-Root: no' control line.
 
  -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Wed, 14 Jan 2026 18:05:51 +0000
 

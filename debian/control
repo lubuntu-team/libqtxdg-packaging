@@ -17,7 +17,6 @@ Build-Depends: cmake,
                qt6-tools-dev,
                qt6-tools-dev-tools
 Standards-Version: 4.7.3
-Rules-Requires-Root: no
 Vcs-Browser: https://git.lubuntu.me/Lubuntu/libqtxdg-packaging
 Vcs-Git: https://git.lubuntu.me/Lubuntu/libqtxdg-packaging.git
 Debian-Vcs-Browser: https://salsa.debian.org/lxqt-team/libqtxdg
