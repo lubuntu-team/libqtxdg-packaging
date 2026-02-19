@@ -3,11 +3,14 @@ libqtxdg (4.3.0-0ubuntu1) resolute; urgency=medium
   * New upstream release.
     - Update build dependencies.
     - Update symbols file.
+    - Refresh ubuntu-gettext-translations.patch.
+    - Backport Qt 6.10 compatibility fix from upstream as
+      qt-6.10-compat.patch.
   * Update copyright file.
   * Update Standards-Version to 4.7.3, no changes needed.
   * Remove redundant 'Rules-Requires-Root: no' control line.
 
- -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Wed, 14 Jan 2026 12:14:26 -0600
+ -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Thu, 19 Feb 2026 13:19:33 -0500
 
 libqtxdg (4.2.0-0ubuntu1) questing; urgency=medium
 
