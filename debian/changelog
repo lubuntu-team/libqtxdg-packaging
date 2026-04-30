@@ -2,6 +2,7 @@ libqtxdg (4.4.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Update Standards-Version to 4.7.4, dropping Priority: optional.
+  * Update the upstream signing key.
 
  -- Simon Quigley <tsimonq2@debian.org>  Thu, 30 Apr 2026 12:28:29 -0500
 
