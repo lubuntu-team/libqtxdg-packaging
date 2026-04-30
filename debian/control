@@ -9,7 +9,7 @@ Section: libs
 Build-Depends: cmake,
                debhelper-compat (= 13),
                libmagic-dev,
-               lxqt-build-tools (>= 2.3.0),
+               lxqt-build-tools (>= 2.4.0),
                pkgconf,
                qt6-base-private-dev,
                qt6-svg-dev,
