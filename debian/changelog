@@ -1,4 +1,4 @@
-libqtxdg (4.4.0-0ubuntu1) UNRELEASED; urgency=medium
+libqtxdg (4.4.0-0ubuntu1) stonking; urgency=medium
 
   * New upstream release.
     - Drop qt-6.10-compat.patch, it is applied upstream.
@@ -9,7 +9,7 @@ libqtxdg (4.4.0-0ubuntu1) UNRELEASED; urgency=medium
   * Update the upstream signing key.
   * Update the copyright file.
 
- -- Simon Quigley <tsimonq2@debian.org>  Thu, 30 Apr 2026 12:28:29 -0500
+ -- Simon Quigley <tsimonq2@debian.org>  Thu, 30 Apr 2026 12:42:47 -0500
 
 libqtxdg (4.3.0-0ubuntu1) resolute; urgency=medium
 
