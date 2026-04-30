@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4.0.0 amd64 arm64 armhf ppc64el riscv64 s390x
+# SymbolsHelper-Confirmed: 4.4.0 amd64
 libQt6Xdg.so.4 libqt6xdg4 #MINVER#
 * Build-Depends-Package: libqt6xdg-dev
  (c++)"XdgAction::XdgAction(QObject*)@Base" 1.0.0
@@ -138,6 +138,8 @@ libQt6Xdg.so.4 libqt6xdg4 #MINVER#
  (c++)"XdgMimeType::swap(XdgMimeType&)@Base" 3.6.0
  (c++)"XdgMimeType::~XdgMimeType()@Base" 1.0.0
  _ZN12XdgAutoStart15desktopFileListE5QListI7QStringEb@Base 4.0.0
+ _ZN7XdgDirs9stateHomeERK7QStringb@Base 4.4.0
+ _ZN7XdgDirs9stateHomeEb@Base 4.4.0
  _ZN7XdgIcon9fromThemeERK5QListI7QStringERK5QIcon@Base 4.0.0
  _ZN7XdgMenu15setEnvironmentsERK5QListI7QStringE@Base 4.0.0
  _ZNK14XdgDesktopFile13startDetachedERK5QListI7QStringE@Base 4.0.0
