@@ -6,8 +6,8 @@ Uploaders: Alf Gaida <agaida@siduction.org>,
            Andrew Lee (李健秋) <ajqlee@debian.org>,
            Simon Quigley <tsimonq2@debian.org>
 Section: libs
-Build-Depends: cmake,
-               debhelper-compat (= 13),
+Build-Depends: debhelper-compat (= 14),
+               cmake,
                libmagic-dev,
                lxqt-build-tools (>= 2.5.0),
                pkgconf,
@@ -25,14 +25,8 @@ Homepage: https://github.com/lxqt/libqtxdg
 Package: libqt6xdg4
 Architecture: any
 Multi-Arch: same
-Depends: file,
-         libfile-mimeinfo-perl,
-         libglib2.0-bin,
-         shared-mime-info,
-         ${misc:Depends},
-         ${shlibs:Depends}
+Depends: file, libfile-mimeinfo-perl, libglib2.0-bin, shared-mime-info
 Recommends: qt6-translations-l10n
-Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libqt5xdg3 (<< 3.12.0-0ubuntu7~)
 Replaces: libqt5xdg3 (<< 3.12.0-0ubuntu7~)
 Provides: libqt6xdg
@@ -45,9 +39,7 @@ Description: Implementation of the XDG Specifications for Qt (shared lib)
 Package: libqt6xdgiconloader4
 Architecture: any
 Multi-Arch: same
-Depends: ${misc:Depends}, ${shlibs:Depends}
 Recommends: gtk-update-icon-cache
-Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libqt5xdgiconloader3 (<< 3.12.0-0ubuntu7~)
 Replaces: libqt5xdgiconloader3 (<< 3.12.0-0ubuntu7~)
 Provides: libqt6xdgiconloader
@@ -62,8 +54,7 @@ Architecture: any
 Section: libdevel
 Depends: libmagic-dev,
          libqt6xdg4 (= ${binary:Version}),
-         libqt6xdgiconloader-dev (= ${binary:Version}),
-         ${misc:Depends}
+         libqt6xdgiconloader-dev (= ${binary:Version})
 Recommends: qtxdg-dev-tools (= ${source:Version})
 Conflicts: libqt5xdg-dev (<< 3.12.0-0ubuntu7~)
 Replaces: libqt5xdg-dev (<< 3.12.0-0ubuntu7~)
@@ -76,10 +67,7 @@ Description: Development files for libqtxdg
 Package: libqt6xdgiconloader-dev
 Architecture: any
 Section: libdevel
-Depends: libqt6xdgiconloader4 (= ${binary:Version}),
-         qt6-svg-dev,
-         ${misc:Depends},
-         ${shlibs:Depends}
+Depends: libqt6xdgiconloader4 (= ${binary:Version}), qt6-svg-dev
 Conflicts: libqt5xdgiconloader-dev (<< 3.12.0-0ubuntu7~)
 Replaces: libqt5xdgiconloader-dev (<< 3.12.0-0ubuntu7~)
 Description: Development files for libqtxdgiconloader
@@ -92,9 +80,7 @@ Package: qtxdg-dev-tools
 Architecture: any
 Section: devel
 Depends: libqt6xdg4 (= ${binary:Version}),
-         libqt6xdgiconloader4 (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
+         libqt6xdgiconloader4 (= ${binary:Version})
 Description: Tools for QtXdg
  This package provide some tools for qtxdg:
  .
