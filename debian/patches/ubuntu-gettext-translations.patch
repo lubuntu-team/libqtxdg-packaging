@@ -7,15 +7,16 @@ Last-Update: 2023-03-06
 This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 --- a/src/qtxdg/xdgdesktopfile.cpp
 +++ b/src/qtxdg/xdgdesktopfile.cpp
-@@ -37,6 +37,7 @@
+@@ -35,6 +35,8 @@
+ #include "xdgmimeapps.h"
+ #include "xdgdefaultapps.h"
  
- #include <cstdlib>
- #include <unistd.h>
 +#include <libintl.h>
- 
++
  #include <QDebug>
  #include <QDBusInterface>
-@@ -920,7 +921,22 @@ QString XdgDesktopFile::localizedKey(con
+ #include <QDBusObjectPath>
+@@ -942,7 +944,22 @@ QString XdgDesktopFile::localizedKey(con
  
  QVariant XdgDesktopFile::localizedValue(const QString& key, const QVariant& defaultValue) const
  {
